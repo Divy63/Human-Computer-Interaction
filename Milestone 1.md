@@ -57,3 +57,8 @@
 3.**Door Lock Codes** – Codes that lock doors are easy to use for everyone, whether a beginner, a novice or an expert. You input the right code and the door unlocks, pretty straightforward. However, a common issue is that once you enter a number, you can’t undo it without starting over. Mistakes happen frequently and when they do, this design flaw can be frustrating. This design is accessible, but this flaw shows a limitation on user experience. 
 
 4.**Peggo card reader** – sometimes doesn’t read the card correctly and still beeps that you have insufficient funds even when you do 
+
+### Divy
+
+1. **Electric Milk Frother** - The device allows users to create froth or foam in milk. I use it to make froth in my coffee my main purpose is to just mix coffee, milk and sugar well.It has very simple but effective user interface and I find it to be very successful. It only has one button and pushing that button starts the frother which then can be used to do the thing we want it to.
+2. 
