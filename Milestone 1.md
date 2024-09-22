@@ -76,4 +76,6 @@
 
 8. **Playstation Remote** -  Playstation remote is useful to play games in playstation. It is a bit complex interface for the newbies but once a person gets used to it, it feels very comfortable. It has several buttons which differ in functionality as per the game. Also it is made in a way that it fits in between both hands easily. Overall, I think it is a good interface but not a very successful one as person who wants to play has to give time to become comfortable with it.
 
-9. **Apple Watch** - Apple watch is a smart watch which gets connected to our apple smartphone. It has two buttons as hard interface whereas touch controls as soft interface. Touch controls are very easy as they do what they say. Moreover it easily gets our data and can measure 
+9. **Apple Watch** - Apple watch is a smart watch which gets connected to our apple smartphone. It has two buttons as hard interface whereas touch controls as soft interface. Touch controls are very easy as they do what they say. Moreover it easily gets our data and can measure our heart rate also, canprovide some health analysis details. The watch is a very well made interface as per my expectations.
+
+10. **iPhone 15 Pro Action Button** This button is a very good interface which helps us do several tasks as set in our settings by just long pressing it. The haptics it provides helps a lot to understand it's functionality. I feel that this is a very successful interface created by Apple.
