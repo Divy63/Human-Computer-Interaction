@@ -1,5 +1,11 @@
 # Milestone 1
 
+## Members
+**Divy Patel** : [patelda2@myumanitoba.ca]{patelda2@myumanitoba.ca}
+**Faiza Salami** : [salamif@myumanitoba.ca]{salamif@myumanitoba.ca}
+**Ian Gilhuly** : [umgilhul@myumanitoba.ca]{umgilhul@myumanitoba.ca}
+**Heejeong Kim** : [kimh4@myumanitoba.ca]{kimh4@myumanitoba.ca}
+
 ## Part A
 
 ### Everyday Interactions
