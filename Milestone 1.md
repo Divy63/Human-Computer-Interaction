@@ -2,8 +2,11 @@
 
 ## Members
 **Divy Patel** : patelda2@myumanitoba.ca
+
 **Faiza Salami** : salamif@myumanitoba.ca
+
 **Ian Gilhuly** : umgilhul@myumanitoba.ca
+
 **Heejeong Kim** : kimh4@myumanitoba.ca
 
 ## Part A
