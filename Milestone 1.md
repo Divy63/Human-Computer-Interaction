@@ -1,6 +1,6 @@
 # Milestone 1
 
-## Members
+## Group Members
 **Divy Patel** : patelda2@myumanitoba.ca
 
 **Faiza Salami** : salamif@myumanitoba.ca
