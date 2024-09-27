@@ -65,7 +65,24 @@
 
 3. **Door Lock Codes** – Codes that lock doors are easy to use for everyone, whether a beginner, a novice or an expert. You input the right code and the door unlocks, pretty straightforward. However, a common issue is that once you enter a number, you can’t undo it without starting over. Mistakes happen frequently and when they do, this design flaw can be frustrating. This design is accessible, but this flaw shows a limitation on user experience.
 
-4. **Peggo card reader** – sometimes doesn’t read the card correctly and still beeps that you have insufficient funds even when you do 
+4. Door Lock Codes – Codes that lock doors are easy to use for everyone, whether a beginner, a novice or an expert. You input the right code and the door unlocks, pretty straightforward. However, a common issue is that once you enter a number, you can’t undo it without starting over. Mistakes happen frequently and when they do, this design flaw can be frustrating. This design is accessible, but this flaw shows a limitation on user experience.
+5. 
+Peggo card reader – works well, easy to use. You just tap your card, hear a beep and proceed but there are sometimes times when the reader incorrectly shows an insufficient balance, even though you have funds available on the card. The user has to repeatedly keep tapping until it acknowledges the fund on your card which could lead to frustration on the user part.
+
+
+Whiteboard on zoom – You use this to simulate a physical board on your screen where users can view the board and contribute to it in real time. An error I noticed recently was when the user who's sharing the board zooms in or out, it also affects the view for every single person viewing the board. This could disrupt users who want to maintain their own zoom level.
+
+
+Reversing a car – Reversing a car could be confusing for new drivers.  When driving a car forward, we know that turning the steering wheel right makes the car turn right, and turning it left makes the car turn left. However, when reversing, this becomes less clear as we get confused whether to turn the wheel right as we would when moving a car forward, or the opposite. It would take some experience for new drivers to understand how steering while reversing the car works. A workaround I use is relying on the rearview camera, the camera shows guiding lines that indicate where the car is going to move to base on how the steering wheel is turned, making it easier to understand.
+
+
+Elevators in Uni – Some elevators at the uni have 2 buttons, one is “Main” and the other is “1”. The “Main” button refers to the main floors, while “1” refers to the basement. This can be confusing for users not familiar with the elevators, they might assume that “1” refers to the main floor, which is commonly considered as the first floor in most buildings.
+
+
+Alarm volume on phone - setting an alarm on a phone is easy to do, and doesn’t take much effort for users to do.  However, for heavy sleepers the maximum volume of the alarm clock on a phone might not be loud enough to wake them up
+
+
+7. **Peggo card reader** – sometimes doesn’t read the card correctly and still beeps that you have insufficient funds even when you do 
 
 ### Divy
 
