@@ -36,34 +36,30 @@
 10. **Backpack** – The backpack has two main storage pouches that have two zippers each that can be used to close and open the pouch. There are also two open topped mesh pouches (one on either side) that can hold a mug or something similar. The main pouches are used to hold textbooks and laptops, and they do this quite well. The one pouch even contains a separate area to hold the laptop, restricting its movement in the bag. Overall, it is a good design. It holds everything as expected. The material is strong enough to hold several books and a laptop, the zippers ensure nothing falls out from the top. 
 
 ### Heejeong
+1.**Automatic Soap Dispenser – The automatic soap dispenser senses when my hands are near the sensor. It ensures consistent amount of soap so can avoid wasting and since the dispenser works without any contact, it helps me maintain hygiene in the public washroom. But sometimes, it might cause confusion where the sensor is so need to move hands around the dispenser to find the sensor.  
 
-1. **Automatic Soap Dispenser** – The automatic soap dispenser senses when my hands are near the sensor. It ensures consistent amount of soap so can avoid wasting and since the dispenser works without any contact, it helps me maintain hygiene in the public washroom. But sometimes, it might cause confusion where the sensor is so need to move hands around the dispenser to find the sensor.  
+Standing Desk – The standing desk can be able to move up and down depending on how the user wants. The desk's height can be modified by pressing a button with an upper or down arrow sign, which makes it easy to recognize which button to press to manage the height. 
 
-2. **Standing Desk** – The standing desk can be able to move up and down depending on how the user wants. The desk's height can be modified by pressing a button with an upper or down arrow sign, which makes it easy to recognize which button to press to manage the height. 
+Auto-Focus of Phone Camera – When using a phone camera, it automatically focuses on the subject. This auto-focus function in a phone camera could ensure the quality of the photo without manually focusing it but at the same time, it might be inconvenient if the auto-focusing subject is not the part that the user wants to focus on.  
 
-3. **Auto-Focus of Phone Camera** – When using a phone camera, it automatically focuses on the subject. This auto-focus function in a phone camera could ensure the quality of the photo without manually focusing it but at the same time, it might be inconvenient if the auto-focusing subject is not the part that the user wants to focus on.  
+School Vending Machines – It helps me easy to grab snacks or drinks from vending machines without contacting a cashier. This saves my time by just selecting an item with a couple of buttons. But the bad feature I think is sometimes, I get confused about when to pay money (e.g., before selecting an item, or after selecting an item) and end up starting over from the beginning. It makes me confused that I refuse to use different vending machines that I haven’t tried yet.  
 
-4. **School Vending Machines** – It helps me easy to grab snacks or drinks from vending machines without contacting a cashier. This saves my time by just selecting an item with a couple of buttons. But the bad feature I think is sometimes, I get confused about when to pay money (e.g., before selecting an item, or after selecting an item) and end up starting over from the beginning. It actually makes me confused that I refuse to use different vending machines that I haven’t tried yet.  
+Syrup pump - Working as a barista, when customers ask for a quarter pump or half pump, it’s hard to measure the exact amount of syrup all the time.  The pumps are designed for full portions, so trying to dispense smaller amounts often leads to inconsistent servings, which can affect the flavour balance of the drink. 
 
-5. **Syrup pump** - Working as a barista, when customers ask for a quarter pump or half pump, it’s hard to measure the exact amount of syrup all the time.  
+Smart car parking auto unlocks – In some smart cars when you put the car in park. The doors automatically unlock. While this is convenient in most situations, there are times when you don’t want the doors to unlock, such as in unsafe areas or when waiting inside the car. However, the car unlocks automatically regardless, which can be frustrating or even pose a safety risk.  
 
-6. **Smart car parking auto unlock** – (for some smart cars with specific design or software..?) When putting the car in park, it’s convenient most of the time for the car to unlock the doors. However, there are times when you don’t want it to unlock perhaps for safety reasons but it will unlock upon parking anyway which can be annoying or dangerous. 
+Charging outlet – some need all three plugs to plug into the wall and this makes it so that it can’t be plugged in upside down. Some of these charging blocks are very big and if not plugged into the bottom outlet but the top outlet, then it would block the bottom outlet. However, if you have two of these charging blocks, then you cannot utilize both outlets at the same time which is very annoying.  
 
-7. **Charging outlet** – some need all three plugs to plug into the wall and this makes it so that it can’t be plugged in upside down. Some of these charging blocks are very big and if not plugged into the bottom outlet but the top outlet, then it would block the bottom outlet. However, if you have two of these charging blocks, then you cannot utilize both outlets at the same time which is very annoying.  
+Elevator button undo - Once you press a button for a floor, there is no option to undo or cancel that choice. This is inconvenient when you accidentally press the wrong button, as you either have to stop on the wrong floor or make someone else wait.  
 
-8. **Elevator button undo** -  
+Apple pencil – The Apple Pencil cannot be used while charging. When the battery runs out, I wait until it recharges enough to use it again, which interrupts my workflow.  
 
-9. **Apple pencil** – can't use it when charging  
-
-10. **Calculator** -  
-
+Calculator - Some calculators, especially on smartphones, have unclear or hidden functions, making them difficult to use. Features like advanced mathematical operations (e.g., square roots, exponents, or scientific notation) are often hidden within a secondary function, which isn’t always obvious to the user. This leads to confusion or the need to search for instructions.  
 ### Faiza
 
 1. **Mobile Phone** – The mobile phone interface allows users to interact with their device by displaying information in a user-friendly manner. It is a very successful interaction as mobile phones have become essential in daily life for many individuals. Basic functions are easily accessible like calling, texting, or browsing without needing prior experience. However, some advanced features might be hard to grasp without proper guidance or tips, which shows both the success and limitation of this design. 
 
 2. **Typing on a Keyboard** - Typing on a keyboard is an interaction that most people find easy to learn. Its main function of having to type a key to input text is pretty straightforward even for first –time users. However, to become an expert in it where you can type without having to look at the keys and knowing the exact placement of each letter takes practice. This would be gained through repeated use such as typing documents or texting. This design is easy and accessible for beginners but requires practice to get to be an expert.
-
-3. **Door Lock Codes** – Codes that lock doors are easy to use for everyone, whether a beginner, a novice or an expert. You input the right code and the door unlocks, pretty straightforward. However, a common issue is that once you enter a number, you can’t undo it without starting over. Mistakes happen frequently and when they do, this design flaw can be frustrating. This design is accessible, but this flaw shows a limitation on user experience.
 
 4. Door Lock Codes – Codes that lock doors are easy to use for everyone, whether a beginner, a novice or an expert. You input the right code and the door unlocks, pretty straightforward. However, a common issue is that once you enter a number, you can’t undo it without starting over. Mistakes happen frequently and when they do, this design flaw can be frustrating. This design is accessible, but this flaw shows a limitation on user experience.
 5. 
