@@ -104,7 +104,9 @@
 ### Design Principle
 1. **Minimal Interface (Buttons)** : Minimum number of buttons make convinient interfaces.
 
-2. **Mitigate User Error (Undo  Button)** : User should be able to undo the thing they did by mistake
+2. **Mitigate User Error** : Mistakes could occur when interacting with an interface, so it's important to design an interface that lets users correct their errors easily.  A user should be able to correct their errors without any difficulty or frustration. 
+
+Consider the “elevator buttons” or the “door lock code” examples from above. If a user presses the wrong elevator button or presses the wrong code while unlocking the door, a good interface should let them correct their mistake immediately. Unfortunately, it does not, once a wrong elevator button is pressed or the wrong input is pressed a user cannot undo it which can lead to frustration. A design that limits this error by allowing users to correct their mistake would improve the use of the system. 
 
 3. **Use Visual Cues** : Using pictures or visual things to help users use the interface
 
