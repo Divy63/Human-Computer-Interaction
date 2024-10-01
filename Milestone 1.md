@@ -71,11 +71,13 @@
 
 6. **Reversing a car** – Reversing a car could be confusing for new drivers.  When driving a car forward, we know that turning the steering wheel right makes the car turn right, and turning it left makes the car turn left. However, when reversing, this becomes less clear as we get confused whether to turn the wheel right as we would when moving a car forward, or the opposite. It would take some experience for new drivers to understand how steering while reversing the car works. A workaround I use is relying on the rearview camera, the camera shows guiding lines that indicate where the car is going to move to base on how the steering wheel is turned, making it easier to understand.
 
-7. **Elevators in University** – Some elevators at the uni have 2 buttons, one is “Main” and the other is “1”. The “Main” button refers to the main floors, while “1” refers to the basement. This can be confusing for users not familiar with the elevators, they might assume that “1” refers to the main floor, which is commonly considered as the first floor in most buildings.
+7. **Elevators in University** – Some elevators at the uni have 2 buttons, one is “Main” and the other is “1”. The “Main” button refers to the main floors, while “1” refers to the basement. This can be confusing for users not familiar with the elevators, they might assume that “1” refers to the main floor, which is commonly considered as the first floor in most buildings. 
 
 8. **Alarm volume on phone** - setting an alarm on a phone is easy to do, and doesn’t take much effort for users to do.  However, for heavy sleepers the maximum volume of the alarm clock on a phone might not be loud enough to wake them up
 
-9. **Peggo card reader** – sometimes doesn’t read the card correctly and still beeps that you have insufficient funds even when you do 
+9. **Mouse** - The mouse is easy to use, anyone with no experience can get the idea of how to use it instantly. It’s a good design.
+
+10.  **Umbrella** - This design protects a person from the rain. One downside I've noticed from some umbrella is that they’re not able to withstand strong winds which makes sense because the umbrella is meant to be a light object one should be able to carry anywhere. 
 
 ### Divy
 
