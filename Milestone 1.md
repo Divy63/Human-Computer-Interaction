@@ -124,13 +124,18 @@
 
 
 ### Design Principle
-1. **Minimal Interface (Buttons)** : Minimum number of buttons make convinient interfaces.
+1. **Minimal Interaction Principle** : Interfaces which have minimalistic things to do are among the most successful database. This is because users do not get confused of what to do or maybe have very less things to interact with the interface so there's no option of choosing any other button.
+   We see the minimalitic interface in the examples of the **Electric Milk Frother** (Best 10), **Push to open door Button (For disabled people)** (Divy's ideas), and **Peggo card reader**(Faiza's Idea). This things in common have only 1 button or switch which makes users operate them. This single button make the interface very simplistic
 
-2. **Mitigate User Error** : Mistakes could occur when interacting with an interface, so it's important to design an interface that lets users correct their errors easily.  A user should be able to correct their errors without any difficulty or frustration. 
+3. **Mitigate User Error** : Mistakes could occur when interacting with an interface, so it's important to design an interface that lets users correct their errors easily.  A user should be able to correct their errors without any difficulty or frustration. 
 Consider the “elevator buttons” or the “door lock code” examples from above. If a user presses the wrong elevator button or presses the wrong code while unlocking the door, a good interface should let them correct their mistake immediately. Unfortunately, it does not, once a wrong elevator button is pressed or the wrong input is pressed a user cannot undo it which can lead to frustration. A design that limits this error by allowing users to correct their mistake would improve the use of the system. 
 
-3. **Use Visual Cues** : Using pictures or visual things to help users use the interface
+4. **Visual Cues Principle** :Using pictures or visual cues, such as icons, or colours, guide users through the interface without the need for excessive explanation. They help users understand what actions are possible, where to focus, or how the system responds to their input, making interactions more intuitive.  
 
-4.**Accessibility** : Using accessibile things like braile scripts on buttons, sound for deaf people
+In the case of the sink faucet, the colour-coded handles are a strong example of visual cues being used to guide the user. The red handle is for hot water and the blue handle is for cold water based on a widely understood colour convention. The combination of these visual cues makes the design functional and relatively easy to use, as long as the user is familiar with basic colour coding  
 
-5.**Learnability** : how eay it is to learn a inteface.
+4.**Princple of Accessibility** : Using accessibile things like braile scripts on buttons, sound for deaf people
+
+5.**Ability to Learn** : How quickly new users can understand and use the interface effectively. The easier it is to learn to adapt to the system, the better the design. A system with consistent interactions and recognizable patterns will minimize the learnomg curve. 
+
+The PlayStation remote is a good example of an interface with a moderate learnability curve. The multiple buttons can be overwhelming for new users. This complexity can hinder initial interactions, requiring the user to invest time to understand the button functions. However, once a user becomes familiar with the remote’s layout, the design becomes intuitive and easy to use across different games.  
