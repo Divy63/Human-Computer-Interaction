@@ -101,6 +101,28 @@
 
 10. **iPhone 15 Pro Action Button** This button is a very good interface which helps us do several tasks as set in our settings by just long pressing it. The haptics it provides helps a lot to understand it's functionality. I feel that this is a very successful interface created by Apple.
 
+### Best 10
+1. **Sink Faucet** – The sink faucet has a long-craned neck with to round handles. One for hot water and the other for cold water.  Some good design features are that the spout is long and facing down into the sink, so it is clear where the water is going, the handles are colour coded (red and blue) to indicate which is for hot and which is for cold. This colour coding feature relies on the prior knowledge from user, as red equals hot and blue equals cold is not necessarily intuitive. Overall, a simplistic design that does what it is supposed to, with only some prior knowledge needed. 
+
+ 2. **Swivel Office Chair** - The office chair allows many parts to be adjusted. It allows the seat to be titled forward and back, up and down, the back rest to be flexible  or stiff, and the arm rest to be wide or narrow, and up and down. The many options are great for customizing the chair and make it great for finding the rights setting      for  maximal comfort. But the many knobs and levers used to do this make it difficult to figure out which control is for what setting, which makes the experience when       adjusting the chair frustrating.
+
+ 3. **Umlearn** – This is a web portal where I can access all the course materials for each class. It has easy dropdown menus to access each class, and displaying the current class being viewed at the top is helpful. Accessing the course materials can usually be easily accessed in a sidebar (Instructor dependent). Overall, it matches my expectations for how it should function. I have used it for several years at this point, which could contribute to its ease of use.
+
+ 4. **Syrup pump** - Working as a barista, when customers ask for a quarter pump or half pump, it’s hard to measure the exact amount of syrup all the time.  The pumps are designed for full portions, so trying to dispense smaller amounts often leads to inconsistent servings, which can affect the flavour balance of the drink.
+  
+ 5. **Automatic Soap Dispenser** – The automatic soap dispenser senses when my hands are near the sensor. It ensures consistent amount of soap so can avoid wasting and since the dispenser works without any contact, it helps me maintain hygiene in the public washroom. But sometimes, it might cause confusion where the sensor is so need to move hands around the dispenser to find the sensor.  
+
+ 6. **Whiteboard on zoom** – You use this to simulate a physical board on your screen where users can view the board and contribute to it in real time. An error I noticed recently was when the user who's sharing the board zooms in or out, it also affects the view for every single person viewing the board. This could disrupt users who want to maintain their own zoom level.
+
+ 7. **Door Lock Codes** – Codes that lock doors are easy to use for everyone, whether a beginner, a novice or an expert. You input the right code and the door unlocks, pretty straightforward. However, a common issue is that once you enter a number, you can’t undo it without starting over. Mistakes happen frequently and when they do, this design flaw can be frustrating. This design is accessible, but this flaw shows a limitation on user experience.
+
+ 8. **Electric Milk Frother** - The device allows users to create froth or foam in milk. I use it to make froth in my coffee my main purpose is to just mix coffee, milk and sugar well.It has very simple but effective user interface and I find it to be very successful. It only has one button and pushing that button starts the frother which then can be used to do the thing we want it to.
+
+ 9. **Playstation Remote** -  Playstation remote is useful to play games in playstation. It is a bit complex interface for the newbies but once a person gets used to it, it feels very comfortable. It has several buttons which differ in functionality as per the game. Also it is made in a way that it fits in between both hands easily. Overall, I think it is a good interface but not a very successful one as person who wants to play has to give time to become comfortable with it.
+
+ 10. **Elevator button undo** - Once you press a button for a floor, there is no option to undo or cancel that choice. This is inconvenient when you accidentally press the wrong button, as you either have to stop on the wrong floor or make someone else wait.  
+
+
 ### Design Principle
 1. **Minimal Interface (Buttons)** : Minimum number of buttons make convinient interfaces.
 
