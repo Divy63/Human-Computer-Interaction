@@ -9,6 +9,8 @@ header-includes:
 # Milestone 1
 
 ## Group Members
+\begin{center}
+
 **Divy Patel** : patelda2@myumanitoba.ca
 
 **Faiza Salami** : salamif@myumanitoba.ca
@@ -17,6 +19,7 @@ header-includes:
 
 **Heejeong Kim** : kimh4@myumanitoba.ca
 
+\end{center}
 # Part A
 
 ## Everyday Interactions
