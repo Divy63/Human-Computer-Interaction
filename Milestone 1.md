@@ -143,7 +143,7 @@ header-includes:
 
  In the case of the sink faucet, the colour-coded handles are a strong example of visual cues being used to guide the user. The red handle is for hot water and the blue handle is for cold water based on a widely understood colour convention. The combination of these visual cues makes the design functional and relatively easy to use, as long as the user is familiar with basic colour coding. 
 
- 4. **Princple of Accessibility** : Making the interface as accessible as it could be for the use of people with disabilities. Like using braile scripts on the interface for blind people, using some kind of descriptive drawing to describe the usage for the deaf people operating\n the device.
+ 4. **Princple of Accessibility** : Making the interface as accessible as it could be for the use of people with disabilities. Like using braile scripts on the interface for blind people, using some kind of descriptive drawing to describe the usage for the deaf people operating the device.
 
  This things can be seen in **Elevator Buttons** (Divy's ideas), and **Push to open door button** (Divy's ideas). There are braile scripts printed on the elevator buttons so rhat blind people can easily identify the description on the button. Talking about the Push to open door button, it is a great thing developed for the help of people who have disabilities in walking or do not have much power to open door. So, while creating an interface we think that providing accessibility tools is a good thing to make people feel that they are included.
 
