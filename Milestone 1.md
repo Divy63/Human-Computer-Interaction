@@ -9,9 +9,9 @@
 
 **Heejeong Kim** : kimh4@myumanitoba.ca
 
-## Part A
+# Part A
 
-### Everyday Interactions
+## Everyday Interactions
 
 ### Ian
 
@@ -101,7 +101,7 @@
 
 10. **iPhone 15 Pro Action Button** This button is a very good interface which helps us do several tasks as set in our settings by just long pressing it. The haptics it provides helps a lot to understand it's functionality. I feel that this is a very successful interface created by Apple.
 
-### Best 10
+## Best 10
 1. **Sink Faucet** – The sink faucet features circular handles and a long, crane-neck design. A separate one for cold and hot water.  Good design elements include the long, downward-facing spout that makes it obvious where the water is going into the sink and the color-coded (red and blue) handles that show which is for hot and which is for cold. This color-coding feature depends on the user's past knowledge because it's not always obvious that red is hot and blue is cold. Overall, a straightforward design that accomplishes its goals and requires minimal prior knowledge. 
 
  2. **Swivel Office Chair** - The office chair allows many parts to be adjusted. It allows the seat to be tilted forward and back, up and down, the back rest to be flexible  or stiff, and the arm rest to be wide or narrow, and up and down.  many options for customizing the chair are great and make it great for finding the rights setting for maximal comfort. But many knobs and levers used to do this make it difficult to figure out which control is for what setting, which makes the experience of adjusting the chair frustrating
@@ -122,7 +122,7 @@
 
  10. **Undoing in elevator button** - When you press a button for a floor in an elevator, there’s no way to undo or cancel it. This can be annoying if you press the wrong button by accident, because you either have to stop at the wrong floor or make others wait. It’s even worse in busy buildings, where this mistake can cause delays. Having a cancel option would make things easier and save time for everyone. So, the interface of Elvator Button might be improved.
  
-### Design Principle
+## Design Principle
  1. **Minimal Interaction Principle** : Interfaces which have minimalistic things to do are among the most successful database. This is because users do not get confused of what to do or maybe have very less things to interact with the interface so there's no option of choosing any other button.
 
  We see the minimalitic interface in the examples of the **Electric Milk Frother** (Best 10), **Push to open door Button (For disabled people)** (Divy's ideas), and **Peggo card reader**(Faiza's Idea). This things in common have only 1 button or switch which makes users operate them. This single button make the interface very simplistic. Simple designs make it very convinient and easy for the users to use the products and thus minimalistic interface seems to be a good one.
@@ -142,3 +142,85 @@
  5. **Ability to Learn** : How quickly new users can understand and use the interface effectively. The easier it is to learn to adapt to the system, the better the design. A system with consistent interactions and recognizable patterns will minimize the learnomg curve.
 
  The PlayStation remote is a good example of an interface with a moderate learnability curve. The multiple buttons can be overwhelming for new users. This complexity can hinder initial interactions, requiring the user to invest time to understand the button functions. However, once a user becomes familiar with the remote’s layout, the design becomes intuitive and easy to use across different games.  
+
+
+
+# Part B: Observing Users 
+
+## Part B.1: Website Description 
+
+The site we have decided to use for our user observations is Toy’s r’ Us. This site was chosen for a few reasons. Firstly, we are considering doing an online store front for our high-fidelity prototype. Observing users use an online store will help us when it comes to time for us to make design decisions for our own prototype. Secondly, the demographic for online toy stores is quite large, as you will have young kids to adults potentially using the site to buy toys for themselves, or someone they know. This provides an interesting challenge, as the skill level of the user will be varied. Finally, Toy’s r’ Us is one of the largest companies dedicated to selling toys, so it seemed like the best option. 
+
+## Part B.2: Tasks 
+
+We choose tasks specifically tailored to an online store front. 
+
+### Tasks
+
+ 1. Find with search bar – Use the search bar to find a toy that you would like to buy. 
+
+ 2. Find by navigation – Use the menus to explore the site to find a different toy you would like to buy. 
+
+ 3. Add to the cart – From the product description page, or a list, how easy is it to add the toy to the shopping cart. 
+ 
+ 4. Buy – Go through the process of buying the toy, from being in the cart to right before it is actually purchased. 
+
+ 
+
+### Interviews 
+
+### Participant 1 
+
+The participant chose the pseudonym **"Lily"**, she is a 10-year-old female currently in grade 6. 
+
+**Lily** had no issues completing most of the tasks, except for finding a specific toy using the navigation feature. The navigation element is a weak part in the interface, as **Lily** got stuck and needed additional help before she could locate a soccer ball. 
+
+**Lily** mentioned that she liked that the website had a lot of toys available and thought the toys on the website looked “cool” considering she’s a kid. She also found the category section helpful. However, she did not like that she could not find the category section initially and needed help to find it 
+
+### Participant 2 
+
+Participant 2 chose the pseudonym **“Briella”**, she is a 17-year-old female currently in grade 12. 
+
+**Briella** had no issues with completing most of the tasks, except for finding a specific toy using the navigation feature. She was initially confused about how to find an item without using the search function and just started clicking on random options that related to what she was searching for. She needed additional help before she could find a soccer ball. She was also confused on what the checkout options “deliver to store” or “deliver to home” meant. 
+
+**Briella** mentioned she liked how straightforward the interface was after finding the category feature. However, she did not like how confusing it was initially to locate an item before location the category, and how the checkout had too many options. 
+
+### Participant 3 
+
+Participant 3 chose the pseudonym **“Olivia”**, she is a 27-year-old female currently working as a nurse. 
+
+She found searching for an item, in this case a ‘Polly Pocket’. She found the item easily using the search ball. Looking for a soccer ball using the navigation bar took longer. The process took going through several navigation bars, to find the soccer balls. She initially had to stop and think for a minute about which link to click, of the broader categories before she could narrow the table down to soccer balls. Also, it took her an extra second to add an item to the shopping cart, as the site has two separate sections, one for instore pickup and another for delivery. There is no button explicitly labelled “add to cart”. Ordering the product was straightforward. 
+
+Overall, she found the website ok to use. She found the search bar easy, and quick to use. The pauses noted while looking up at the soccer ball, and adding an item to the shopping were, were also things Olivia explained she disliked about the interface. Specifically, that it was not obvious right away how to complete those tasks. 
+
+### Participant 4 
+
+Participant 4, chose the pseudonym **“Kevin”**, is a 25-year-old male university student.  
+
+**Kevin** had no trouble finding a toy, whether using the search bar or navigating through the site’s menus. While both methods worked for him, the search bar allowed him to find an item much faster compared to browsing the categories, which took longer but was still effective. When it came to adding an item to the cart, Kevin initially had no problem identifying where the button should be. However, after clicking on the item to view its description in more detail, he encountered difficulties locating the “Add to Cart” button. Through trial and error, he discovered that the “Home Delivery” button actually added the item to the cart, which he found unintuitive and frustrating. The checkout process, on the other hand, was straightforward. Kevin appreciated the multiple options for completing the purchase, including logging in, creating an account, or using guest checkout.  
+
+Overall, **Kevin** felt it was relatively easy to find the toy he wanted. However, he was confused by the misleading “Home Delivery” button and mentioned that the site’s layout seemed disorganized, though it did not hinder his ability to find products.  
+
+ 
+
+### Participant 5 
+
+Participant 5 chose the nickname **‘Seven’** which was his favorite number. He is 21 years old and is a computer science student at the University of Manitoba.Moreover, he works as an associate at Walmart. 
+
+**Seven** while doing his tasks of finding the toy was too fast probably because of his knowledge about toys due to his work at walmart. He easily searched and found the item, also he was comfortable with the menu method as well. For the 3rd task he found it very easy and praised the ‘Toys R’ Us’ website for having easy ‘Add to Cart’ feature. For the 4th task, he thought he would have to create a id to try to place an order but the website provided him a option for guest checkout which made his work less and he enjoyed placing an order. Moreover, he felt easiest while entering the address because when he typed his apartment number and street he got an option of the location and everything got auto filled. 
+The thing he does not like was that the store showed pickup available for some items even when that item was available in nearby store but not in the selected store, so he concluded that as confusing. 
+
+### Participant 6 
+
+Participant 6 chose **‘Unknown’** as her nickname. She is roughly around 21-23 years old and is a computer science student at University of Manitoba. 
+
+**‘Unknown’** when asked to complete her tasks, she found it pretty easy with all of the tasks. None of the tasks took more than a minute or 2 for her to complete and she was impressed with this easy interface, but she also suggested that how an option like buying the product directly instead of adding it to cart and then buying it was missing in the website. She feels that she can save a lot of time with their feature. Also, she hated the inconsistency of the display as there were lots of whitespace left on the sides ofwebsite window in the browser. So, she suggested that this could be mad consistent in all kinds of web browser. 
+
+### Provide a half page summary discussion on what you learned from “Look”ing vs “Ask”ing, where these two approaches yielded similar insight, and where they differed. 
+
+**“Looking”** provided a direct observation on how the user interacted with the interface. I noticed from looking that when users encountered an issue, they often paused or scanned the screen anxiously. This behavior shows a weak point in the interface design. 
+
+**Asking** allowed me to understand what the user thought about the interface. Through asking, i gained more information about their thoughts or frustrations. Users expressed their confusion about some features which made me understand the issues they faced. 
+
+The two approaches yielded similar insight as my observations of the struggles the user faces during the “Looking” was confirmed by the user's feedback during “Asking”. However, the two approaches differed in their focus. “Looking” focuses on real-time behavior while “Asking” provided more understanding of the user’s experience. 
+
