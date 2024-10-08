@@ -1,3 +1,11 @@
+---
+header-includes:
+  - \usepackage{titlesec}
+  - \titleformat{\chapter}[block]{\centering\LARGE\bfseries}{}{0pt}{\LARGE}
+  - \titleformat{\section}[block]{\centering\Large\bfseries}{}{0pt}{\Large}
+  - \titleformat{\subsection}[block]{\centering\normalsize\bfseries}{}{0pt}{\normalsize}
+---
+
 # Milestone 1
 
 ## Group Members
