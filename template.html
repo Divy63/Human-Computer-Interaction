@@ -1,0 +1,143 @@
+<html>
+<head>
+<style>
+.container {
+  display: grid;  
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: repeat(2, [row] auto  );  
+}
+
+.box-logo{
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 1;
+  grid-row-end: 2;
+  background-color: aquamarine;
+}
+
+.box-searchbar {
+  grid-column-start: 2;
+  grid-column-end: 5;
+  grid-row-start: 1;
+  grid-row-end: 2;
+  background-color: blue;
+}  
+
+.box-links {
+  grid-column-start: 1;
+  grid-column-end: 5;
+  grid-row-start: 2;
+  grid-row-end: 3;
+  background-color: red;
+}
+
+.box-categories{
+  grid-column-start: 1;
+  grid-column-end: 5;
+  grid-row-start: 3;
+  grid-row-end: 6;
+  background-color: green;
+}
+
+.box-items {
+  grid-column-start: 2;
+  grid-column-end: 5;
+  grid-row-start: 6;
+  grid-row-end: 10;
+  background-color: yellow;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  width: 40%;
+  border-radius: 5px;
+  margin: auto;
+}
+
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+img {
+  border-radius: 5px 5px 0 0;
+}
+
+.card-container {
+  padding: 2px 16px;
+}
+
+.item-a{
+  grid-column: 1;
+  grid-row: 2;
+}
+
+.item-b{
+  grid-column: 1;
+  grid-row: 2;
+}
+
+.item-c{
+  grid-column: 1;
+  grid-row: 2;
+}
+
+
+.box-filter {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 6;
+  grid-row-end: 12;
+  background-color: aliceblue;
+}
+.box-contact {
+  grid-column-start: 2;
+  grid-column-end: 5;
+  grid-row-start: 10;
+  grid-row-end: 12;
+  background-color: black;
+}
+</style>
+</head>
+
+
+<div class="container">
+<div class="box-logo"><img src="toy_logo.jpg" alt="Store Logo" width="100%" height="100px"></div>
+<div class="box-header"> search bar</div>
+<div class = "box-links"> link</div>
+<div class = "box-filter"> filter</div>
+<div class = "box-items">
+  <div class="grid-column">
+    <div class="item-a">
+      <div class="card">
+        <img src="toy_logo.jpg" alt="Avatar" style="width:100%">
+        <div class="card-container">
+          <h4><b>Jane Doe</b></h4> 
+          <p>Interior Designer</p> 
+        </div>
+      </div>  
+    </div>
+  </div>
+  <div class="grid-column">
+    <div class="item-b">
+      <div class="card">
+        <img src="toy_logo.jpg" alt="Avatar" style="width:100%">
+        <div class="card-container">
+          <h4><b>Jane Doe</b></h4> 
+          <p>Interior Designer</p> 
+        </div>
+      </div>  
+    </div>
+  <div class="grid-column">  
+</div>
+<div class ="item-contact"> bottom bottom</div>
+
+</div>
+
+<body>
+
+
+</body>
+</html>
