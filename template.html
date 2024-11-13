@@ -2,12 +2,13 @@
 
 <head>
   <link rel="stylesheet"
-    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=search" />
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
   <style>
     .container {
       display: grid;
       grid-template-columns: 1fr 1fr 1fr 1fr;
       grid-template-rows: repeat(2, [row] auto);
+      background-color: D9D9D9;
     }
 
     .box-logo {
@@ -15,7 +16,7 @@
       grid-column-end: 2;
       grid-row-start: 1;
       grid-row-end: 2;
-      background-color: rgb(255, 255, 255);
+      background-color: #D9D9D9;
     }
 
     .box-logo img {
@@ -47,14 +48,15 @@
       padding: 0px 5px;
       border-radius: 50px;
       font-size: 18px;
-      font-family: "Nunito";
+      font-family: " Nunito";
       color: #0a0909;
       background-color: #B19C9C;
       font-weight: 500;
     }
 
     .search:focus {
-      outline: none;
+      outline:
+        none;
     }
 
     .box-links {
@@ -62,7 +64,54 @@
       grid-column-end: 5;
       grid-row-start: 2;
       grid-row-end: 3;
-      background-color: red;
+      background-color: #B19C9C;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px;
+      height: 10px;
+    }
+
+    .material-symbols-outlined {
+      color: #000000;
+    }
+
+    .nav-links {
+      list-style: none;
+    }
+
+
+    .nav-links li {
+      display: inline-block;
+      padding: 0px 15px 0px 0px;
+    }
+
+    .nav-links li a {
+      transition: all 0.3s ease 0s;
+      text-decoration: none;
+      color: #000000;
+    }
+
+    .nav-links li a:hover {
+      color: #ffffff;
+    }
+
+    button {
+      padding: auto;
+      background-color: #B19C9C;
+      border: none;
+      border-radius: 50px;
+      cursor: pointer;
+      transition: all 0.3s ease 0s;
+      margin-right: 10px;
+    }
+
+    button:hover {
+      background-color: #7d6464;
+    }
+
+    .sign-in {
+      margin-left: auto;
     }
 
     .box-categories {
@@ -118,9 +167,9 @@
       grid-row: 2;
     }
 
-
     .box-filter {
-      grid-column-start: 1;
+      grid-column-start:
+        1;
       grid-column-end: 2;
       grid-row-start: 6;
       grid-row-end: 12;
@@ -136,7 +185,6 @@
     }
   </style>
 </head>
-
 
 <div class="container">
   <div class="box-logo"><img src="toy_world.png" alt="Store Logo" width="70%" height="70px"></div>
@@ -156,9 +204,20 @@
     </table>
   </div>
 
-
-
-  <div class="box-links"> link</div>
+  <div class="box-links">
+    <a href="#"><span class="material-symbols-outlined">home</span>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="#">Try Your Luck!</a></li>
+          <li><a href="#">Nav2</a></li>
+          <li><a href="#">Nav3</a></li>
+        </ul>
+      </nav>
+      <a class="sign-in" href="#"><button>Sign In</button></a>
+      <a class="cart" href="#"><button><span class="material-symbols-outlined">
+            shopping_cart
+          </span></button></a>
+  </div>
   <div class="box-filter"> filter</div>
   <div class="box-items">
     <div class="grid-column">
