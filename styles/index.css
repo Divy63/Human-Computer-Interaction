@@ -191,7 +191,7 @@ button:hover {
 
 .category-books {
     top: 30%;
-    left: 25%;
+    left: 22%;
     background-color: #FF6B6B;
     color: white;
 }
@@ -204,7 +204,7 @@ button:hover {
 }
 
 .category-electronics {
-    top: 80%;
+    top: 85%;
     left: 30%;
     background-color: #96CEB4;
     color: white;
@@ -219,7 +219,7 @@ button:hover {
 
 .category-action {
     top: 60%;
-    left: 54%;
+    left: 50%;
     background-color: #FFAD60;
     color: white;
 }
