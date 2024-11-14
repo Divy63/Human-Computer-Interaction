@@ -13,6 +13,14 @@
   <component name="ComposerSettings">
     <execution />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="CSS File" />
+        <option value="JavaScript File" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
@@ -45,7 +53,8 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/salam/github/sentence-structure-identifier/Human-Computer-Interaction",
+    "last_opened_file_path": "C:/Users/salam/github/sentence-structure-identifier/Human-Computer-Interaction/images",
+    "list.type.of.created.stylesheet": "CSS",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -58,6 +67,9 @@
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\salam\github\sentence-structure-identifier\Human-Computer-Interaction" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\salam\github\sentence-structure-identifier\Human-Computer-Interaction\images" />
     </key>
   </component>
   <component name="SharedIndexes">
@@ -80,7 +92,8 @@
       <workItem from="1731389699405" duration="4107000" />
       <workItem from="1731427106411" duration="341000" />
       <workItem from="1731519361053" duration="636000" />
-      <workItem from="1731520317482" duration="737000" />
+      <workItem from="1731520317482" duration="326000" />
+      <workItem from="1731563667186" duration="3534000" />
     </task>
     <servers />
   </component>
