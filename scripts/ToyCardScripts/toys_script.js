@@ -1,3 +1,5 @@
+let TOY_DATABASE=new Toys();
+
 function displayToys(toys){
     toys.displayHTML();
 }
@@ -41,6 +43,94 @@ function onLoadDisplayToys(){
     toys.add(Remote_Control_Car);
     toys.add(Digital_Camera_Toy);
 
+    TOY_DATABASE.add(Robot_Head);
+    TOY_DATABASE.add(Grizzly_Bear);
+    TOY_DATABASE.add(Darts);
+    TOY_DATABASE.add(Lego_RangeRover);
+
+    // Comics
+    TOY_DATABASE.add(SpiderMan_Comic_Book);
+    TOY_DATABASE.add(HarryPotter_Book);
+    
+    // Action Figure
+    TOY_DATABASE.add(IronMan_Figure);
+    TOY_DATABASE.add(WonderWoman_Figure);
+    
+    // Games & Puzzles
+    TOY_DATABASE.add(Chess_Set);
+    TOY_DATABASE.add(Jenga_Game);
+
+    // Outdoor
+    TOY_DATABASE.add(Soccer_Ball);
+    TOY_DATABASE.add(Jump_Rope);
+
+    // Electronic
+    TOY_DATABASE.add(Remote_Control_Car);
+    TOY_DATABASE.add(Digital_Camera_Toy);
+
     // Displays Toys
     displayToys(toys);
 }
+
+function showBooksAndComics(){
+    let toys =new Toys();
+    let SpiderMan_Comic_Book = new Toy("Spider-Man Comic Book", "$9.99", 1, 30, "images/toyImages/WEBP/Comic_Book.webp", "images/toyImages/JPEG/Comic_Book.jpeg");
+    let HarryPotter_Book = new Toy("Harry Potter Book", "$12.99", 2, 25, "images/toyImages/WEBP/Comic_Book.webp", "images/toyImages/JPEG/Comic_Book.jpeg");
+
+    toys.add(SpiderMan_Comic_Book);
+    toys.add(HarryPotter_Book);
+
+    displayToys(toys);
+
+}
+
+function showElectronics(){
+    let toys =new Toys();
+    let SpiderMan_Comic_Book = new Toy("Spider-Man Comic Book", "$9.99", 1, 30, "images/toyImages/WEBP/Comic_Book.webp", "images/toyImages/JPEG/Comic_Book.jpeg");
+    let HarryPotter_Book = new Toy("Harry Potter Book", "$12.99", 2, 25, "images/toyImages/WEBP/Comic_Book.webp", "images/toyImages/JPEG/Comic_Book.jpeg");
+
+    toys.add(SpiderMan_Comic_Book);
+    toys.add(HarryPotter_Book);
+
+    displayToys(toys);
+
+}
+
+function showActionFigures(){
+    let toys =new Toys();
+    let SpiderMan_Comic_Book = new Toy("Spider-Man Comic Book", "$9.99", 1, 30, "images/toyImages/WEBP/Comic_Book.webp", "images/toyImages/JPEG/Comic_Book.jpeg");
+    let HarryPotter_Book = new Toy("Harry Potter Book", "$12.99", 2, 25, "images/toyImages/WEBP/Comic_Book.webp", "images/toyImages/JPEG/Comic_Book.jpeg");
+
+    toys.add(SpiderMan_Comic_Book);
+    toys.add(HarryPotter_Book);
+
+    displayToys(toys);
+
+}
+
+function showGamesAndPuzzles(){
+    let toys =new Toys();
+    let SpiderMan_Comic_Book = new Toy("Spider-Man Comic Book", "$9.99", 1, 30, "images/toyImages/WEBP/Comic_Book.webp", "images/toyImages/JPEG/Comic_Book.jpeg");
+    let HarryPotter_Book = new Toy("Harry Potter Book", "$12.99", 2, 25, "images/toyImages/WEBP/Comic_Book.webp", "images/toyImages/JPEG/Comic_Book.jpeg");
+
+    toys.add(SpiderMan_Comic_Book);
+    toys.add(HarryPotter_Book);
+
+    displayToys(toys);
+
+}
+
+function showOutdoor(){
+    let toys =new Toys();
+    let SpiderMan_Comic_Book = new Toy("Spider-Man Comic Book", "$9.99", 1, 30, "images/toyImages/WEBP/Comic_Book.webp", "images/toyImages/JPEG/Comic_Book.jpeg");
+    let HarryPotter_Book = new Toy("Harry Potter Book", "$12.99", 2, 25, "images/toyImages/WEBP/Comic_Book.webp", "images/toyImages/JPEG/Comic_Book.jpeg");
+
+    toys.add(SpiderMan_Comic_Book);
+    toys.add(HarryPotter_Book);
+
+    displayToys(toys);
+
+}
+
+
+
