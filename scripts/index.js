@@ -1,3 +1,4 @@
+//<<<<<<< filters
 $(document).ready(function(){
     $(document).click(function(event) {
         if(
@@ -9,3 +10,8 @@ $(document).ready(function(){
       });
    
   });
+=======
+window.onload=function(){
+    onLoadDisplayToys();
+}
+//>>>>>>> main
