@@ -82,7 +82,7 @@ header {
     grid-column: 2 / 3;
     grid-row: 4;
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
     gap: 20px;
 }
 
