@@ -12,7 +12,7 @@ class Toys{
     // Method that displays toys in the html page.
     // It creates a container for each toy and forms a card for it to display.
     displayHTML(){
-        let htmlContainer=document.getElementById('toy-card-List');
+        let htmlContainer=document.getElementById('box-toy-card');
         htmlContainer.innerHTML='';//Emptying the container
         
         for(let i=0;i<this.toys.length;i++){
@@ -48,9 +48,13 @@ class Toys{
                     </picture>
                     <div class="toy-card-container">
                         <div class="card-title">${toy.name}</div>
-                        <div class="card-price">${toy.price}</div>
                         <div class="rating">${starDisplay}</div>
-                        <button>ADD to Cart</button>
+                        </div>
+                    <div class="toy-card-footer">
+                        <div class="card-price">${toy.price}</div>
+                        <button class="add-to-cart">
+                            <img src="image/Buttons/add-to-cart.jpeg alt="Add to Cart"></i>
+                        </button>
                     </div>
                 </div>`;
             
