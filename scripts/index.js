@@ -13,3 +13,22 @@ $(document).ready(function(){
 window.onload=function(){
     onLoadDisplayToys();
 }
+
+
+//Display Toy Cards for Categories Added listeners for categories
+let booksAndComicsButton=document.getElementById("BooksAndComicsButton").addEventListener("click",function(){
+  showBooksAndComics();
+});
+let outdoorButton=document.getElementById("outdoorButton").addEventListener("click",function(){
+  showOutdoor();
+});
+let electronicsButton=document.getElementById("electronicsButton").addEventListener("click",function(){
+  showElectronics();
+});
+let GamesAndPuzzlesButton=document.getElementById("GamesAndPuzzlesButton").addEventListener("click",function(){
+  showGamesAndPuzzles();
+});
+let ActionFigures=document.getElementById("ActionFiguresButton").addEventListener("click",function(){
+  showActionFigures();
+});
+

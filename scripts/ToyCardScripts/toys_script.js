@@ -72,19 +72,21 @@ function onLoadDisplayToys(){
     displayToys(toys);
 }
 
-function showBooksAndComics(){
+function showElectronics(){
+    let htmlContainer=document.getElementById('box-toy-card');
+    htmlContainer.innerHTML='';//Emptying the container
     let toys =new Toys();
-    let SpiderMan_Comic_Book = new Toy("Spider-Man Comic Book", "$9.99", 1, 30, "images/toyImages/WEBP/Comic_Book.webp", "images/toyImages/JPEG/Comic_Book.jpeg");
-    let HarryPotter_Book = new Toy("Harry Potter Book", "$12.99", 2, 25, "images/toyImages/WEBP/Comic_Book.webp", "images/toyImages/JPEG/Comic_Book.jpeg");
+    let Remote_Control_Car = new Toy("Remote Control Car", "$29.99", 5, 15, "images/toyImages/WEBP/Remote_Control_Car.webp", "images/toyImages/JPEG/Remote_Control_Car.jpeg");
+    let Digital_Camera_Toy = new Toy("Digital Camera Toy", "$22.99", 4, 25, "images/toyImages/WEBP/Digital_Camera_Toy.webp", "images/toyImages/JPEG/Digital_Camera_Toy.jpeg");
 
-    toys.add(SpiderMan_Comic_Book);
-    toys.add(HarryPotter_Book);
+    toys.add(Remote_Control_Car);
+    toys.add(Digital_Camera_Toy);
 
     displayToys(toys);
 
 }
 
-function showElectronics(){
+function showBooksAndComics(){
     let toys =new Toys();
     let SpiderMan_Comic_Book = new Toy("Spider-Man Comic Book", "$9.99", 1, 30, "images/toyImages/WEBP/Comic_Book.webp", "images/toyImages/JPEG/Comic_Book.jpeg");
     let HarryPotter_Book = new Toy("Harry Potter Book", "$12.99", 2, 25, "images/toyImages/WEBP/Comic_Book.webp", "images/toyImages/JPEG/Comic_Book.jpeg");
@@ -98,11 +100,10 @@ function showElectronics(){
 
 function showActionFigures(){
     let toys =new Toys();
-    let SpiderMan_Comic_Book = new Toy("Spider-Man Comic Book", "$9.99", 1, 30, "images/toyImages/WEBP/Comic_Book.webp", "images/toyImages/JPEG/Comic_Book.jpeg");
-    let HarryPotter_Book = new Toy("Harry Potter Book", "$12.99", 2, 25, "images/toyImages/WEBP/Comic_Book.webp", "images/toyImages/JPEG/Comic_Book.jpeg");
-
-    toys.add(SpiderMan_Comic_Book);
-    toys.add(HarryPotter_Book);
+    let IronMan_Figure = new Toy("Iron Man Action Figure", "$14.99", 5, 50, "images/toyImages/WEBP/Ironman_Figure.webp", "images/toyImages/JPEG/Ironman_Figure.jpeg");
+    let WonderWoman_Figure = new Toy("Wonder Woman Action Figure", "$17.99", 4, 40, "images/toyImages/WEBP/WonderWoman_Figure.webp", "images/toyImages/JPEG/WonderWoman_Figure.jpeg");
+    toys.add(IronMan_Figure);
+    toys.add(WonderWoman_Figure);
 
     displayToys(toys);
 
@@ -110,11 +111,11 @@ function showActionFigures(){
 
 function showGamesAndPuzzles(){
     let toys =new Toys();
-    let SpiderMan_Comic_Book = new Toy("Spider-Man Comic Book", "$9.99", 1, 30, "images/toyImages/WEBP/Comic_Book.webp", "images/toyImages/JPEG/Comic_Book.jpeg");
-    let HarryPotter_Book = new Toy("Harry Potter Book", "$12.99", 2, 25, "images/toyImages/WEBP/Comic_Book.webp", "images/toyImages/JPEG/Comic_Book.jpeg");
+    let Chess_Set = new Toy("Chess Set", "$24.99", 3, 15, "images/toyImages/WEBP/Chess_Set.webp", "images/toyImages/JPEG/Chess_Set.jpeg");
+    let Jenga_Game = new Toy("Jenga Game", "$19.99", 4, 20, "images/toyImages/WEBP/Jenga_Game.webp", "images/toyImages/JPEG/Jenga_Game.jpeg");
 
-    toys.add(SpiderMan_Comic_Book);
-    toys.add(HarryPotter_Book);
+    toys.add(Chess_Set);
+    toys.add(Jenga_Game);
 
     displayToys(toys);
 
@@ -122,11 +123,11 @@ function showGamesAndPuzzles(){
 
 function showOutdoor(){
     let toys =new Toys();
-    let SpiderMan_Comic_Book = new Toy("Spider-Man Comic Book", "$9.99", 1, 30, "images/toyImages/WEBP/Comic_Book.webp", "images/toyImages/JPEG/Comic_Book.jpeg");
-    let HarryPotter_Book = new Toy("Harry Potter Book", "$12.99", 2, 25, "images/toyImages/WEBP/Comic_Book.webp", "images/toyImages/JPEG/Comic_Book.jpeg");
+    let Soccer_Ball = new Toy("Soccer Ball", "$14.99", 2, 35, "images/toyImages/WEBP/Soccer_Ball.webp", "images/toyImages/JPEG/Soccer_Ball.jpeg");
+    let Jump_Rope = new Toy("Jump Rope", "$7.99", 1, 30, "images/toyImages/WEBP/Jump_Rope.webp", "images/toyImages/JPEG/Jump_Rope.jpeg");
 
-    toys.add(SpiderMan_Comic_Book);
-    toys.add(HarryPotter_Book);
+    toys.add(Soccer_Ball);
+    toys.add(Jump_Rope);
 
     displayToys(toys);
 

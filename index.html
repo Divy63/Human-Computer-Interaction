@@ -9,11 +9,9 @@
     <link rel="stylesheet" href="styles/index.css">
     <link rel="stylesheet" href="styles/ToyCardStyle.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-    <script src="scripts/index.js"></script>
-    <script src="scripts/Toy.js"></script>
-    <script src="scripts/Toys.js"></script>
-    <script src="scripts/ToyCardScripts/toys_script.js"></script>
+    
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 
@@ -54,11 +52,11 @@
 
             <div id="box-categories">
                 <img src="images/map.png" alt="Map Image">
-                <div class="category category-books">Books & Comics</div>
-                <div class="category category-outdoor">Outdoor</div>
-                <div class="category category-electronics">Electronics</div>
-                <div class="category category-games">Games & Puzzles</div>
-                <div class="category category-action">Action Figures</div>
+                <div class="category category-books" id="BooksAndComicsButton">Books & Comics</div>
+                <div class="category category-outdoor" id="outdoorButton">Outdoor</div>
+                <div class="category category-electronics" id="electronicsButton">Electronics</div>
+                <div class="category category-games" id="GamesAndPuzzlesButton">Games & Puzzles</div>
+                <div class="category category-action" id="ActionFiguresButton">Action Figures</div>
                 <!--            <div class="category category-dolls">Dolls</div>-->
             </div>
 
@@ -177,9 +175,9 @@
                 </div>
             </div>
 
-        <div class="box-toy-card">
-            <div class="toy-card-List" id="toy-card-List">
-                </div>
+        <div class="box-toy-card" id="box-toy-card">
+            <!-- <div class="toy-card-List" id="toy-card-List"> -->
+                <!-- </div> -->
             </div>
         </div>
     </div>
@@ -204,6 +202,12 @@
         </div>
     </footer>
 <footer class="box-contact">FOOTER</footer>
+
+
+<script src="scripts/Toy.js"></script>
+<script src="scripts/Toys.js"></script>
+<script src="scripts/ToyCardScripts/toys_script.js"></script>
+<script src="scripts/index.js"></script>
 
 </body>
 
