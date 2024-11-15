@@ -2,7 +2,7 @@
     grid-column: 2 / 4;
     grid-row: 4;
     display: grid;
-    grid-template-columns: repeat(auto-fit, 20rem);
+    grid-template-columns: 1fr 1fr 1fr 1fr;
     gap: 20px;
     overflow-y: auto;
     padding: 10px;
