@@ -340,7 +340,7 @@ button:hover {
     font-size: 13px;
     text-transform: uppercase;
     font-weight: bold;
-    color: #999;
+    color: #090909;
     background-color: #FFF;
 }
 
@@ -399,6 +399,30 @@ button:hover {
 .dropdown.hover:hover li:first-child,
 .dropdown.toggle>input:checked~ul li:first-child {
     padding-top: 15px;
+}
+
+.disable {
+    display: block;
+    padding: 0 0 0 10px;
+    text-decoration: none;
+    line-height: 40px;
+    font-size: 13px;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #b7b2b2;
+    background-color: #FFF;
+}
+
+.enable {
+    display: block;
+    padding: 0 0 0 10px;
+    text-decoration: none;
+    line-height: 40px;
+    font-size: 13px;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #090909;
+    background-color: #FFF;
 }
 
 /*
