@@ -41,8 +41,8 @@
                     <li><a href="#">Nav3</a></li>
                 </ul>
             </nav>
-            <a class="sign-in" href="#">
-                <button>Sign In</button>
+            <a class="sign-in" href="#" >
+                <button onclick="window.dialog.showModal();">Sign In</button>
             </a>
             <a class="cart" href="#">
                 <button><span class="material-symbols-outlined">shopping_cart
@@ -52,11 +52,11 @@
 
         <div id="box-categories">
             <img src="images/map.png" alt="Map Image">
-            <div class="category category-books" id="BooksAndComicsButton">Books & Comics</div>
-            <div class="category category-outdoor" id="outdoorButton">Outdoor</div>
-            <div class="category category-electronics" id="electronicsButton">Electronics</div>
-            <div class="category category-games" id="GamesAndPuzzlesButton">Games & Puzzles</div>
-            <div class="category category-action" id="ActionFiguresButton">Action Figures</div>
+            <div class="category category-books" id="BooksAndComicsButton">Books & Comics<span class="book material-symbols-outlined" style="color: #ffffff;">book</span></div>
+            <div class="category category-outdoor" id="outdoorButton">Outdoor<span class="book material-symbols-outlined" style="color: #ffffff;">sports_and_outdoors</span></div>
+            <div class="category category-electronics" id="electronicsButton">Electronics<span class="book material-symbols-outlined" style="color: #ffffff;">sports_esports</span></div>
+            <div class="category category-games" id="GamesAndPuzzlesButton">Games & Puzzles<span class="book material-symbols-outlined" style="color: #ffffff;">extension</span></div>
+            <div class="category category-action" id="ActionFiguresButton">Action Figures<span class="book material-symbols-outlined" style="color: #ffffff;">flutter_dash</span></div>
             <!--            <div class="category category-dolls">Dolls</div>-->
         </div>
 
@@ -215,6 +215,14 @@
         </div>
     </div>
 </footer>
+
+<!--Sign in popup-->
+<dialog id="dialog">
+	<h2>Hello.</h2>
+	<p>A CSS-only modal based on the <a href="https://developer.mozilla.org/es/docs/Web/CSS/::backdrop" target="_blank">::backdrop</a> pseudo-class. Hope you find it helpful.</p>
+	<p>You can also change the styles of the <code>::backdrop</code> from the CSS.</p>
+	<button onclick="window.dialog.close();" aria-label="close" class="x">❌</button>
+</dialog>
 
 
 <script src="scripts/Toy.js"></script>
