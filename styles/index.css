@@ -306,6 +306,7 @@ button:hover {
 .dropdown.toggle>label {
     border-radius: 2px;
     box-shadow: 0 6px 5px -5px rgba(0, 0, 0, 0.3);
+    align-items: center;
 }
 
 .dropdown>a::after,
@@ -341,7 +342,8 @@ button:hover {
     text-transform: uppercase;
     font-weight: bold;
     color: #090909;
-    background-color: #FFF;
+    background-color: #FFF;    
+    align-items: center;
 }
 
 .dropdown li {
@@ -430,8 +432,13 @@ li.star.rating {
     font-variation-settings: 'FILL' 0, 'wght' 100, 'GRAD' 0, 'opsz' 15;
 }
 */
-.star {
-    padding-left: 0%;
+.stars {
+    display: flex;
+    /*text-align: center;*/
+    vertical-align: middle;
+    text-align: center;   
+    align-items: center;    
+    /*align-items: center;*/
 }
 
 /*footer {*/
