@@ -9,6 +9,17 @@ class Toys{
         this.toys.push(toy);
     }
 
+    // Method that gives length of the toys array
+    getLength(){
+        return (this.toys.length);
+    }
+
+    get(i){
+        return this.toys[i]
+;
+    }
+
+
     // Method that displays toys in the html page.
     // It creates a container for each toy and forms a card for it to display.
     displayHTML(){
