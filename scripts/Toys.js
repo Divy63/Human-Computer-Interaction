@@ -54,35 +54,32 @@ class Toys{
                 toyCard=`
                 <div class="toy-card">
                     <picture>
-                        <source srcset="${toy.imageLink}" type="image/webp" alt="${toy.name}">
-                        <img src="${toy.otherLink}" alt="${toy.name}">
+                        <source srcset="${toy.getImageLink()}" type="image/webp" alt="${toy.getName()}">
+                        <img src="${toy.getOtherImageLink()}" alt="${toy.getName()}">
                     </picture>
                     <div class="toy-card-container">
-                        <div class="card-title">${toy.name}</div>
+                        <div class="card-title">${toy.getName()}</div>
                         <div class="rating">${starDisplay}</div>
                         </div>
                     <div class="toy-card-footer">
                         <div class="card-price">Out Of Stock</div>
-                        <button class="add-to-cart">
-                            <img src="image/Buttons/add-to-cart.jpeg alt="Add to Cart"></i>
-                        </button>
                     </div>
                 </div>`;
             }else{
                  toyCard=`
                     <div class="toy-card">
                         <picture>
-                            <source srcset="${toy.imageLink}" type="image/webp" alt="${toy.name}">
-                            <img src="${toy.otherLink}" alt="${toy.name}">
+                            <source srcset="${toy.getImageLink()}" type="image/webp" alt="${toy.getName()}">
+                            <img src="${toy.getOtherImageLink()}" alt="${toy.getName()}">
                         </picture>
                         <div class="toy-card-container">
-                            <div class="card-title">${toy.name}</div>
+                            <div class="card-title">${toy.getName()}</div>
                             <div class="rating">${starDisplay}</div>
                             </div>
                         <div class="toy-card-footer">
-                            <div class="card-price">${toy.price}</div>
-                            <button class="add-to-cart">
-                                <img src="image/Buttons/add-to-cart.jpeg alt="Add to Cart"></i>
+                            <div class="card-price">${toy.getPrice()}</div>
+                            <button class="add-to-cart-btn" id="add to cart - ${toy.getID()}">
+                                <img src="images/buttons/add-to-cart-icon.png" alt="Add to Cart"></i>
                             </button>
                         </div>
                     </div>`;

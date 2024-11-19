@@ -56,6 +56,7 @@ function onLoadDisplayToys(){
     displayToys(TOY_DATABASE);
 }
 
+// Method that shows Electronics
 function showElectronics(){
     let htmlContainer=document.getElementById('box-toy-card');
     htmlContainer.innerHTML='';//Emptying the container
@@ -70,6 +71,7 @@ function showElectronics(){
 
 }
 
+// Method that shows books and comics
 function showBooksAndComics(){
     let htmlContainer=document.getElementById('box-toy-card');
     htmlContainer.innerHTML='';//Emptying the container
@@ -93,6 +95,7 @@ function showBooksAndComics(){
 
 }
 
+// Method that shows action figures
 function showActionFigures(){
     let htmlContainer=document.getElementById('box-toy-card');
     htmlContainer.innerHTML='';//Emptying the container
@@ -107,6 +110,7 @@ function showActionFigures(){
 
 }
 
+// Method that shows games and puzzles
 function showGamesAndPuzzles(){
     let htmlContainer=document.getElementById('box-toy-card');
     htmlContainer.innerHTML='';//Emptying the container
@@ -121,6 +125,7 @@ function showGamesAndPuzzles(){
 
 }
 
+// Method that shows Outdoors
 function showOutdoor(){
     let htmlContainer=document.getElementById('box-toy-card');
     htmlContainer.innerHTML='';//Emptying the container
@@ -135,7 +140,14 @@ function showOutdoor(){
 
 }
 
-
+function createCartListeners(){
+    for(let i=0;i<TOY_DATABASE.getLength();i++){
+        toy=TOY_DATABASE.get(i);
+        let button=document.getElementById(`add to cart - ${toy.id}`).addEventListener(function(){
+            addToCart(toy);
+        })
+    }
+}
 
 
 
