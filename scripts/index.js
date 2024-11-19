@@ -22,7 +22,14 @@ window.onload=function(){
 
 let homeButton = document.getElementById("homeButton").addEventListener("click",function(){
   $("#t4").attr("disabled","disabled");
-  $("label.t4").css("color", "grey")
+  $("label.t4").css("color", "grey");
+  onLoadDisplayToys();
+});
+
+let toyLogohomeButton = document.getElementById("toyLogoHomeButton").addEventListener("click",function(){
+  $("#t4").attr("disabled","disabled");
+  $("label.t4").css("color", "grey");
+  onLoadDisplayToys();
 });
 
 
