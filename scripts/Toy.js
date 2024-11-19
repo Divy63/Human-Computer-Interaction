@@ -1,10 +1,10 @@
 class Toy{
 
-    static idCounter=0;
+    static idCounter=-1;
     // Constructor for a toy class
     constructor(name,price,rating,quantity,imageLink,otherLink,toyType){
         
-        this.id=this.idCounter++;
+        this.id=Toy.idCounter+=1;
         this.name=name;
         this.price=price;
         this.rating=rating;

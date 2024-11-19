@@ -32,7 +32,7 @@
 
 <main>
     <div class="container">
-        <div class="box-links">
+        <div class="box-links" id="navigation-bar">
             <a href="#" id="homeButton"><span class="material-symbols-outlined">home</span></a>
             <nav>
                 <ul class="nav-links">
@@ -45,8 +45,7 @@
                 <button onclick="window.dialog.showModal();">Sign In</button>
             </a>
             <a class="cart" href="#">
-                <button><span class="material-symbols-outlined">shopping_cart
-                        </span></button>
+                <button id="Add-to-Cart"><span class="material-symbols-outlined">shopping_cart</span></button>
             </a>
         </div>
 
@@ -61,7 +60,7 @@
         </div>
 
 
-        <div class="box-filter">
+        <div class="box-filter" id="box-filter">
             <div class="row filter-row age">
                 <div class="dropdown toggle">
                     <input id="t1" type="checkbox">
@@ -190,6 +189,28 @@
             <!-- </div> -->
         </div>
     </div>
+
+    <!-- <div class="container">
+
+    </div> -->
+    <section id="cart-section" style="display: none;">
+        <div id="cart-header">
+            <h2>Your Cart</h2>
+        </div>
+
+        <div id="cart-items-container">
+            <div id="empty-cart-message" style="display:none;">
+                <strong>Your cart is empty!</strong>
+                <button id="shopMoreButton">Shop More</button>
+            </div>
+            <div id="cart-items">
+                <!-- Cart Items will be displayed here -->
+            </div>
+        </div>
+        <div id=""cart-total>
+            <strong>Total: $<span id="total-price">0.00</span>
+        </div>
+    </section>
 </main>
 
 
@@ -227,6 +248,8 @@
 
 <script src="scripts/Toy.js"></script>
 <script src="scripts/Toys.js"></script>
+<script src="scripts/CartToy.js"></script>
+<script src="scripts/Cart.js" ></script>
 <script src="scripts/ToyCardScripts/toys_script.js"></script>
 <script src="scripts/index.js"></script>
 

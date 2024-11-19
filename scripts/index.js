@@ -17,8 +17,24 @@ $(document).ready(function(){
 
 window.onload=function(){
   onLoadCreateDatabase();
-    onLoadDisplayToys();
+  onLoadDisplayToys();
+  createCartListeners();
 }
+
+let addToCart=document.getElementById("Add-to-Cart").addEventListener("click",function(){
+  let boxCategories=document.getElementById('box-categories');
+  let boxFilters=document.getElementById('box-filter');
+  let boxToyCard=document.getElementById('box-toy-card');
+  let navigationBar=document.getElementById('navigation-bar');
+  navigationBar.style.display='none';
+  boxCategories.style.display='none';
+  boxFilters.style.display='none';
+  boxToyCard.style.display='none';
+
+  let cartDivision=document.getElementById('cart-section');
+  cartDivision.style.display='block';
+  CART.displayCart();
+});
 
 let homeButton = document.getElementById("homeButton").addEventListener("click",function(){
   $("#t4").attr("disabled","disabled");
@@ -26,6 +42,26 @@ let homeButton = document.getElementById("homeButton").addEventListener("click",
 
   onLoadDisplayToys();
 });
+
+let shopMoreButton=document.getElementById("shopMoreButton").addEventListener("click",regenerateHomePage());
+
+function regenerateHomePage(){
+  $("#t4").attr("disabled","disabled");
+  $("label.t4").css("color", "grey");
+  let boxCategories=document.getElementById('box-categories');
+  let boxFilters=document.getElementById('box-filter');
+  let boxToyCard=document.getElementById('box-toy-card');
+  let navigationBar=document.getElementById('navigation-bar');
+  navigationBar.style.display='block';
+  boxCategories.style.display='block';
+  boxFilters.style.display='block';
+  boxToyCard.style.display='none';
+
+  let cartDivision=document.getElementById('cart-section');
+  cartDivision.style.display='block';
+  CART.displayCart();
+  onLoadDisplayToys();
+}
 
 let toyLogohomeButton = document.getElementById("toyLogoHomeButton").addEventListener("click",function(){
   $("#t4").attr("disabled","disabled");
@@ -42,7 +78,7 @@ let booksAndComicsButton=document.getElementById("BooksAndComicsButton").addEven
   // Scrolls to toy card section
   window.scrollTo({
     top: toyCardArea.offsetTop,
-    behaviour: "smooth",
+    behavior: "smooth",
   });
 
   $("#t4").removeAttr('disabled');
@@ -69,7 +105,7 @@ let outdoorButton=document.getElementById("outdoorButton").addEventListener("cli
   // Scrolls to toy card section
   window.scrollTo({
     top: toyCardArea.offsetTop,
-    behaviour: "smooth",
+    behavior: "smooth",
   });
   $("#t4").removeAttr('disabled');
   $("label.t4").css("color", "black");
@@ -95,7 +131,7 @@ let electronicsButton=document.getElementById("electronicsButton").addEventListe
   // Scrolls to toy card section
   window.scrollTo({
     top: toyCardArea.offsetTop,
-    behaviour: "smooth",
+    behavior: "smooth",
   });
   $("#t4").removeAttr('disabled');
   $("label.t4").css("color", "black");
@@ -121,7 +157,7 @@ let GamesAndPuzzlesButton=document.getElementById("GamesAndPuzzlesButton").addEv
   // Scrolls to toy card section
   window.scrollTo({
     top: toyCardArea.offsetTop,
-    behaviour: "smooth",
+    behavior: "smooth",
   });
   $("#t4").removeAttr('disabled');
   $("label.t4").css("color", "black");
@@ -147,7 +183,7 @@ let ActionFigures=document.getElementById("ActionFiguresButton").addEventListene
   // Scrolls to toy card section
   window.scrollTo({
     top: toyCardArea.offsetTop,
-    behaviour: "smooth",
+    behavior: "smooth",
   });
   $("#t4").removeAttr('disabled');
   $("label.t4").css("color", "black");

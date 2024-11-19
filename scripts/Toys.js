@@ -89,4 +89,20 @@ class Toys{
         }
 
     }
+
+    getByID(id){
+        
+        for(let i=0;i<this.toys.length;i++){
+            if(this.toys[i].getID()==id){
+                toy=this.toys[i];
+                break;
+        }
+        }
+        console.log(toy);
+        return toy;
+    }
+
+    toString(){
+        console.log(toys);
+    }
 }

@@ -1,11 +1,12 @@
 let TOY_DATABASE=new Toys();
+let CART=new Cart();
 
 function displayToys(toys){
     toys.displayHTML();
 }
 
 function onLoadCreateDatabase(){
-
+    
     // Create Toys to display on load
     let Robot_Head=new Toy("Robot Head","$18.99",3,0,"images/toyImages/WEBP/Robot_Head.webp","images/toyImages/JPEG/Robot_Head.jpeg","Action Figures");
     let Grizzly_Bear=new Toy("Grizzly Bear","$19.99",2,15,"images/toyImages/WEBP/Grizzly_Bear.webp","images/toyImages/JPEG/Grizzly_Bear.jpeg","Games and Puzzles");
@@ -48,6 +49,8 @@ function onLoadCreateDatabase(){
     // Electronic
     TOY_DATABASE.add(Remote_Control_Car);
     TOY_DATABASE.add(Digital_Camera_Toy);
+
+    console.log(TOY_DATABASE);
 
 }
 
@@ -143,9 +146,22 @@ function showOutdoor(){
 function createCartListeners(){
     for(let i=0;i<TOY_DATABASE.getLength();i++){
         toy=TOY_DATABASE.get(i);
-        let button=document.getElementById(`add to cart - ${toy.id}`).addEventListener(function(){
-            addToCart(toy);
-        })
+        if(toy.getQuantity()>0){
+            let id ="add to cart - "+toy.getID();
+            console.log(id);
+            button=document.getElementById(id)
+            if (button) {
+                button.addEventListener("click", function(toy) {
+                    return function(){
+                    console.log("clicked " + id);
+                    console.log("TOY ID IS " + toy.getID());
+
+                    CART.addToCart(TOY_DATABASE.getByID(toy.getID()));
+                        console.log(CART)
+                };
+                }(toy));            
+            }
+        }
     }
 }
 
