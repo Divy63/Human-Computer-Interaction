@@ -7,7 +7,7 @@ function displayToys(toys){
 function onLoadCreateDatabase(){
 
     // Create Toys to display on load
-    let Robot_Head=new Toy("Robot Head","$18.99",3,20,"images/toyImages/WEBP/Robot_Head.webp","images/toyImages/JPEG/Robot_Head.jpeg","Action Figures");
+    let Robot_Head=new Toy("Robot Head","$18.99",3,0,"images/toyImages/WEBP/Robot_Head.webp","images/toyImages/JPEG/Robot_Head.jpeg","Action Figures");
     let Grizzly_Bear=new Toy("Grizzly Bear","$19.99",2,15,"images/toyImages/WEBP/Grizzly_Bear.webp","images/toyImages/JPEG/Grizzly_Bear.jpeg","Games and Puzzles");
     let Darts=new Toy("Darts","$19.99",5,2,"images/toyImages/WEBP/Darts.webp","images/toyImages/JPEG/Darts.jpeg","Outdoor");
     let Lego_RangeRover=new Toy("Lego Car (Range Rover)","$25.99",4.5,12,"images/toyImages/WEBP/Lego_RangeRover.webp","images/toyImages/JPEG/Lego_RangeRover.jpeg","Games and Puzzles");
@@ -79,8 +79,17 @@ function showBooksAndComics(){
             toys.add(TOY_DATABASE.get(i));
         }
     }
-   
+    
+    let toyCardArea=document.getElementById("box-toy-card");
+
     displayToys(toys);
+
+    // Scrolls to toy card section
+    toyCardArea.scrollIntoView({
+        behaviour: "smooth",
+        block: "start",
+    });
+    
 
 }
 
@@ -125,6 +134,8 @@ function showOutdoor(){
     displayToys(toys);
 
 }
+
+
 
 
 

@@ -49,9 +49,9 @@ class Toys{
             // while(starDisplay.split(' ').length<5){
             //     starDisplay+=`<span class="rating">&#9734;</span>`
             // }
-
-            
-            let toyCard=`
+            let toyCard=``;
+            if(toy.quantity<=0){
+                toyCard=`
                 <div class="toy-card">
                     <picture>
                         <source srcset="${toy.imageLink}" type="image/webp" alt="${toy.name}">
@@ -62,12 +62,31 @@ class Toys{
                         <div class="rating">${starDisplay}</div>
                         </div>
                     <div class="toy-card-footer">
-                        <div class="card-price">${toy.price}</div>
+                        <div class="card-price">Out Of Stock</div>
                         <button class="add-to-cart">
                             <img src="image/Buttons/add-to-cart.jpeg alt="Add to Cart"></i>
                         </button>
                     </div>
                 </div>`;
+            }else{
+                 toyCard=`
+                    <div class="toy-card">
+                        <picture>
+                            <source srcset="${toy.imageLink}" type="image/webp" alt="${toy.name}">
+                            <img src="${toy.otherLink}" alt="${toy.name}">
+                        </picture>
+                        <div class="toy-card-container">
+                            <div class="card-title">${toy.name}</div>
+                            <div class="rating">${starDisplay}</div>
+                            </div>
+                        <div class="toy-card-footer">
+                            <div class="card-price">${toy.price}</div>
+                            <button class="add-to-cart">
+                                <img src="image/Buttons/add-to-cart.jpeg alt="Add to Cart"></i>
+                            </button>
+                        </div>
+                    </div>`;
+            }
             
             htmlContainer.innerHTML+=toyCard;
         }
