@@ -19,6 +19,11 @@ window.onload=function(){
     onLoadDisplayToys();
 }
 
+let homeButton = document.getElementById("homeButton").addEventListener("click",function(){
+  $("#t4").attr("disabled","disabled");
+  $("label.t4").css("color", "grey")
+});
+
 
 //Display Toy Cards for Categories Added listeners for categories
 let booksAndComicsButton=document.getElementById("BooksAndComicsButton").addEventListener("click",function(){
