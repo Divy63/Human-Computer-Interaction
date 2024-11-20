@@ -15,7 +15,7 @@ class Toys{
     }
 
     get(i){
-        return this.toys[i]
+        return this.toys[i];
 ;
     }
 
@@ -105,4 +105,21 @@ class Toys{
     toString(){
         console.log(toys);
     }
+
+    applyPriceFilter(start,end=Infinity){
+        console.log("In Price FIlter");
+        let filteredToys=new Toys();
+        for(let i=0;i<this.toys.length;i++){
+            console.log("IN LOOP");
+            let price= parseFloat(this.toys[i].getPrice().replace('$', ''));
+            if(price>=start && price<=end){
+
+                console.log("FILTERED");
+                filteredToys.add(this.toys[i]);
+            }
+        }
+        filteredToys.displayHTML();
+
+    }   
+
 }

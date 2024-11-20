@@ -50,8 +50,6 @@ function onLoadCreateDatabase(){
     TOY_DATABASE.add(Remote_Control_Car);
     TOY_DATABASE.add(Digital_Camera_Toy);
 
-    console.log(TOY_DATABASE);
-
 }
 
 function onLoadDisplayToys(){
@@ -148,16 +146,12 @@ function createCartListeners(){
         toy=TOY_DATABASE.get(i);
         if(toy.getQuantity()>0){
             let id ="add to cart - "+toy.getID();
-            console.log(id);
             button=document.getElementById(id)
             if (button) {
                 button.addEventListener("click", function(toy) {
                     return function(){
-                    console.log("clicked " + id);
-                    console.log("TOY ID IS " + toy.getID());
-
+                    
                     CART.addToCart(TOY_DATABASE.getByID(toy.getID()));
-                        console.log(CART)
                 };
                 }(toy));            
             }

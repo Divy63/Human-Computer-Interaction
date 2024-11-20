@@ -48,18 +48,7 @@ let shopMoreButton=document.getElementById("shopMoreButton").addEventListener("c
 function regenerateHomePage(){
   $("#t4").attr("disabled","disabled");
   $("label.t4").css("color", "grey");
-  let boxCategories=document.getElementById('box-categories');
-  let boxFilters=document.getElementById('box-filter');
-  let boxToyCard=document.getElementById('box-toy-card');
-  let navigationBar=document.getElementById('navigation-bar');
-  navigationBar.style.display='block';
-  boxCategories.style.display='block';
-  boxFilters.style.display='block';
-  boxToyCard.style.display='none';
 
-  let cartDivision=document.getElementById('cart-section');
-  cartDivision.style.display='block';
-  CART.displayCart();
   onLoadDisplayToys();
 }
 
@@ -71,6 +60,80 @@ let toyLogohomeButton = document.getElementById("toyLogoHomeButton").addEventLis
 });
 
 
+// -------------------------------------------------------------------------------------------------------------------------------------
+// Filter Button Listeners
+// -------------------------------------------------------------------------------------------------------------------------------------
+
+//Price Filters
+// Get the dropdown container by its ID
+const priceDropdown = document.getElementById("priceDropDown");
+const priceRanges={
+  price0to10: () => TOY_DATABASE.applyPriceFilter(0,10),
+  price10to20: () => TOY_DATABASE.applyPriceFilter(10,20),
+  price20to30: () => TOY_DATABASE.applyPriceFilter(20,30),
+  price30to40: () => TOY_DATABASE.applyPriceFilter(30,40),
+  priceMoreThan40: () => TOY_DATABASE.applyPriceFilter(40)
+} 
+
+let price0to10=document.getElementById("price0to10").addEventListener("click",(event)=>{
+  event.preventDefault();
+    TOY_DATABASE.applyPriceFilter(0,10);
+    let toyCardArea=document.getElementById("box-toy-card");
+    // Scrolls to toy card section
+    window.scrollTo({
+      top: toyCardArea.offsetTop,
+      behavior: "smooth",
+    });
+  });
+
+  let price10to20=document.getElementById("price10to20").addEventListener("click",(event)=>{
+    event.preventDefault();
+    TOY_DATABASE.applyPriceFilter(10,20);
+    let toyCardArea=document.getElementById("box-toy-card");
+    // Scrolls to toy card section
+    window.scrollTo({
+      top: toyCardArea.offsetTop,
+      behavior: "smooth",
+    });
+  });
+  
+let price20to30=document.getElementById("price20to30").addEventListener("click",(event)=>{
+  event.preventDefault();
+  TOY_DATABASE.applyPriceFilter(20,30);
+  let toyCardArea=document.getElementById("box-toy-card");
+    // Scrolls to toy card section
+    window.scrollTo({
+      top: toyCardArea.offsetTop,
+      behavior: "smooth",
+    });
+});
+
+let price30to40=document.getElementById("price30to40").addEventListener("click",(event)=>{
+  event.preventDefault();
+  TOY_DATABASE.applyPriceFilter(30,40);
+  let toyCardArea=document.getElementById("box-toy-card");
+    // Scrolls to toy card section
+    window.scrollTo({
+      top: toyCardArea.offsetTop,
+      behavior: "smooth",
+    });
+});
+
+let priceMoreThan40=document.getElementById("priceMoreThan40").addEventListener("click",(event)=>{
+  event.preventDefault();
+  TOY_DATABASE.applyPriceFilter(40);
+  let toyCardArea=document.getElementById("box-toy-card");
+    // Scrolls to toy card section
+    window.scrollTo({
+      top: toyCardArea.offsetTop,
+      behavior: "smooth",
+    });
+});
+
+
+// -------------------------------------------------------------------------------------------------------------------------------------
+// Categories button listeners
+// -------------------------------------------------------------------------------------------------------------------------------------
 //Display Toy Cards for Categories Added listeners for categories
 let booksAndComicsButton=document.getElementById("BooksAndComicsButton").addEventListener("click",function(){
   showBooksAndComics();
