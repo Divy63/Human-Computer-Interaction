@@ -20,7 +20,7 @@
 <body>
 <header>
     <div class="container">
-        <div class="box-logo" id="toyLogoHomeButton"><a href="#"><img src="images/toy_logo.jpg" alt="Store Logo" width="70%" height="70px"></a></div>
+        <div class="box-logo" id="toyLogoHomeButton"><a href="#"><img src="images/toy_world_logo.jpg" alt="Store Logo" width="70%" height="70px"></a></div>
         <div class="box-header">
             <div class="box-search">
                 <input type="text" placeholder="Search..." class="search">
@@ -66,10 +66,10 @@
                     <input id="t1" type="checkbox">
                     <label for="t1">Age</label>
                     <ul>
-                        <li><a href="#">0 - 2</a></li>
-                        <li><a href="#">2 - 5</a></li>
-                        <li><a href="#">5 - 10</a></li>
-                        <li><a href="#">10 +</a></li>
+                        <li><a href="#" id="age0to2">0 - 2</a></li>
+                        <li><a href="#" id="age2to5">2 - 5</a></li>
+                        <li><a href="#" id="age5to10">5 - 10</a></li>
+                        <li><a href="#" id="ageMoreThan10">10 +</a></li>
                     </ul>
                 </div>
             </div>
@@ -91,7 +91,7 @@
                     <input id="t3" type="checkbox">
                     <label for="t3">Customer Ratings</label>
                     <ul>
-                        <li class="star rating"><a class="OneStar" href="#"><div class="stars">1 Star
+                        <li class="star rating"><a class="OneStar" href="#" id="oneStar"><div class="stars">1 Star
                             <span class=" first star material-symbols-outlined"
                                   style="font-variation-settings: 'FILL' 0, 'wght' 100, 'GRAD' 0, 'opsz' 10;">star</span>
                             <span class=" material-symbols-outlined"
@@ -104,7 +104,7 @@
                                   style="font-variation-settings: 'FILL' 1, 'wght' 100, 'GRAD' 0, 'opsz' 10;color:gold;">star</span>
                                 </div></a>
                         </li>
-                        <li class="star rating"><a class="TwoStar" href="#"><div class="stars">2 Star
+                        <li class="star rating"><a class="TwoStar" href="#" id="twoStar"><div class="stars">2 Star
                             <span class=" first star material-symbols-outlined"
                                   style="font-variation-settings: 'FILL' 0, 'wght' 100, 'GRAD' 0, 'opsz' 10;">star</span>
                             <span class=" material-symbols-outlined"
@@ -117,7 +117,7 @@
                                   style="font-variation-settings: 'FILL' 1, 'wght' 100, 'GRAD' 0, 'opsz' 10;color:gold;">star</span>
                                 </div></a>
                         </li>
-                        <li class="star rating"><a class="ThreeStar" href="#"><div class="stars">3 Star
+                        <li class="star rating"><a class="ThreeStar" href="#" id="threeStar"><div class="stars">3 Star
                             <span class=" first star material-symbols-outlined"
                                   style="font-variation-settings: 'FILL' 0, 'wght' 100, 'GRAD' 0, 'opsz' 10;">star</span>
                             <span class=" material-symbols-outlined"
@@ -130,7 +130,7 @@
                                   style="font-variation-settings: 'FILL' 1, 'wght' 100, 'GRAD' 0, 'opsz' 10; color:gold;">star</span>
                         </div></a>
                         </li>
-                        <li class="star rating"><a class="FourStar" href="#"><div class="stars">4 Star
+                        <li class="star rating"><a class="FourStar" href="#" id="fourStar"><div class="stars">4 Star
                             <span class=" first star material-symbols-outlined"
                                   style="font-variation-settings: 'FILL' 0, 'wght' 100, 'GRAD' 0, 'opsz' 10;">star</span>
                             <span class=" material-symbols-outlined"
@@ -143,7 +143,7 @@
                                   style="font-variation-settings: 'FILL' 1, 'wght' 100, 'GRAD' 0, 'opsz' 10;color:gold;">star</span>
                         </div></a>
                         </li>
-                        <li class="star rating"><a class="FiveStar" href="#"><div class="stars">5 Star
+                        <li class="star rating"><a class="FiveStar" href="#" id="fiveStar"><div class="stars">5 Star
                             <span class=" first star material-symbols-outlined"
                                   style="font-variation-settings: 'FILL' 1, 'wght' 100, 'GRAD' 0, 'opsz' 10;color:gold;">star</span>
                             <span class=" material-symbols-outlined"
@@ -188,6 +188,8 @@
             <!-- <div class="toy-card-List" id="toy-card-List"> -->
             <!-- </div> -->
         </div>
+
+        <div>class=</div>
     </div>
 
     <!-- <div class="container">

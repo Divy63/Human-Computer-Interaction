@@ -38,7 +38,7 @@ class Toys{
                 // Adding a full star
                 starDisplay+=`<span class="rating">&#9733;</span>`
             }
-            if (halfstar >= 0.5){
+            if (halfstar >= 0.5 && stars<5){
                 // adding a full star
                 starDisplay+=`<span class="rating">&#9733;</span>`
             }else{
@@ -46,9 +46,9 @@ class Toys{
                 starDisplay+=`<span class="rating">&#9734;</span>`
             }
 
-            // while(starDisplay.split(' ').length<5){
-            //     starDisplay+=`<span class="rating">&#9734;</span>`
-            // }
+            while(starDisplay.split(' ').length<5 && stars<5){
+                starDisplay+=`<span class="rating">&#9734;</span>`
+            }
             let toyCard=``;
             if(toy.quantity<=0){
                 toyCard=`
@@ -91,7 +91,6 @@ class Toys{
     }
 
     getByID(id){
-        
         for(let i=0;i<this.toys.length;i++){
             if(this.toys[i].getID()==id){
                 toy=this.toys[i];
@@ -101,6 +100,7 @@ class Toys{
         console.log(toy);
         return toy;
     }
+
 
     toString(){
         console.log(toys);
@@ -114,6 +114,36 @@ class Toys{
             let price= parseFloat(this.toys[i].getPrice().replace('$', ''));
             if(price>=start && price<=end){
 
+                console.log("FILTERED");
+                filteredToys.add(this.toys[i]);
+            }
+        }
+        filteredToys.displayHTML();
+
+    }   
+
+    applyAgeFilter(start,end=Infinity){
+        console.log("In Price FIlter");
+        let filteredToys=new Toys();
+        for(let i=0;i<this.toys.length;i++){
+            let toy=this.toys[i];
+            console.log("IN LOOP");
+            if(toy.getAge()>=start && toy.getAge()<=end){
+                console.log("FILTERED");
+                filteredToys.add(this.toys[i]);
+            }
+        }
+        filteredToys.displayHTML();
+
+    }   
+
+    applyRatingFilter(star){
+        console.log("In Rating FIlter");
+        let filteredToys=new Toys();
+        for(let i=0;i<this.toys.length;i++){
+            let toy=this.toys[i];
+            console.log("IN LOOP");
+            if(toy.getRating()>=star && toy.getAge()<=5){
                 console.log("FILTERED");
                 filteredToys.add(this.toys[i]);
             }
