@@ -1,34 +1,34 @@
-$(document).ready(function(){
-    // Filter code
-    $(document).click(function(event) {
-        if(
-          $('.toggle > input').is(':checked') &&
-          !$(event.target).parents('.toggle').is('.toggle')
-        ) {
-          $('.toggle > input').prop('checked', false);
-        }
-      });
-      $("#t4").attr("disabled","disabled");
-      $("label.t4").css("color", "grey");
-
-      //$("#t4").prop('disabled', true);
-      //$("#subcategory-list").hide();
+$(document).ready(function () {
+  // Filter code
+  $(document).click(function (event) {
+    if (
+      $('.toggle > input').is(':checked') &&
+      !$(event.target).parents('.toggle').is('.toggle')
+    ) {
+      $('.toggle > input').prop('checked', false);
+    }
   });
+  $("#t4").attr("disabled", "disabled");
+  $("label.t4").css("color", "grey");
 
-window.onload=function(){
+  //$("#t4").prop('disabled', true);
+  //$("#subcategory-list").hide();
+});
+
+window.onload = function () {
   onLoadCreateDatabase();
-    onLoadDisplayToys();
+  onLoadDisplayToys();
 }
 
-let homeButton = document.getElementById("homeButton").addEventListener("click",function(){
-  $("#t4").attr("disabled","disabled");
+let homeButton = document.getElementById("homeButton").addEventListener("click", function () {
+  $("#t4").attr("disabled", "disabled");
   $("label.t4").css("color", "grey");
 
   onLoadDisplayToys();
 });
 
-let toyLogohomeButton = document.getElementById("toyLogoHomeButton").addEventListener("click",function(){
-  $("#t4").attr("disabled","disabled");
+let toyLogohomeButton = document.getElementById("toyLogoHomeButton").addEventListener("click", function () {
+  $("#t4").attr("disabled", "disabled");
   $("label.t4").css("color", "grey");
 
   onLoadDisplayToys();
@@ -36,9 +36,9 @@ let toyLogohomeButton = document.getElementById("toyLogoHomeButton").addEventLis
 
 
 //Display Toy Cards for Categories Added listeners for categories
-let booksAndComicsButton=document.getElementById("BooksAndComicsButton").addEventListener("click",function(){
+let booksAndComicsButton = document.getElementById("BooksAndComicsButton").addEventListener("click", function () {
   showBooksAndComics();
-  let toyCardArea=document.getElementById("box-toy-card");
+  let toyCardArea = document.getElementById("box-toy-card");
   // Scrolls to toy card section
   window.scrollTo({
     top: toyCardArea.offsetTop,
@@ -63,9 +63,9 @@ let booksAndComicsButton=document.getElementById("BooksAndComicsButton").addEven
   $("#book-cat2").show();
   $("#book-cat3").show();
 });
-let outdoorButton=document.getElementById("outdoorButton").addEventListener("click",function(){
+let outdoorButton = document.getElementById("outdoorButton").addEventListener("click", function () {
   showOutdoor();
-  let toyCardArea=document.getElementById("box-toy-card");
+  let toyCardArea = document.getElementById("box-toy-card");
   // Scrolls to toy card section
   window.scrollTo({
     top: toyCardArea.offsetTop,
@@ -89,9 +89,9 @@ let outdoorButton=document.getElementById("outdoorButton").addEventListener("cli
   $("#outdoor-cat2").show();
   $("#outdoor-cat3").show();
 });
-let electronicsButton=document.getElementById("electronicsButton").addEventListener("click",function(){
+let electronicsButton = document.getElementById("electronicsButton").addEventListener("click", function () {
   showElectronics();
-  let toyCardArea=document.getElementById("box-toy-card");
+  let toyCardArea = document.getElementById("box-toy-card");
   // Scrolls to toy card section
   window.scrollTo({
     top: toyCardArea.offsetTop,
@@ -115,9 +115,9 @@ let electronicsButton=document.getElementById("electronicsButton").addEventListe
   $("#electronics-cat2").show();
   $("#electronics-cat3").show();
 });
-let GamesAndPuzzlesButton=document.getElementById("GamesAndPuzzlesButton").addEventListener("click",function(){
+let GamesAndPuzzlesButton = document.getElementById("GamesAndPuzzlesButton").addEventListener("click", function () {
   showGamesAndPuzzles();
-  let toyCardArea=document.getElementById("box-toy-card");
+  let toyCardArea = document.getElementById("box-toy-card");
   // Scrolls to toy card section
   window.scrollTo({
     top: toyCardArea.offsetTop,
@@ -141,9 +141,9 @@ let GamesAndPuzzlesButton=document.getElementById("GamesAndPuzzlesButton").addEv
   $("#game-cat2").show();
   $("#game-cat3").show();
 });
-let ActionFigures=document.getElementById("ActionFiguresButton").addEventListener("click",function(){
+let ActionFigures = document.getElementById("ActionFiguresButton").addEventListener("click", function () {
   showActionFigures();
-  let toyCardArea=document.getElementById("box-toy-card");
+  let toyCardArea = document.getElementById("box-toy-card");
   // Scrolls to toy card section
   window.scrollTo({
     top: toyCardArea.offsetTop,
@@ -168,3 +168,28 @@ let ActionFigures=document.getElementById("ActionFiguresButton").addEventListene
   $("#action-cat3").show();
 });
 
+
+let tryYourLuckButton = document.getElementById("tryYourLuckButton").addEventListener("click", function () {
+  showLuckCards();
+  let toyCardArea = document.getElementById("box-toy-card");
+  // Scrolls to toy card section
+  window.scrollTo({
+    top: toyCardArea.offsetTop,
+    behaviour: "smooth",
+  });
+
+});
+
+// Add event listener to handle the flip
+luckCard.addEventListener('click', function () {
+  // Only flip if the card doesn't have an item (e.g., "?" sign)
+  if (luckCard.querySelector('.card-title').textContent === "?") {
+    luckCard.classList.add('flipped'); // Flip the card
+
+    // After 2 seconds, check if this is the lucky card (you can customize this)
+    setTimeout(function () {
+      luckCard.classList.remove('flipped'); // Flip back if it's not the lucky card
+      // You can add logic here to show the toy details on the back
+    }, 2000);
+  }
+});

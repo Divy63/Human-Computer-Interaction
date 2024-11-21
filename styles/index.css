@@ -81,6 +81,7 @@ header {
     background-color: #f3f3f3;
     padding: 15px;
 }
+
 /* 
 .box-items {
     background-color: #f3f3f3;
@@ -346,7 +347,7 @@ button:hover {
     text-transform: uppercase;
     font-weight: bold;
     color: #090909;
-    background-color: #FFF;    
+    background-color: #FFF;
     align-items: center;
 }
 
@@ -440,8 +441,8 @@ li.star.rating {
     display: flex;
     /*text-align: center;*/
     vertical-align: middle;
-    text-align: center;   
-    align-items: center;    
+    text-align: center;
+    align-items: center;
     /*align-items: center;*/
 }
 
@@ -509,21 +510,23 @@ li.star.rating {
 
 /* Sign Popup */
 dialog {
-	padding: 1rem 3rem;
-	background: white;
-	max-width: 400px;
-	padding-top: 2rem;
-	border-radius: 20px;
-	border: 0;
-	box-shadow: 0 5px 30px 0 rgb(0 0 0 / 10%);
-	animation: fadeIn 1s ease both;
-	&::backdrop {
-		animation: fadeIn 1s ease both;
-		background: rgb(255 255 255 / 40%);
-		z-index: 2;
-		backdrop-filter: blur(20px);
-	}
+    padding: 1rem 3rem;
+    background: white;
+    max-width: 400px;
+    padding-top: 2rem;
+    border-radius: 20px;
+    border: 0;
+    box-shadow: 0 5px 30px 0 rgb(0 0 0 / 10%);
+    animation: fadeIn 1s ease both;
+
+    &::backdrop {
+        animation: fadeIn 1s ease both;
+        background: rgb(255 255 255 / 40%);
+        z-index: 2;
+        backdrop-filter: blur(20px);
+    }
 }
+
 .x {
     filter: grayscale(1);
     border: none;
@@ -534,6 +537,7 @@ dialog {
     transition: ease filter, transform 0.3s;
     cursor: pointer;
     transform-origin: center;
+
     &:hover {
         filter: grayscale(0);
         transform: scale(1.1);
