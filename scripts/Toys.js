@@ -77,7 +77,7 @@ class Toys{
                             <div class="rating">${starDisplay}</div>
                             </div>
                         <div class="toy-card-footer">
-                            <div class="card-price">${toy.getPrice()}</div>
+                            <div class="card-price">$${toy.getPrice()}</div>
                             <button class="add-to-cart-btn" id="add to cart - ${toy.getID()}">
                                 <img src="images/buttons/add-to-cart-icon.png" alt="Add to Cart"></i>
                             </button>
