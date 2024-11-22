@@ -164,6 +164,19 @@ class Toys{
     }
 
 
+    searchToys(searchText){
+
+
+        result=this.toys.filter(toy => {
+            return (toy.getName().toLowerCase().includes(searchText.toLowerCase()) ||
+             toy.getToyType().toLowerCase().includes(searchText.toLowerCase()))||
+             toy.getKeywords().some(keyword=>keyword.toLowerCase().includes(searchText.toLowerCase())
+            );
+        });
+
+        return result;
+    }
+
 
 }
 

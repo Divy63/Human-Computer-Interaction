@@ -63,17 +63,22 @@ class Cart {
     displayCart() {
         let cartItemsContainer = document.getElementById('cart-items');
         let emptyCart = document.getElementById('empty-cart-message');
+        let cartTotalElement=document.getElementById('cart-total');
         let totalPriceElement = document.getElementById('total-price');
+        let gstPriceElement = document.getElementById('gst-price');
+        let pstPrcicELement = document.getElementById('pst-price');
         let total = 0;
+        let gstPrice = 0;
+        let pstPrice = 0;
 
         cartItemsContainer.innerHTML = '';
 
         if (this.cartItems.length === 0) {
             emptyCart.style.display = "block";
-            total = 0;
+            cartTotalElement.style.display = "none";
         } else {
             emptyCart.style.display = "none";
-
+            cartTotalElement.style.display = "block";
             for (let i = 0; i < this.cartItems.length; i++) {
                 let toy = this.cartItems[i].toy;
                 let quantity = this.cartItems[i].quantity;
@@ -97,8 +102,26 @@ class Cart {
                 </div>`;
 
                 cartItemsContainer.innerHTML += toyInCart;
+
+
             }
+            gstPrice=total*0.05;
+            pstPrice=total*0.07;
         }
+        pstPrcicELement.innerText=pstPrice.toFixed(2);
+        gstPriceElement.innerText=gstPrice.toFixed(2);
+        total+=gstPrice+pstPrice;
         totalPriceElement.innerText = total.toFixed(2);
+    }
+
+    //  addTotalBlock(){
+    //     let cartTotalElement = document.getElementById("cart-total");
+    //     cartTotalElement.innerHTML+=`<strong>Total: $<span id="total-price">0.00</span></strong>`;
+        
+    // }
+
+    emptyTotal(){
+        let cartTotalElement = document.getElementById('cart-total');
+        cartTotalElement.innerHTML = '';
     }
 }

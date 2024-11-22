@@ -70,21 +70,21 @@ header {
 }
 
 
-/* Results Container Styling */
-#results {
+.result-container {
     width: 90%;
-    margin: 10px auto 0; 
+    /* margin: 10px auto 0;  */
     padding: 10px;
     background-color: #F0EDED;
     border-radius: 16px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    max-height: 200px; 
-    overflow-y: auto;
+    max-height: 300px; 
+    overflow-y: auto; 
     font-family: "Nunito";
     font-size: 16px;
+    position: relative;
+    z-index: 1000; 
 }
 
-/* Individual Result Item */
 .result-item {
     padding: 8px 12px;
     margin: 5px 0;
@@ -92,6 +92,13 @@ header {
     border-radius: 12px;
     cursor: pointer;
     transition: background-color 0.3s;
+    position: relative; 
+    z-index: 1000;
+
+}
+
+.result-item:not(:last-child) {
+    border-bottom: 2px solid #D6C5C5; 
 }
 
 .result-item:hover {
@@ -615,7 +622,7 @@ dialog {
 }
 
 .btn-primary {
-    background-color: #007BFF;
+    background-color: #9D6F6F;
     color: #fff;
     border: none;
     padding: 8px 16px;
@@ -625,7 +632,7 @@ dialog {
 }
 
 .btn-primary:hover {
-    background-color: #0056b3;
+    background-color: #984a4a;
 }
 
 /* Cart Items Container */
