@@ -68,6 +68,36 @@ header {
     border-radius: 16px;
 }
 
+
+/* Results Container Styling */
+#results {
+    width: 90%;
+    margin: 10px auto 0; 
+    padding: 10px;
+    background-color: #F0EDED;
+    border-radius: 16px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    max-height: 200px; 
+    overflow-y: auto;
+    font-family: "Nunito";
+    font-size: 16px;
+}
+
+/* Individual Result Item */
+.result-item {
+    padding: 8px 12px;
+    margin: 5px 0;
+    background-color: #E8DCDC; 
+    border-radius: 12px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.result-item:hover {
+    background-color: #D6C5C5;
+}
+
+
 .box-filter,
 .box-contact,
     /* .box-items {
