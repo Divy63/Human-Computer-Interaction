@@ -7,7 +7,7 @@ html {
     grid-template-columns: 1fr 3fr;
     grid-template-rows: auto 1fr auto;
     gap: 10px;
-    max-width: 1400px;
+    max-width: 2500px;
     margin: 0 auto;
     padding: 20px;
     background-color: #d9d9d9;
@@ -66,14 +66,9 @@ header {
     border: none;
     outline: none;
     border-radius: 16px;
+
 }
 
-.box-filter,
-.box-contact,
-/* .box-items {
-    background-color: #f3f3f3;
-    padding: 15px;
-} */
 
 .box-filter {
     grid-column: 1 / 2;
@@ -618,7 +613,7 @@ dialog {
     width: 50px;
     height: 50px;
     object-fit: cover;
-    margin-right: 15px; 
+    margin-right: 15px;
 }
 
 .cart-item .item-details {
@@ -644,5 +639,7 @@ dialog {
     border-radius: 4px;
     cursor: pointer;
 }
+
+
 
 
