@@ -1,52 +1,53 @@
-class Toy {
+class Toy{
 
-    static idCounter = 0;
+    static idCounter=-1;
     // Constructor for a toy class
-    constructor(name, price, rating, quantity, imageLink, otherLink, toyType) {
+    constructor(name,price,rating,quantity,imageLink,otherLink,toyType,age){
 
-        this.id = this.idCounter++;
-        this.name = name;
-        this.price = price;
-        this.rating = rating;
-        this.quantity = quantity;
-        this.imageLink = imageLink;
-        this.otherLink = otherLink;
-        this.toyType = toyType;
+        this.id=Toy.idCounter+=1;
+        this.name=name;
+        this.price=price;
+        this.rating=rating;
+        this.quantity=quantity;
+        this.imageLink=imageLink;
+        this.otherLink=otherLink;
+        this.toyType=toyType;
+        this.age=age;
     }
-    getID() {
+    getID(){
         return this.id;
     }
 
-    getName() {
+    getName(){
         return this.name;
     }
 
-    getPrice() {
+    getPrice(){
         return this.price;
     }
 
-    getRating() {
+    getRating(){
         return this.rating;
     }
 
-    getQuantity() {
+    getQuantity(){
         return this.quantity;
     }
 
-    getImageLink() {
+    getImageLink(){
         return this.imageLink;
     }
 
-    getOtherImageLink() {
+    getOtherImageLink(){
         return this.otherLink;
     }
 
-    getToyType() {
+    getToyType(){
         return this.toyType;
     }
 
-    setPrice(newPrice) {
-        this.price = newPrice;
+    getAge(){
+        return this.age;
     }
 
 
