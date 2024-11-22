@@ -16,7 +16,7 @@ class Toys{
 
     get(i){
         return this.toys[i];
-        ;
+;
     }
 
 
@@ -25,10 +25,10 @@ class Toys{
     displayHTML(){
         let htmlContainer=document.getElementById('box-toy-card');
         htmlContainer.innerHTML='';//Emptying the container
-
+        
         for(let i=0;i<this.toys.length;i++){
             let toy=this.toys[i];
-
+            
             // Display ratings using star images
             let stars=Math.floor(toy.rating);
             let halfstar=(toy.rating%1);
@@ -66,7 +66,7 @@ class Toys{
                     </div>
                 </div>`;
             }else{
-                toyCard=`
+                 toyCard=`
                     <div class="toy-card">
                         <picture>
                             <source srcset="${toy.getImageLink()}" type="image/webp" alt="${toy.getName()}">
@@ -84,7 +84,7 @@ class Toys{
                         </div>
                     </div>`;
             }
-
+            
             htmlContainer.innerHTML+=toyCard;
         }
 
@@ -95,7 +95,7 @@ class Toys{
             if(this.toys[i].getID()==id){
                 toy=this.toys[i];
                 break;
-            }
+        }
         }
         console.log(toy);
         return toy;
@@ -120,7 +120,7 @@ class Toys{
         }
         filteredToys.displayHTML();
 
-    }
+    }   
 
     applyAgeFilter(start,end=Infinity){
         console.log("In Price FIlter");
@@ -135,7 +135,7 @@ class Toys{
         }
         filteredToys.displayHTML();
 
-    }
+    }   
 
     applyRatingFilter(star){
         console.log("In Rating FIlter");

@@ -3,7 +3,7 @@ class Toy{
     static idCounter=-1;
     // Constructor for a toy class
     constructor(name,price,rating,quantity,imageLink,otherLink,toyType,age){
-
+        
         this.id=Toy.idCounter+=1;
         this.name=name;
         this.price=price;
