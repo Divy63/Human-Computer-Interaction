@@ -600,7 +600,7 @@ dialog {
 #cart-items {
     display: flex;
     flex-direction: column;
-    gap: 19px;
+    gap: 10px;
 }
 
 .cart-item {
