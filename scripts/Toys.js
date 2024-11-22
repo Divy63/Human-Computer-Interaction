@@ -143,7 +143,7 @@ class Toys{
         for(let i=0;i<this.toys.length;i++){
             let toy=this.toys[i];
             console.log("IN LOOP");
-            if(toy.getRating()>=star && toy.getAge()<=5){
+            if(toy.getRating()===star){
                 console.log("FILTERED");
                 filteredToys.add(this.toys[i]);
             }
