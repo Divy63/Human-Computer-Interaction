@@ -150,6 +150,10 @@ class Toys{
         }
         filteredToys.displayHTML();
 
-    }   
+    }
+
+
 
 }
+
+
