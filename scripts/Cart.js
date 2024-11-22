@@ -24,18 +24,17 @@ class Cart {
     }
 
     removeFromCart(toyID) {
-        for (let i = 0; i < this.cartItems.length; i++) {
-            if (this.cartItems[i].toy.getID() === toyID) {
-                if (this.cartItems[i].quantity > 1) {
-                    this.cartItems[i].subtractQuantity();
-                } else {
-                    this.cartItems.splice(i, 1);
-                }
-                this.displayCart();  // Update cart after removal
-                return;
-            }
+        const itemIndex = this.cartItems.findIndex(item => item.toy.getID() === toyID);
+
+        if (itemIndex === -1) {
+            console.warn(`Item with ID ${toyID} not found in the cart.`);
+            return;
         }
+
+        this.cartItems.splice(itemIndex, 1);
+        this.displayCart();
     }
+
 
     toString() {
         let output = "Cart:\n";
@@ -71,6 +70,7 @@ class Cart {
 
         if (this.cartItems.length === 0) {
             emptyCart.style.display = "block";
+            total = 0;
         } else {
             emptyCart.style.display = "none";
 
@@ -80,7 +80,7 @@ class Cart {
                 let price = toy.getPrice();
                 total += price * quantity;
 
-              
+
                 let toyInCart = `
                 <div class="cart-item">
                     <img class="item-image" src="${toy.getImageLink()}" alt="${toy.getName()}">
@@ -98,8 +98,7 @@ class Cart {
 
                 cartItemsContainer.innerHTML += toyInCart;
             }
-
-            totalPriceElement.innerText = total.toFixed(2);
         }
+        totalPriceElement.innerText = total.toFixed(2);
     }
 }

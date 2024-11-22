@@ -53,6 +53,7 @@ header {
     vertical-align: middle;
     display: flex;
     align-items: center;
+    justify-content: space-between;
 }
 
 
@@ -579,6 +580,7 @@ dialog {
     font-family: Arial, sans-serif;
     max-width: 2500px;
     padding: 20px;
+    height: 500px;
 
 }
 
@@ -593,6 +595,10 @@ dialog {
     margin: 0;
     font-size: 1.5rem;
     color: #333;
+}
+
+#cart-total{
+    text-align: right;
 }
 
 
@@ -673,4 +679,28 @@ dialog {
     padding: 6px 12px;
     border-radius: 4px;
     cursor: pointer;
+}
+
+#notification {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #4caf50; /* Green */
+    color: white;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+    opacity: 0;
+    transition: opacity 0.5s, transform 0.5s;
+    transform: translateY(100%);
+}
+
+#notification.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+#notification.hidden {
+    display: none;
 }
