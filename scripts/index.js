@@ -359,7 +359,7 @@ let tryYourLuckButton = document.getElementById("tryYourLuckButton").addEventLis
     // Scrolls to toy card section
     window.scrollTo({
         top: toyCardArea.offsetTop,
-        behaviour: "smooth",
+        behavior: "smooth",
     });
 
 });

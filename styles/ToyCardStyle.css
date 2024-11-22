@@ -150,3 +150,9 @@ button.disabled {
 .toy-card.toy-card-inner {
     transform: rotateY(180deg);
 }
+
+.toy-card.instruction{
+    text-align: center;
+    font-weight: bold;
+    font-size: 50px;
+}

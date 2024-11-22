@@ -163,6 +163,10 @@ function showLuckCards() {
     let htmlContainer = document.getElementById('box-toy-card');
     htmlContainer.innerHTML = ''; // Emptying the container
 
+    htmlContainer.innerHTML+=`<instruction>Select Any One Card For A Surprise!</instruction>
+    <instruction></instruction>
+    <instruction></instruction>
+    <instruction></instruction>`
     // Random card pick (lucky card)
     let luckyCardIndex = Math.floor(Math.random() * 4);
 
