@@ -159,5 +159,74 @@ function createCartListeners(){
     }
 }
 
+function showLuckCards() {
+    let htmlContainer = document.getElementById('box-toy-card');
+    htmlContainer.innerHTML = ''; // Emptying the container
+
+    // Random card pick (lucky card)
+    let luckyCardIndex = Math.floor(Math.random() * 4);
+
+    let luckyToy = new Toys();
+    luckyToy.add(TOY_DATABASE.get(2));
+
+    // Store the original price
+    let originalPrice = luckyToy.get(0).getPrice();
+
+
+    for (let i = 0; i < 4; i++) {
+        let luckCard = document.createElement('div');
+        luckCard.classList.add('toy-card');
+
+        let luckCardInner = document.createElement('div');
+        luckCardInner.classList.add('toy-card-inner');
+
+        let luckCardFront = document.createElement('div');
+        luckCardFront.classList.add('card-side', 'front');
+
+        let luckCardTitle = document.createElement('div');
+        luckCardTitle.classList.add('card-title');
+        luckCardTitle.textContent = "?";
+        luckCardFront.appendChild(luckCardTitle);
+
+        let luckCardFooter = document.createElement('div');
+        luckCardFooter.classList.add('card-footer');
+        luckCardFooter.innerHTML = "<p>Try Your Luck!</p>";
+        luckCardFront.appendChild(luckCardFooter);
+
+        // Back side of the card (initially empty)
+        let luckCardBack = document.createElement('div');
+        luckCardBack.classList.add('card-side', 'back');
+
+        luckCardInner.appendChild(luckCardFront);
+        luckCardInner.appendChild(luckCardBack);
+
+        luckCard.appendChild(luckCardInner);
+
+        // Event listener for flipping the card
+        luckCard.addEventListener('click', function () {
+            luckCard.classList.toggle('flipped'); // Toggle flip class
+
+            // When the card is flipped, update the content only for the clicked card
+            if (i === luckyCardIndex) {
+                luckCardBack.innerHTML = ''; // Clear the current back content
+
+                luckyToy.get(0).setPrice("$13.99");
+                luckyToy.displayHTML();
+                luckyToy.get(0).setPrice(originalPrice);
+
+                luckCardFooter.style.display = "none";
+            } else {
+                luckCardFooter.style.display = "none";
+                luckCardTitle.style.display = "none";
+                luckCardBack.innerHTML = "<p>Better luck next time!</p>";
+            }
+        });
+
+        htmlContainer.appendChild(luckCard);
+
+    }
+
+}
+
 
 
