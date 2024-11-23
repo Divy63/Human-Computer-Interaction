@@ -68,6 +68,10 @@ header {
     border-radius: 16px;
 }
 
+.search-symbol {
+    align-items: end;
+}
+
 .box-filter,
 .box-contact,
     /* .box-items {
@@ -199,6 +203,20 @@ button:hover {
     top: 30%;
     left: 22%;
     background-color: #FF6B6B;
+    color: white;
+}
+
+.category-books:active{
+    top: 30%;
+    left: 22%;
+    background-color: #f82828;
+    color: white;
+}
+
+.category-books:focus{
+    top: 30%;
+    left: 22%;
+    background-color: #3bb47b;
     color: white;
 }
 
@@ -343,6 +361,7 @@ button:hover {
     text-decoration: none;
     line-height: 40px;
     font-size: 13px;
+    word-spacing: 4%;
     text-transform: uppercase;
     font-weight: bold;
     color: #090909;

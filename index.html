@@ -20,14 +20,14 @@
 <body>
 <header>
     <div class="container">
-        <div class="box-logo" id="toyLogoHomeButton"><a href="#"><img src="images/toy_logo.jpg" alt="Store Logo"
+        <div class="box-logo" id="toyLogoHomeButton"><a href="#" id="toylogolink"><img src="images/toy_logo.jpg" alt="Store Logo"
                                                                       width=512 height=512></a></div>
         <div class="box-header">
             <div class="box-search">
                 <label>
                     <input type="text" placeholder="Search..." class="search">
                 </label>
-                <a href="#"><span class="material-symbols-outlined">search</span></a>
+                <a href="#" class="search-icon"><span class="material-symbols-outlined" style="padding-left: 700%;">search</span></a>
             </div>
         </div>
     </div>
@@ -36,12 +36,11 @@
 <main>
     <div class="container">
         <div class="box-links" id="navigation-bar">
-            <a href="#" id="homeButton"><span class="material-symbols-outlined">home</span></a>
+            <button href="#" id="homeButton"><span class="material-symbols-outlined">home</span></button>
             <nav>
                 <ul class="nav-links">
-                    <li><a id="tryYourLuckButton" href="#">Try Your Luck!</a></li>
-                    <li><a href="#">Nav2</a></li>
-                    <li><a href="#">Nav3</a></li>
+                    <li><button id="tryYourLuckButton" href="#">Try Your Luck!</button></li>
+                    
                 </ul>
             </nav>
             <a class="sign-in" href="#">
@@ -79,35 +78,38 @@
 
 
         <div class="box-filter" id="box-filter">
+            <div class="row category-selected" id="selectedCategory" style="text-align: center; font-family:sans-serif; font-size:1.25em; font-weight: bold;"></div>
             <div class="row filter-row age">
                 <div class="dropdown toggle">
                     <input id="t1" type="checkbox">
-                    <label for="t1">Age</label>
+                    <label id="agefilter" for="t1">Age</label>
                     <ul>
                         <li><a href="#" id="age0to2">0 - 2</a></li>
                         <li><a href="#" id="age2to5">2 - 5</a></li>
                         <li><a href="#" id="age5to10">5 - 10</a></li>
                         <li><a href="#" id="ageMoreThan10">10 +</a></li>
+                        <li><a href="#" class="Undo" href="#" id="ageUndo"> Undo </a></li>
                     </ul>
                 </div>
             </div>
             <div class="row filter-row price">
                 <div class="dropdown toggle" id="priceDropDown">
                     <input id="t2" type="checkbox">
-                    <label for="t2">Price</label>
+                    <label id="pricefilter" for="t2">Price</label>
                     <ul>
-                        <li><a href="#" id="price0to10">$ 0 - 10</a></li>
+                        <li><a href="#" id="price0to10">$0-10</a></li>
                         <li><a href="#" id="price10to20">$ 10 - 20</a></li>
                         <li><a href="#" id="price20to30">$ 20 - 30</a></li>
                         <li><a href="#" id="price30to40">$ 30 - 40</a></li>
                         <li><a href="#" id="priceMoreThan40">$ 40 +</a></li>
+                        <li><a href="#" href="#" id="priceUndo"> Undo </a> </li>
                     </ul>
                 </div>
             </div>
             <div class="row filter-row ratings">
                 <div class="dropdown toggle">
                     <input id="t3" type="checkbox">
-                    <label for="t3">Customer Ratings</label>
+                    <label id="ratingfilter" for="t3">Customer Ratings</label>
                     <ul>
                         <li class="star rating"><a class="OneStar" href="#" id="oneStar">
                             <div class="stars">1 Star
@@ -181,6 +183,11 @@
                                       style="font-variation-settings: 'FILL' 1, 'wght' 100, 'GRAD' 0, 'opsz' 10;color:gold;">star</span>
                                 <span class=" fifth star material-symbols-outlined"
                                       style="font-variation-settings: 'FILL' 1, 'wght' 100, 'GRAD' 0, 'opsz' 10;color:gold;">star</span>
+                            </div>
+                        </a>
+                        </li>
+                        <li class="star rating"><a class="Undo" href="#" id="ratingUndo">
+                            <div class="stars">Undo                
                             </div>
                         </a>
                         </li>
