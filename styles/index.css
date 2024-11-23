@@ -711,14 +711,14 @@ dialog {
     position: fixed;
     bottom: 20px;
     right: 20px;
-    background-color: #4caf50; /* Green */
+    background-color: #4caf50; /* Green background */
     color: white;
-    padding: 15px;
+    padding: 15px 20px;
     border-radius: 5px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-    z-index: 1000;
+    z-index: 1000; /* Ensures it appears above other elements */
     opacity: 0;
-    transition: opacity 0.5s, transform 0.5s;
+    transition: opacity 0.5s ease, transform 0.5s ease;
     transform: translateY(100%);
 }
 
@@ -727,6 +727,3 @@ dialog {
     transform: translateY(0);
 }
 
-#notification.hidden {
-    display: none;
-}

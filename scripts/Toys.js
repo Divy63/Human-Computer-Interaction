@@ -16,15 +16,23 @@ class Toys{
 
     get(i){
         return this.toys[i];
-;
-    }
 
+    }
 
     // Method that displays toys in the html page.
     // It creates a container for each toy and forms a card for it to display.
     displayHTML(){
         let htmlContainer=document.getElementById('box-toy-card');
         htmlContainer.innerHTML='';//Emptying the container
+
+
+        let notificationDiv = document.getElementById('notification');
+        if (!notificationDiv) {
+            notificationDiv = document.createElement('div');
+            notificationDiv.id = 'notification';
+            document.body.appendChild(notificationDiv); 
+        }
+
         
         for(let i=0;i<this.toys.length;i++){
             let toy=this.toys[i];
@@ -88,22 +96,11 @@ class Toys{
             
             htmlContainer.innerHTML+=toyCard;
         }
-        
-        console.log("ADD TO CART CREATED");
     }
-
-    // showNotification(itemName) {
-    //     const notification = document.getElementById('notification');
-    //     notification.innerText = `${itemName} has been added to the cart!`;
-    //     notification.classList.add('show');
-
-    //     setTimeout(() => {
-    //         notification.classList.remove('show');
-    //     }, 3000); // Hides after 3 seconds
-    // }
 
     
     getByID(id){
+        let toy;
         for(let i=0;i<this.toys.length;i++){
             if(this.toys[i].getID()==id){
                 toy=this.toys[i];
