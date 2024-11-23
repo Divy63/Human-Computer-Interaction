@@ -141,9 +141,9 @@ function showOutdoor(){
 
 }
 
-function createCartListeners(){
-    for(let i=0;i<TOY_DATABASE.getLength();i++){
-        toy=TOY_DATABASE.get(i);
+function createCartListeners(toys){
+    for(let i=0;i<toys.getLength();i++){
+        toy=toys.get(i);
         if(toy.getQuantity()>0){
             let id ="add to cart - "+toy.getID();
             button=document.getElementById(id)
@@ -151,7 +151,7 @@ function createCartListeners(){
                 button.addEventListener("click", function(toy) {
                     return function(){
 
-                        CART.addToCart(TOY_DATABASE.getByID(toy.getID()));
+                        CART.addToCart(toys.getByID(toy.getID()));
                     };
                 }(toy));
             }

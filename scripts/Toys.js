@@ -66,6 +66,7 @@ class Toys{
                     </div>
                 </div>`;
             }else{
+                console.log("CREATING ID");
                  toyCard=`
                     <div class="toy-card">
                         <picture>
@@ -78,7 +79,7 @@ class Toys{
                             </div>
                         <div class="toy-card-footer">
                             <div class="card-price">$${toy.getPrice()}</div>
-                            <button class="add-to-cart-btn" id="add to cart - ${toy.getID()}" onclick="showNotification('${toy.getName()}')">
+                            <button class="add-to-cart-btn" id="add to cart - ${toy.getID()}">
                                 <img src="images/buttons/add-to-cart-icon.png" alt="Add to Cart"></i>
                             </button>
                         </div>
@@ -87,18 +88,19 @@ class Toys{
             
             htmlContainer.innerHTML+=toyCard;
         }
-
+        
+        console.log("ADD TO CART CREATED");
     }
 
-    showNotification(itemName) {
-        const notification = document.getElementById('notification');
-        notification.innerText = `${itemName} has been added to the cart!`;
-        notification.classList.add('show');
+    // showNotification(itemName) {
+    //     const notification = document.getElementById('notification');
+    //     notification.innerText = `${itemName} has been added to the cart!`;
+    //     notification.classList.add('show');
 
-        setTimeout(() => {
-            notification.classList.remove('show');
-        }, 3000); // Hides after 3 seconds
-    }
+    //     setTimeout(() => {
+    //         notification.classList.remove('show');
+    //     }, 3000); // Hides after 3 seconds
+    // }
 
     
     getByID(id){

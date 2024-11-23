@@ -20,6 +20,7 @@ searchBar=document.getElementById('searchBar').addEventListener('input',function
                         toys.add(results[i]);
                     }
                     toys.displayHTML();
+                    createCartListeners(toys);
                     let toyCardArea = document.getElementById("box-toy-card");
                     // Scrolls to toy card section
                     window.scrollTo({
@@ -35,6 +36,7 @@ searchBar=document.getElementById('searchBar').addEventListener('input',function
                     toys=new Toys();
                     toys.add(toy);
                     toys.displayHTML();
+                    createCartListeners(toys);
                     let toyCardArea = document.getElementById("box-toy-card");
                     // Scrolls to toy card section
                     window.scrollTo({
