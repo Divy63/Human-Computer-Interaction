@@ -2,7 +2,7 @@ class Toy{
 
     static idCounter=-1;
     // Constructor for a toy class
-    constructor(name,price,rating,quantity,imageLink,otherLink,toyType,age){
+    constructor(name,price,rating,quantity,imageLink,otherLink,toyType,age,keywords){
         
         this.id=Toy.idCounter+=1;
         this.name=name;
@@ -13,6 +13,7 @@ class Toy{
         this.otherLink=otherLink;
         this.toyType=toyType;
         this.age=age;
+        this.keywords=keywords;
     }
     getID(){
         return this.id;
@@ -48,6 +49,10 @@ class Toy{
 
     getAge(){
         return this.age;
+    }
+
+    getKeywords(){
+        return this.keywords;
     }
 
 

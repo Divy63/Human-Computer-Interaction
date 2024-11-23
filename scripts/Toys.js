@@ -66,6 +66,7 @@ class Toys{
                     </div>
                 </div>`;
             }else{
+                console.log("CREATING ID");
                  toyCard=`
                     <div class="toy-card">
                         <picture>
@@ -87,9 +88,21 @@ class Toys{
             
             htmlContainer.innerHTML+=toyCard;
         }
-
+        
+        console.log("ADD TO CART CREATED");
     }
 
+    // showNotification(itemName) {
+    //     const notification = document.getElementById('notification');
+    //     notification.innerText = `${itemName} has been added to the cart!`;
+    //     notification.classList.add('show');
+
+    //     setTimeout(() => {
+    //         notification.classList.remove('show');
+    //     }, 3000); // Hides after 3 seconds
+    // }
+
+    
     getByID(id){
         for(let i=0;i<this.toys.length;i++){
             if(this.toys[i].getID()==id){
@@ -143,7 +156,7 @@ class Toys{
         for(let i=0;i<this.toys.length;i++){
             let toy=this.toys[i];
             console.log("IN LOOP");
-            if(toy.getRating()>=star && toy.getAge()<=5){
+            if(toy.getRating()===star){
                 console.log("FILTERED");
                 filteredToys.add(this.toys[i]);
             }
@@ -152,6 +165,19 @@ class Toys{
 
     }
 
+
+    searchToys(searchText){
+
+
+        result=this.toys.filter(toy => {
+            return (toy.getName().toLowerCase().includes(searchText.toLowerCase()) ||
+             toy.getToyType().toLowerCase().includes(searchText.toLowerCase()))||
+             toy.getKeywords().some(keyword=>keyword.toLowerCase().includes(searchText.toLowerCase())
+            );
+        });
+
+        return result;
+    }
 
 
 }

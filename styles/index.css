@@ -53,6 +53,7 @@ header {
     vertical-align: middle;
     display: flex;
     align-items: center;
+    justify-content: space-between;
 }
 
 
@@ -67,6 +68,43 @@ header {
     outline: none;
     border-radius: 16px;
 }
+
+
+.result-container {
+    width: 90%;
+    /* margin: 10px auto 0;  */
+    padding: 10px;
+    background-color: #F0EDED;
+    border-radius: 16px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    max-height: 300px; 
+    overflow-y: auto; 
+    font-family: "Nunito";
+    font-size: 16px;
+    position: relative;
+    z-index: 1000; 
+}
+
+.result-item {
+    padding: 8px 12px;
+    margin: 5px 0;
+    background-color: #E8DCDC; 
+    border-radius: 12px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    position: relative; 
+    z-index: 1000;
+
+}
+
+.result-item:not(:last-child) {
+    border-bottom: 2px solid #D6C5C5; 
+}
+
+.result-item:hover {
+    background-color: #D6C5C5;
+}
+
 
 .search-symbol {
     align-items: end;
@@ -568,6 +606,7 @@ dialog {
     font-family: Arial, sans-serif;
     max-width: 2500px;
     padding: 20px;
+    height: 500px;
 
 }
 
@@ -584,6 +623,10 @@ dialog {
     color: #333;
 }
 
+#cart-total{
+    text-align: right;
+}
+
 
 #empty-cart-message {
     text-align: center;
@@ -598,7 +641,7 @@ dialog {
 }
 
 .btn-primary {
-    background-color: #007BFF;
+    background-color: #9D6F6F;
     color: #fff;
     border: none;
     padding: 8px 16px;
@@ -608,7 +651,7 @@ dialog {
 }
 
 .btn-primary:hover {
-    background-color: #0056b3;
+    background-color: #984a4a;
 }
 
 /* Cart Items Container */
@@ -662,4 +705,28 @@ dialog {
     padding: 6px 12px;
     border-radius: 4px;
     cursor: pointer;
+}
+
+#notification {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #4caf50; /* Green */
+    color: white;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+    opacity: 0;
+    transition: opacity 0.5s, transform 0.5s;
+    transform: translateY(100%);
+}
+
+#notification.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+#notification.hidden {
+    display: none;
 }
