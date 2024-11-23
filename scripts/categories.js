@@ -10,7 +10,7 @@ let booksAndComicsButton = document.getElementById("BooksAndComicsButton").addEv
         top: toyCardArea.offsetTop,
         behavior: "smooth",
     });
-
+    document.getElementById("selectedCategory").innerHTML = "Category: Books and Comics";
     $("#t4").removeAttr('disabled');
     $("label.t4").css("color", "black");
     $("#electronics-cat1").hide();
@@ -37,6 +37,7 @@ let outdoorButton = document.getElementById("outdoorButton").addEventListener("c
         top: toyCardArea.offsetTop,
         behavior: "smooth",
     });
+    document.getElementById("selectedCategory").innerHTML = "Category: Outdoor";
     $("#t4").removeAttr('disabled');
     $("label.t4").css("color", "black");
     $("#electronics-cat1").hide();
@@ -63,6 +64,7 @@ let electronicsButton = document.getElementById("electronicsButton").addEventLis
         top: toyCardArea.offsetTop,
         behavior: "smooth",
     });
+    document.getElementById("selectedCategory").innerHTML = "Category: Electronics";
     $("#t4").removeAttr('disabled');
     $("label.t4").css("color", "black");
     $("#book-cat1").hide();
@@ -89,6 +91,8 @@ let GamesAndPuzzlesButton = document.getElementById("GamesAndPuzzlesButton").add
         top: toyCardArea.offsetTop,
         behavior: "smooth",
     });
+
+    document.getElementById("selectedCategory").innerHTML = "Category: Games and Puzzles";
     $("#t4").removeAttr('disabled');
     $("label.t4").css("color", "black");
     $("#electronics-cat1").hide();
@@ -115,6 +119,7 @@ let ActionFigures = document.getElementById("ActionFiguresButton").addEventListe
         top: toyCardArea.offsetTop,
         behavior: "smooth",
     });
+    document.getElementById("selectedCategory").innerHTML = "Category: Action Figures";
     $("#t4").removeAttr('disabled');
     $("label.t4").css("color", "black");
     $("#electronics-cat1").hide();
