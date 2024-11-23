@@ -10,7 +10,8 @@ $(document).ready(function () {
     });
     $("#t4").attr("disabled", "disabled");
     $("label.t4").css("color", "grey");
-
+    //let text = "Price";
+    //document.getElementById("pricefilter").innerHTML = text; 
     //$("#t4").prop('disabled', true);
     //$("#subcategory-list").hide();
 });
@@ -51,6 +52,15 @@ function regenerateHomePage() {
 let toyLogohomeButton = document.getElementById("toyLogoHomeButton").addEventListener("click", function () {
     $("#t4").attr("disabled", "disabled");
     $("label.t4").css("color", "grey");
+    document.getElementById("selectedCategory").innerHTML = "";
+
+    onLoadDisplayToys();
+});
+
+let homeButton = document.getElementById("homeButton").addEventListener("click", function () {
+    $("#t4").attr("disabled", "disabled");
+    $("label.t4").css("color", "grey");
+    document.getElementById("selectedCategory").innerHTML = "";
 
     onLoadDisplayToys();
 });
