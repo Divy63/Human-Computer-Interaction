@@ -38,13 +38,25 @@ let addToCart = document.getElementById("Add-to-Cart").addEventListener("click",
     CART.displayCart();
 });
 
-let shopMoreButton = document.getElementById("shopMoreButton").addEventListener("click", regenerateHomePage());
+let shopMoreButton = document.getElementById("shopMoreButton").addEventListener("click", regenerateHomePage);
 
 function regenerateHomePage() {
     $("#t4").attr("disabled", "disabled");
     $("label.t4").css("color", "grey");
 
+
+    let boxCategories = document.getElementById('box-categories');
+    let boxFilters = document.getElementById('box-filter');
+    let boxToyCard = document.getElementById('box-toy-card');
+    let navigationBar = document.getElementById('navigation-bar');
+    navigationBar.style.display = 'block';
+    boxCategories.style.display = 'block';
+    boxFilters.style.display = 'block';
+    boxToyCard.style.display = 'block';
     onLoadDisplayToys();
+
+    let cartDivision = document.getElementById('cart-section');
+    cartDivision.style.display = 'none';
 }
 
 
@@ -57,6 +69,9 @@ let toyLogohomeButton = document.getElementById("toyLogoHomeButton").addEventLis
     onLoadDisplayToys();
 });
 
+
+
+
 let homeButton = document.getElementById("homeButton").addEventListener("click", function () {
     $("#t4").attr("disabled", "disabled");
     $("label.t4").css("color", "grey");
@@ -64,8 +79,6 @@ let homeButton = document.getElementById("homeButton").addEventListener("click",
 
     onLoadDisplayToys();
 });
-
-
 
 
 

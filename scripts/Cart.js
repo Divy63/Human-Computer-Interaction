@@ -125,3 +125,5 @@ class Cart {
         cartTotalElement.innerHTML = '';
     }
 }
+
+
