@@ -15,10 +15,17 @@ let price0to10 = document.getElementById("price0to10").addEventListener("click",
     });
     const pricelabel = document.getElementById("pricefilter");
     if (pricelabel.innerHTML != "$0-10") {
+        
         pricelabel.innerHTML = "$0-10";
       } else {
-        pricelabel.innerHTML = "Price";
+        pricelabel.innerHTML = "$0-10";
       }
+      //alert(Boolean($('.toggle > input').is(':checked')));
+    if ( $('.toggle > input').is(':checked'))
+    {     
+      $('.toggle > input').prop('checked', false);
+    }
+
 });
 
 let price10to20 = document.getElementById("price10to20").addEventListener("click", (event) => {
@@ -34,8 +41,14 @@ let price10to20 = document.getElementById("price10to20").addEventListener("click
     if (pricelabel.innerHTML != "$10-20") {
         pricelabel.innerHTML = "$10-20";
       } else {
-        pricelabel.innerHTML = "Price";
+        pricelabel.innerHTML = "$10-20";
       }
+    
+    if ( $('.toggle > input').is(':checked'))
+    {     
+      $('.toggle > input').prop('checked', false);
+    }  
+
 });
 
 let price20to30 = document.getElementById("price20to30").addEventListener("click", (event) => {
@@ -51,8 +64,12 @@ let price20to30 = document.getElementById("price20to30").addEventListener("click
     if (pricelabel.innerHTML != "$20-30") {
         pricelabel.innerHTML = "$20-30";
       } else {
-        pricelabel.innerHTML = "Price";
+        pricelabel.innerHTML = "$20-30";
       }
+    if ( $('.toggle > input').is(':checked'))
+    {     
+      $('.toggle > input').prop('checked', false);
+    }   
 });
 
 let price30to40 = document.getElementById("price30to40").addEventListener("click", (event) => {
@@ -68,8 +85,13 @@ let price30to40 = document.getElementById("price30to40").addEventListener("click
     if (pricelabel.innerHTML != "$30-40") {
         pricelabel.innerHTML = "$30-40";
       } else {
-        pricelabel.innerHTML = "Price";
+        pricelabel.innerHTML = "$30-40";
       }
+
+    if ( $('.toggle > input').is(':checked'))
+    {     
+      $('.toggle > input').prop('checked', false);
+    }   
 });
 
 let priceMoreThan40 = document.getElementById("priceMoreThan40").addEventListener("click", (event) => {
@@ -85,8 +107,14 @@ let priceMoreThan40 = document.getElementById("priceMoreThan40").addEventListene
     if (pricelabel.innerHTML != "$40 +") {
         pricelabel.innerHTML = "$40 +";
       } else {
-        pricelabel.innerHTML = "Price";
+        pricelabel.innerHTML = "$40 +";
       }
+    
+    if ( $('.toggle > input').is(':checked'))
+    {     
+        $('.toggle > input').prop('checked', false);
+    }   
+
 });
 
 let undoPriceFilter = document.getElementById("priceUndo").addEventListener("click", (event) => {
@@ -104,6 +132,10 @@ let undoPriceFilter = document.getElementById("priceUndo").addEventListener("cli
       } else {
         pricelabel.innerHTML = "Price";
       }
+    if ( $('.toggle > input').is(':checked'))
+    {     
+        $('.toggle > input').prop('checked', false);
+    }   
 });
 
 
@@ -121,8 +153,14 @@ let age0to2 = document.getElementById("age0to2").addEventListener("click", (even
     if (pricelabel.innerHTML != "0 - 2 years old") {
         pricelabel.innerHTML = "0 - 2 years old";
       } else {
-        pricelabel.innerHTML = "Age";
+        pricelabel.innerHTML = "0 - 2 years old";
       }
+
+    if ( $('.toggle > input').is(':checked'))
+    {     
+      $('.toggle > input').prop('checked', false);
+    } 
+
 });
 
 let age2to5 = document.getElementById("age2to5").addEventListener("click", (event) => {
@@ -138,8 +176,14 @@ let age2to5 = document.getElementById("age2to5").addEventListener("click", (even
     if (pricelabel.innerHTML != "2 - 5 years old") {
         pricelabel.innerHTML = "2 - 5 years old";
       } else {
-        pricelabel.innerHTML = "Age";
+        pricelabel.innerHTML = "2 - 5 years old";
       }
+    
+    if ( $('.toggle > input').is(':checked'))
+    {     
+      $('.toggle > input').prop('checked', false);
+    } 
+      
 });
 
 let age5to10 = document.getElementById("age5to10").addEventListener("click", (event) => {
@@ -155,8 +199,13 @@ let age5to10 = document.getElementById("age5to10").addEventListener("click", (ev
     if (pricelabel.innerHTML != "5 - 10 years old") {
         pricelabel.innerHTML = "5 - 10 years old";
       } else {
-        pricelabel.innerHTML = "Age";
+        pricelabel.innerHTML = "5 - 10 years old";
       }
+
+    if ( $('.toggle > input').is(':checked'))
+    {     
+      $('.toggle > input').prop('checked', false);
+    }   
 });
 
 let ageMoreThan10 = document.getElementById("ageMoreThan10").addEventListener("click", (event) => {
@@ -172,8 +221,13 @@ let ageMoreThan10 = document.getElementById("ageMoreThan10").addEventListener("c
     if (pricelabel.innerHTML != "10+ years old") {
         pricelabel.innerHTML = "10+ years old";
       } else {
-        pricelabel.innerHTML = "Age";
+        pricelabel.innerHTML = "10+ years old";
       }
+
+    if ( $('.toggle > input').is(':checked'))
+    {     
+      $('.toggle > input').prop('checked', false);
+    } 
 });
 
 let undoAgeFilter = document.getElementById("ageUndo").addEventListener("click", (event) => {
@@ -191,6 +245,12 @@ let undoAgeFilter = document.getElementById("ageUndo").addEventListener("click",
       } else {
         pricelabel.innerHTML = "Age";
       }
+    
+    if ( $('.toggle > input').is(':checked'))
+    {     
+      $('.toggle > input').prop('checked', false);
+    }     
+
 });
 
 // Rating Filter
@@ -205,10 +265,15 @@ let oneStar = document.getElementById("oneStar").addEventListener("click", (even
     });
     const pricelabel = document.getElementById("starfilter");
     if (pricelabel.innerHTML != "1 star") {
-        pricelabel.innerHTML = "1 star ";
+        pricelabel.innerHTML = "1 star";
       } else {
-        pricelabel.innerHTML = "Ratings";
+        pricelabel.innerHTML = "1 star";
       }
+
+    if ( $('.toggle > input').is(':checked'))
+    {     
+      $('.toggle > input').prop('checked', false);
+    }    
 });
 
 let twoStar = document.getElementById("twoStar").addEventListener("click", (event) => {
@@ -222,10 +287,15 @@ let twoStar = document.getElementById("twoStar").addEventListener("click", (even
     });
     const pricelabel = document.getElementById("starfilter");
     if (pricelabel.innerHTML != "2 star") {
-        pricelabel.innerHTML = "2 star ";
+        pricelabel.innerHTML = "2 star";
       } else {
-        pricelabel.innerHTML = "Ratings";
+        pricelabel.innerHTML = "2 star";
       }
+
+    if ( $('.toggle > input').is(':checked'))
+    {     
+      $('.toggle > input').prop('checked', false);
+    }  
 });
 
 let threeStar = document.getElementById("threeStar").addEventListener("click", (event) => {
@@ -239,10 +309,15 @@ let threeStar = document.getElementById("threeStar").addEventListener("click", (
     });
     const pricelabel = document.getElementById("starfilter");
     if (pricelabel.innerHTML != "3 star") {
-        pricelabel.innerHTML = "3 star ";
+        pricelabel.innerHTML = "3 star";
       } else {
-        pricelabel.innerHTML = "Ratings";
+        pricelabel.innerHTML = "3 star";
       }
+
+    if ( $('.toggle > input').is(':checked'))
+    {     
+      $('.toggle > input').prop('checked', false);
+    }    
 });
 
 let fourStar = document.getElementById("fourStar").addEventListener("click", (event) => {
@@ -256,10 +331,15 @@ let fourStar = document.getElementById("fourStar").addEventListener("click", (ev
     });
     const pricelabel = document.getElementById("starfilter");
     if (pricelabel.innerHTML != "4 star") {
-        pricelabel.innerHTML = "4 star ";
+        pricelabel.innerHTML = "4 star";
       } else {
-        pricelabel.innerHTML = "Ratings";
+        pricelabel.innerHTML = "4 star";
       }
+
+    if ( $('.toggle > input').is(':checked'))
+    {     
+      $('.toggle > input').prop('checked', false);
+    }    
 });
 
 let fiveStar = document.getElementById("fiveStar").addEventListener("click", (event) => {
@@ -273,10 +353,15 @@ let fiveStar = document.getElementById("fiveStar").addEventListener("click", (ev
     });
     const pricelabel = document.getElementById("starfilter");
     if (pricelabel.innerHTML != "5 star") {
-        pricelabel.innerHTML = "5 star ";
+        pricelabel.innerHTML = "5 star";
       } else {
-        pricelabel.innerHTML = "Ratings";
+        pricelabel.innerHTML = "5 star";
       }
+
+    if ( $('.toggle > input').is(':checked'))
+    {     
+      $('.toggle > input').prop('checked', false);
+    }      
 });
 
 let undoStarFilter = document.getElementById("ratingUndo").addEventListener("click", (event) => {
@@ -294,4 +379,9 @@ let undoStarFilter = document.getElementById("ratingUndo").addEventListener("cli
       } else {
         pricelabel.innerHTML = "Customer Ratings";
       }
+
+    if ( $('.toggle > input').is(':checked'))
+    {     
+      $('.toggle > input').prop('checked', false);
+    }       
 });
