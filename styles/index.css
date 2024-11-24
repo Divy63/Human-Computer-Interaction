@@ -254,7 +254,7 @@ button:hover {
 .category-books:focus{
     top: 30%;
     left: 22%;
-    background-color: #3bb47b;
+    background-color: #f82828;
     color: white;
 }
 
@@ -265,6 +265,20 @@ button:hover {
     color: white;
 }
 
+.category-outdoor:active{
+    top: 80%;
+    left: 85%;
+    background-color: #fc5d5d;
+    color: white;
+}
+
+.category-outdoor:focus{
+    top: 80%;
+    left: 85%;
+    background-color: #fc5d5d;
+    color: white;
+}
+
 .category-electronics {
     top: 85%;
     left: 30%;
@@ -272,10 +286,38 @@ button:hover {
     color: white;
 }
 
+.category-electronics:active{
+    top: 85%;
+    left: 30%;
+    background-color: #52cf95;
+    color: white;
+}
+
+.category-electronics:focus{
+    top: 85%;
+    left: 30%;
+    background-color: #52cf95;
+    color: white;
+}
+
 .category-games {
     top: 30%;
     left: 70%;
-    background-color: #4ECDC4;
+    background-color: #71dad3;
+    color: white;
+}
+
+.category-games:active{
+    top: 30%;
+    left: 70%;
+    background-color: #05bdb1;
+    color: white;
+}
+
+.category-games:focus{
+    top: 30%;
+    left: 70%;
+    background-color: #05bdb1;
     color: white;
 }
 
@@ -286,10 +328,38 @@ button:hover {
     color: white;
 }
 
+.category-action:active{
+    top: 60%;
+    left: 50%;
+    background-color: #f88d29;
+    color: white;
+}
+
+.category-action:focus{
+    top: 60%;
+    left: 50%;
+    background-color: #f88d29;
+    color: white;
+}
+
 .category-dolls {
     top: 80%;
     left: 85%;
     background-color: #FF9999;
+    color: white;
+}
+
+.category-dolls:active{
+    top: 80%;
+    left: 85%;
+    background-color: #f46b6b;
+    color: white;
+}
+
+.category-dolls:focus{
+    top: 80%;
+    left: 85%;
+    background-color: #f46b6b;
     color: white;
 }
 
