@@ -2,6 +2,7 @@
 class Toys{
     constructor(){
         this.toys = [];//Array that stores a toy
+        this.filter = ["Category","None","Age",0,Infinity,"Price",0,Infinity,"STAR",6];//applied filters
     }
 
     // Method that adds toy to the List
@@ -16,6 +17,24 @@ class Toys{
 
     get(i){
         return this.toys[i];
+
+    }
+
+    editFilterArray(type,start,end=Infinity){
+        if(type === "Category"){
+            this.filter[1] = start;            
+        }
+        if(type === "Age"){
+            this.filter[3] = start;
+            this.filter[4] = end;            
+        }
+        if(type === "Price"){
+            this.filter[6] = start;
+            this.filter[7] = end;            
+        }
+        if(type === "Star"){
+            this.filter[9] = start;                     
+        }
 
     }
 
@@ -124,6 +143,8 @@ class Toys{
 
     applyPriceFilter(start,end=Infinity){
         console.log("In Price FIlter");
+        console.log("current db");
+       console.log(this.toys);
         let filteredToys=new Toys();
         for(let i=0;i<this.toys.length;i++){
             console.log("IN LOOP");
@@ -135,11 +156,14 @@ class Toys{
             }
         }
         filteredToys.displayHTML();
-
+        
+        
     }   
 
     applyAgeFilter(start,end=Infinity){
         console.log("In Price FIlter");
+        console.log("current db");
+        console.log(this.toys);
         let filteredToys=new Toys();
         for(let i=0;i<this.toys.length;i++){
             let toy=this.toys[i];
@@ -150,11 +174,17 @@ class Toys{
             }
         }
         filteredToys.displayHTML();
+       
 
     }   
 
     applyRatingFilter(star){
         console.log("In Rating FIlter");
+        this.filterArray[2] = category;
+       console.log("Filter array");
+       console.log(this.filterArray);
+        console.log("current db");
+       console.log(this.toys);
         let filteredToys=new Toys();
         for(let i=0;i<this.toys.length;i++){
             let toy=this.toys[i];
@@ -165,9 +195,81 @@ class Toys{
             }
         }
         filteredToys.displayHTML();
-
+        
     }
 
+    applyCategoryFilter(category){
+        //let htmlContainer=document.getElementById('box-toy-card');
+       // htmlContainer.innerHTML='';//Emptying the container
+       this.filterArray[2] = category;
+       console.log("Filter array");
+       console.log(this.filterArray);
+       console.log("current db");
+       console.log(this.toys);
+       //alert(category)
+        let filteredToys=new Toys();
+        for(let i=0;i<this.toys.length;i++){
+            let toy=this.toys[i];
+            if(toy.getToyType()===category){
+                console.log("FILTERED");
+                filteredToys.add(this.toys[i]);
+            }
+        }
+        filteredToys.displayHTML();
+        
+    }
+
+    filterToyDB(){
+       
+        let filteredToys=new Toys();        
+        for(let i=0;i<this.toys.length;i++){
+            let toy=this.toys[i];
+            let price= parseFloat(this.toys[i].getPrice().replace('$', ''));
+            if (this.filter[1] === "None"){ 
+                console.log("filter by none");               
+                if (this.filter[9] <= 5){
+                    if (toy.getRating()===this.filter[9]){
+                        if (price>=this.filter[6] && price<=this.filter[7]){
+                            if(toy.getAge()>=this.filter[3] && toy.getAge()<=this.filter[4]){
+                                filteredToys.add(this.toys[i]);
+                            }
+                        }
+                    }     
+                } 
+                else{
+                    if (price>=this.filter[6] && price<=this.filter[7]){
+                        if(toy.getAge()>=this.filter[3] && toy.getAge()<=this.filter[4]){
+                            filteredToys.add(this.toys[i]);
+                        }
+                    }
+                }      
+            }
+            else{
+                console.log("filter by category");
+                if(toy.getToyType()===this.filter[1])
+                {  
+                    if (this.filter[9] <= 5){
+                        if (toy.getRating()===this.filter[9]){
+                            if (price>=this.filter[6] && price<=this.filter[7]){
+                                if(toy.getAge()>=this.filter[3] && toy.getAge()<=this.filter[4]){
+                                    filteredToys.add(this.toys[i]);
+                                }
+                            }
+                        }     
+                    } 
+                    else{
+                        if (price>=this.filter[6] && price<=this.filter[7]){
+                            if(toy.getAge()>=this.filter[3] && toy.getAge()<=this.filter[4]){
+                                filteredToys.add(this.toys[i]);
+                            }
+                        }
+                    }                    
+                }
+            }    
+        }
+        filteredToys.displayHTML();
+
+    }
 
     searchToys(searchText){
 
