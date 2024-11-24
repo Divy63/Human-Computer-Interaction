@@ -281,7 +281,7 @@ let fiveStar = document.getElementById("fiveStar").addEventListener("click", (ev
 
 let undoStarFilter = document.getElementById("ratingUndo").addEventListener("click", (event) => {
     event.preventDefault();
-    TOY_DATABASE.applyAgeFilter(0);
+    TOY_DATABASE.applyAgeFilter(6);
     let toyCardArea = document.getElementById("box-toy-card");
     // Scrolls to toy card section
     window.scrollTo({
