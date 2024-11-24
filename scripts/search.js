@@ -1,5 +1,6 @@
 searchBar=document.getElementById('searchBar');
 if(searchBar){
+document.getElementById("result").style.display = "none";     
 searchBar.addEventListener('input',function(){
     const searchText=this.value.trim();
     const resultsDiv=document.getElementById('result');
@@ -7,6 +8,7 @@ searchBar.addEventListener('input',function(){
     resultsDiv.innerHTML='';//clear previous 
     let toys=new Toys();
     if(searchText.length>0){
+        document.getElementById("result").style.display = "block";
         const results=TOY_DATABASE.searchToys(searchText);
         console.log(results);
         if(results.length>0){
@@ -60,6 +62,7 @@ searchBar.addEventListener('input',function(){
         noResultDiv.className='result-item'
         noResultDiv.textContent='No results found.';
         resultsDiv.appendChild(noResultDiv);
+        document.getElementById("result").style.display = "none"; 
     }
     
 });
