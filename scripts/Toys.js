@@ -34,6 +34,10 @@ class Toys{
             document.body.appendChild(notificationDiv); 
         }
 
+
+
+
+
         
         for(let i=0;i<this.toys.length;i++){
             let toy=this.toys[i];

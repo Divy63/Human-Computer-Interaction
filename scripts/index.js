@@ -108,5 +108,20 @@ document.addEventListener("DOMContentLoaded",()=>{
 
 
     });
+
+
+    // Add event listener to handle the flip
+luckCard.addEventListener('click', function () {
+    // Only flip if the card doesn't have an item (e.g., "?" sign)
+    if (luckCard.querySelector('.card-title').textContent === "?") {
+        luckCard.classList.add('flipped'); // Flip the card
+
+        // After 2 seconds, check if this is the lucky card (you can customize this)
+        setTimeout(function () {
+            luckCard.classList.remove('flipped'); // Flip back if it's not the lucky card
+            // You can add logic here to show the toy details on the back
+        }, 2000);
+    }
+});
 });
 
