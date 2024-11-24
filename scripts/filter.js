@@ -288,7 +288,7 @@ let undoStarFilter = document.getElementById("ratingUndo").addEventListener("cli
         top: toyCardArea.offsetTop,
         behavior: "smooth",
     });
-    const pricelabel = document.getElementById("pricefilter");
+    const pricelabel = document.getElementById("ratingsfilter");
     if (pricelabel.innerHTML != "Customer Ratings") {
         pricelabel.innerHTML = "Customer Ratings";
       } else {
