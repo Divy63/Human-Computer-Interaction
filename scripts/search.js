@@ -1,4 +1,6 @@
-searchBar=document.getElementById('searchBar').addEventListener('input',function(){
+searchBar=document.getElementById('searchBar');
+if(searchBar){
+searchBar.addEventListener('input',function(){
     const searchText=this.value.trim();
     const resultsDiv=document.getElementById('result');
     const searchButton=document.getElementById("searchButton");
@@ -59,7 +61,7 @@ searchBar=document.getElementById('searchBar').addEventListener('input',function
         noResultDiv.textContent='No results found.';
         resultsDiv.appendChild(noResultDiv);
     }
-
+    
 });
-
+}
 

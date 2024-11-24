@@ -1,9 +1,10 @@
 class CartToy{
-    constructor(toy){
+    constructor(toy,quantity){
         this.toy = toy;
-        this.quantity=1;
+        this.quantity=quantity || 1;
     }
-
+    
+    
     addQuantity(){
         this.quantity += 1;
     }

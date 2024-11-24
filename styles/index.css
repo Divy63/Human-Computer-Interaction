@@ -631,6 +631,36 @@ dialog {
     transition: background-color 0.3s ease;
 }
 
+#cart-button{
+    display:flex;
+    justify-content: center;
+    gap:16px;
+    margin-top:16px;
+}
+
+.btn-primary-checkout, .btn-secondary-homepage {
+    background-color: #9D6F6F;
+    color: #fff;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn-primary-checkout:hover{
+    background-color: #814D4D;
+}
+
+.btn-secondary-homepage{
+    background-color:#9D6F6F;
+
+}
+
+.btn-secondary-homepage:hover{
+    background-color: #814D4D;
+}
+
 .btn-primary:hover {
     background-color: #984a4a;
 }

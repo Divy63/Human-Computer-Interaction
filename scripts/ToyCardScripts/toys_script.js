@@ -1,5 +1,5 @@
-let TOY_DATABASE=new Toys();
-let CART=new Cart();
+// let TOY_DATABASE=new Toys();
+// let CART=new Cart();
 
 function displayToys(toys){
     toys.displayHTML();

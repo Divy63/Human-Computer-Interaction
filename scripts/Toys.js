@@ -24,6 +24,7 @@ class Toys{
     // It creates a container for each toy and forms a card for it to display.
     displayHTML(){
         let htmlContainer=document.getElementById('box-toy-card');
+        if(htmlContainer){
         htmlContainer.innerHTML='';//Emptying the container
         
         for(let i=0;i<this.toys.length;i++){
@@ -90,6 +91,7 @@ class Toys{
         }
         
         console.log("ADD TO CART CREATED");
+    }
     }
 
     // showNotification(itemName) {
