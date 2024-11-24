@@ -25,6 +25,56 @@ function onLoadCreateDatabase(){
     let Remote_Control_Car = new Toy("Remote Control Car", "29.99", 5, 15, "images/toyImages/WEBP/Remote_Control_Car.webp", "images/toyImages/JPEG/Remote_Control_Car.jpeg","Electronics",12,["remote control", "car", "toy", "vehicle", "RC", "radio control", "race", "speed", "battery"]);
     let Digital_Camera_Toy = new Toy("Digital Camera Toy", "22.99", 4, 25, "images/toyImages/WEBP/Digital_Camera_Toy.webp", "images/toyImages/JPEG/Digital_Camera_Toy.jpeg","Electronics",15,["digital camera", "toy", "camera", "photography", "kids", "imagination", "toy camera", "electronic", "play", "education"]);
 
+
+
+    let cinderella_doll=new Toy("cindrella doll","$20",4,10,"images/toyImages/WEBP/Chess_Set.webp","images/toyImages/WEBP/Chess_Set.webp","Games and Puzzles",3,["Cinderella doll", "doll", "toy", "princess", "fairy tale", "Disney", "royalty", "kids", "gift", "playtime", "dress", "castle", "magic", "glass slipper", "imagination", "ball gown"]);
+    let football =new Toy ("football","$8",3,15,"images/toyImages/WEBP/Chess_Set.webp","images/toyImages/WEBP/Chess_Set.webp","outdoor",5,["football", "soccer", "ball", "sports", "game", "kids", "outdoor", "team", "kick", "goal", "play", "athletics", "exercise", "training", "field"]);
+    
+
+    // OUTDOOR
+let Flying_Disc = new Toy("Flying Disc","7.99",4,50,"images/toyImages/WEBP/Flying_Disc.webp","images/toyImages/JPEG/Flying_Disc.jpeg","Outdoor",5,["flying disc", "frisbee", "outdoor", "sports", "kids", "fun", "play", "throw", "catch", "exercise"]);
+
+let Beach_Bucket_Set = new Toy("Beach Bucket and Shovel Set","9.99",5,40,"images/toyImages/WEBP/Beach_Bucket_Set.webp","images/toyImages/JPEG/Beach_Bucket_Set.jpeg","Outdoor",3,["beach bucket", "sand toys", "outdoor", "kids", "summer", "fun", "shovel", "play", "activity", "creative"]);
+
+let Trampoline = new Toy("Mini Trampoline","49.99",4,10,"images/toyImages/WEBP/Trampoline.webp","images/toyImages/JPEG/Trampoline.jpeg","Outdoor",8,["trampoline", "jumping", "outdoor", "kids", "fun", "fitness", "activity", "play", "exercise", "sports"]);
+
+let Kite = new Toy("Colorful Kite","14.99",4,30,"images/toyImages/WEBP/Kite.webp","images/toyImages/JPEG/Kite.jpeg","Outdoor",6,["kite", "flying", "outdoor", "wind", "kids", "fun", "play", "activity", "summer", "colorful"]);
+
+// ELECTRONICS
+let Walkie_Talkies = new Toy("Kids Walkie Talkies","29.99",4,20,"images/toyImages/WEBP/Walkie_Talkies.webp","images/toyImages/JPEG/Walkie_Talkies.jpeg","Electronics",7,["walkie talkies", "communication", "toy", "kids", "fun", "electronics", "play", "outdoor", "radio", "talk"]);
+
+let Coding_Robot = new Toy("Coding Robot for Kids","79.99",5,15,"images/toyImages/WEBP/Coding_Robot.webp","images/toyImages/JPEG/Coding_Robot.jpeg","Electronics",10,["coding robot", "robotics", "STEM", "electronics", "toy", "learning", "education", "kids", "fun", "technology"]);
+
+let RC_Boat = new Toy("Remote Control Boat","39.99",4,25,"images/toyImages/WEBP/RC_Boat.webp","images/toyImages/JPEG/RC_Boat.jpeg","Electronics",8,["remote control", "boat", "toy", "RC", "water", "kids", "fun", "action", "electronics", "vehicle"]);
+
+let Tablet_For_Kids = new Toy("Kids Educational Tablet","59.99",4,12,"images/toyImages/WEBP/Tablet_For_Kids.webp","images/toyImages/JPEG/Tablet_For_Kids.jpeg","Electronics",6,["tablet", "educational", "toy", "kids", "learning", "fun", "technology", "play", "interactive", "electronics"]);
+
+// ACTION FIGURES
+let SpiderMan_Figure = new Toy("Spider-Man Action Figure","19.99",5,20,"images/toyImages/WEBP/SpiderMan_Figure.webp","images/toyImages/JPEG/SpiderMan_Figure.jpeg","Action Figures",4,["spider-man", "action figure", "marvel", "superhero", "kids", "fun", "toy", "play", "adventure", "hero"]);
+
+let Batman_Figure = new Toy("Batman Action Figure","17.99",4,25,"images/toyImages/WEBP/Batman_Figure.webp","images/toyImages/JPEG/Batman_Figure.jpeg","Action Figures",5,["batman", "action figure", "DC", "superhero", "toy", "kids", "fun", "justice league", "play", "hero"]);
+
+let Transformers_Optimus = new Toy("Transformers Optimus Prime","29.99",5,15,"images/toyImages/WEBP/Transformers_Optimus.webp","images/toyImages/JPEG/Transformers_Optimus.jpeg","Action Figures",6,["transformers", "optimus prime", "robot", "action figure", "toy", "kids", "fun", "hero", "adventure", "play"]);
+
+let Hulk_Figure = new Toy("Hulk Smash Action Figure","19.99",4,20,"images/toyImages/WEBP/Hulk_Figure.webp","images/toyImages/JPEG/Hulk_Figure.jpeg","Action Figures",5,["hulk", "action figure", "marvel", "superhero", "smash", "kids", "fun", "toy", "hero", "adventure"]);
+
+// BOOKS AND COMICS
+let Harry_Potter_Book = new Toy("Harry Potter and the Sorcerer's Stone","9.99",5,50,"images/toyImages/WEBP/Harry_Potter_Book.webp","images/toyImages/JPEG/Harry_Potter_Book.jpeg","Books and Comics",10,["harry potter", "book", "fantasy", "magic", "kids", "adventure", "reading", "novel", "fiction", "wizard"]);
+
+let SpiderMan_Comics = new Toy("Spider-Man Comics","14.99",4,30,"images/toyImages/WEBP/SpiderMan_Comics.webp","images/toyImages/JPEG/SpiderMan_Comics.jpeg","Books and Comics",8,["spider-man", "comics", "superhero", "reading", "adventure", "marvel", "kids", "fun", "illustration", "story"]);
+
+let Dr_Seuss_Book = new Toy("Dr. Seuss Collection","19.99",5,25,"images/toyImages/WEBP/Dr_Seuss_Book.webp","images/toyImages/JPEG/Dr_Seuss_Book.jpeg","Books and Comics",3,["dr. seuss", "book", "kids", "reading", "fun", "imagination", "story", "illustration", "classic", "rhymes"]);
+
+let Avengers_Comics = new Toy("Avengers Comics","12.99",4,20,"images/toyImages/WEBP/Avengers_Comics.webp","images/toyImages/JPEG/Avengers_Comics.jpeg","Books and Comics",9,["avengers", "comics", "superhero", "marvel", "kids", "reading", "action", "adventure", "story", "illustration"]);
+
+// BOARD GAMES AND PUZZLES
+let Scrabble_Game = new Toy("Scrabble Board Game","19.99",4,20,"images/toyImages/WEBP/Scrabble_Game.webp","images/toyImages/JPEG/Scrabble_Game.jpeg","Board Games and Puzzles",12,["scrabble", "board game", "words", "letters", "toy", "family", "fun", "education", "strategy", "challenge"]);
+
+let Connect_4 = new Toy("Connect 4 Game","15.99",4,30,"images/toyImages/WEBP/Connect_4.webp","images/toyImages/JPEG/Connect_4.jpeg","Board Games and Puzzles",8,["connect 4", "game", "board game", "kids", "fun", "strategy", "challenge", "toy", "family", "classic"]);
+
+
+
+
     TOY_DATABASE.add(Robot_Head);
     TOY_DATABASE.add(Grizzly_Bear);
     TOY_DATABASE.add(Darts);
@@ -49,6 +99,8 @@ function onLoadCreateDatabase(){
     // Electronic
     TOY_DATABASE.add(Remote_Control_Car);
     TOY_DATABASE.add(Digital_Camera_Toy);
+
+
 
 }
 
