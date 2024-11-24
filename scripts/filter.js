@@ -185,7 +185,7 @@ let undoAgeFilter = document.getElementById("ageUndo").addEventListener("click",
         top: toyCardArea.offsetTop,
         behavior: "smooth",
     });
-    const pricelabel = document.getElementById("pricefilter");
+    const pricelabel = document.getElementById("agefilter");
     if (pricelabel.innerHTML != "Age") {
         pricelabel.innerHTML = "Age";
       } else {
@@ -288,7 +288,7 @@ let undoStarFilter = document.getElementById("ratingUndo").addEventListener("cli
         top: toyCardArea.offsetTop,
         behavior: "smooth",
     });
-    const pricelabel = document.getElementById("ratingsfilter");
+    const pricelabel = document.getElementById("starfilter");
     if (pricelabel.innerHTML != "Customer Ratings") {
         pricelabel.innerHTML = "Customer Ratings";
       } else {

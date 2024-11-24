@@ -1,10 +1,11 @@
 searchBar=document.getElementById('searchBar');
 if(searchBar){
-document.getElementById("result").style.display = "none";     
+document.getElementById("result").style.display = "none"; 
 searchBar.addEventListener('input',function(){
+    //document.getElementById("result").style.display;
     const searchText=this.value.trim();
     const resultsDiv=document.getElementById('result');
-    const searchButton=document.getElementById("searchButton");
+    const searchButton=document.getElementById("searchButton");    
     resultsDiv.innerHTML='';//clear previous 
     let toys=new Toys();
     if(searchText.length>0){
