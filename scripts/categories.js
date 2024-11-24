@@ -11,6 +11,15 @@ let booksAndComicsButton = document.getElementById("BooksAndComicsButton").addEv
         behavior: "smooth",
     });
     document.getElementById("selectedCategory").innerHTML = "Category: Books and Comics";
+
+    //Displays selected button as darker colour    
+    document.getElementById("BooksAndComicsButton").style.backgroundColor = "#f82828";
+    document.getElementById("outdoorButton").style.backgroundColor = "#FF9999";
+    document.getElementById("ActionFiguresButton").style.backgroundColor = "#FFAD60";
+    document.getElementById("GamesAndPuzzlesButton").style.backgroundColor = "#71dad3";
+    document.getElementById("electronicsButton").style.backgroundColor = "#96CEB4"; 
+    //end
+
     $("#t4").removeAttr('disabled');
     $("label.t4").css("color", "black");
     $("#electronics-cat1").hide();
@@ -38,6 +47,15 @@ let outdoorButton = document.getElementById("outdoorButton").addEventListener("c
         behavior: "smooth",
     });
     document.getElementById("selectedCategory").innerHTML = "Category: Outdoor";
+
+    //Displays selected button as darker colour    
+    document.getElementById("BooksAndComicsButton").style.backgroundColor = "#FF6B6B";
+    document.getElementById("outdoorButton").style.backgroundColor = "#fc5d5d";
+    document.getElementById("ActionFiguresButton").style.backgroundColor = "#FFAD60";
+    document.getElementById("GamesAndPuzzlesButton").style.backgroundColor = "#71dad3";
+    document.getElementById("electronicsButton").style.backgroundColor = "#96CEB4"; 
+    //end
+
     $("#t4").removeAttr('disabled');
     $("label.t4").css("color", "black");
     $("#electronics-cat1").hide();
@@ -65,6 +83,15 @@ let electronicsButton = document.getElementById("electronicsButton").addEventLis
         behavior: "smooth",
     });
     document.getElementById("selectedCategory").innerHTML = "Category: Electronics";
+
+    //Displays selected button as darker colour    
+    document.getElementById("BooksAndComicsButton").style.backgroundColor = "#FF6B6B";
+    document.getElementById("outdoorButton").style.backgroundColor = "#FF9999";
+    document.getElementById("ActionFiguresButton").style.backgroundColor = "#FFAD60";
+    document.getElementById("GamesAndPuzzlesButton").style.backgroundColor = "#71dad3";
+    document.getElementById("electronicsButton").style.backgroundColor = "#52cf95"; 
+    //end
+
     $("#t4").removeAttr('disabled');
     $("label.t4").css("color", "black");
     $("#book-cat1").hide();
@@ -91,8 +118,17 @@ let GamesAndPuzzlesButton = document.getElementById("GamesAndPuzzlesButton").add
         top: toyCardArea.offsetTop,
         behavior: "smooth",
     });
-
+    //display selected category
     document.getElementById("selectedCategory").innerHTML = "Category: Games and Puzzles";
+
+    //Displays selected button as darker colour    
+    document.getElementById("BooksAndComicsButton").style.backgroundColor = "#FF6B6B";
+    document.getElementById("outdoorButton").style.backgroundColor = "#FF9999";
+    document.getElementById("ActionFiguresButton").style.backgroundColor = "#FFAD60";
+    document.getElementById("GamesAndPuzzlesButton").style.backgroundColor = "#05bdb1";
+    document.getElementById("electronicsButton").style.backgroundColor = "#96CEB4"; 
+    //end
+
     $("#t4").removeAttr('disabled');
     $("label.t4").css("color", "black");
     $("#electronics-cat1").hide();
@@ -119,7 +155,17 @@ let ActionFigures = document.getElementById("ActionFiguresButton").addEventListe
         top: toyCardArea.offsetTop,
         behavior: "smooth",
     });
+
+    //display selected category
     document.getElementById("selectedCategory").innerHTML = "Category: Action Figures";
+    
+    //Displays selected button as darker colour    
+    document.getElementById("BooksAndComicsButton").style.backgroundColor = "#FF6B6B";
+    document.getElementById("outdoorButton").style.backgroundColor = "#FF9999";
+    document.getElementById("ActionFiguresButton").style.backgroundColor = "#f88d29";
+    document.getElementById("GamesAndPuzzlesButton").style.backgroundColor = "#71dad3";
+    document.getElementById("electronicsButton").style.backgroundColor = "#96CEB4";
+    //end 
     $("#t4").removeAttr('disabled');
     $("label.t4").css("color", "black");
     $("#electronics-cat1").hide();
