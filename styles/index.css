@@ -106,6 +106,10 @@ header {
 }
 
 
+.search-symbol {
+    align-items: end;
+}
+
 .box-filter,
 .box-contact,
     /* .box-items {
@@ -237,6 +241,20 @@ button:hover {
     top: 30%;
     left: 22%;
     background-color: #FF6B6B;
+    color: white;
+}
+
+.category-books:active{
+    top: 30%;
+    left: 22%;
+    background-color: #f82828;
+    color: white;
+}
+
+.category-books:focus{
+    top: 30%;
+    left: 22%;
+    background-color: #3bb47b;
     color: white;
 }
 
@@ -381,6 +399,7 @@ button:hover {
     text-decoration: none;
     line-height: 40px;
     font-size: 13px;
+    word-spacing: 4%;
     text-transform: uppercase;
     font-weight: bold;
     color: #090909;
@@ -722,14 +741,14 @@ dialog {
     position: fixed;
     bottom: 20px;
     right: 20px;
-    background-color: #4caf50; /* Green */
+    background-color: #4caf50;
     color: white;
-    padding: 15px;
+    padding: 15px 20px;
     border-radius: 5px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
     z-index: 1000;
     opacity: 0;
-    transition: opacity 0.5s, transform 0.5s;
+    transition: opacity 0.5s ease, transform 0.5s ease;
     transform: translateY(100%);
 }
 
@@ -738,6 +757,3 @@ dialog {
     transform: translateY(0);
 }
 
-#notification.hidden {
-    display: none;
-}

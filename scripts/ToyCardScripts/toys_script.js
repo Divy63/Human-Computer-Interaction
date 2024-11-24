@@ -141,23 +141,35 @@ function showOutdoor(){
 
 }
 
-function createCartListeners(toys){
-    for(let i=0;i<toys.getLength();i++){
-        toy=toys.get(i);
-        if(toy.getQuantity()>0){
-            let id ="add to cart - "+toy.getID();
-            button=document.getElementById(id)
+function createCartListeners(toys) {
+    for (let i = 0; i < toys.getLength(); i++) {
+        let toy = toys.get(i);
+        if (toy.getQuantity() > 0) {
+            let id = "add to cart - " + toy.getID();
+            let button = document.getElementById(id);
             if (button) {
                 button.addEventListener("click", function(toy) {
-                    return function(){
-
-                        CART.addToCart(toys.getByID(toy.getID()));
+                    return function() {
+                        CART.addToCart(toys.getByID(toy.getID())); 
+                        showNotification(toy.getName());
                     };
-                }(toy));
+                }(toy)); 
             }
         }
     }
 }
+
+
+function showNotification(itemName) {
+    const notification = document.getElementById('notification');
+    notification.innerText = `${itemName} has been added to the cart!`;
+    notification.classList.add('show');
+
+    setTimeout(() => {
+        notification.classList.remove('show');
+    }, 3000); // Hides after 3 seconds
+}
+
 
 function showLuckCards() {
     let htmlContainer = document.getElementById('box-toy-card');
