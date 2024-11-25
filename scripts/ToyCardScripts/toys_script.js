@@ -219,12 +219,11 @@ function showLuckCards() {
                 luckyToy.get(0).setPrice("13.99");
                 luckyToy.displayHTML();
 
+                createCartListeners(luckyToy);
+
+                luckyToy.get(0).setPrice(originalPrice);
+
                 luckCardFooter.style.display = "none";
-
-                setTimeout(() => {
-                    luckyToy.get(0).setPrice(originalPrice);
-
-                }, 1000);
 
             } else {
                 luckCardFooter.style.display = "none";
