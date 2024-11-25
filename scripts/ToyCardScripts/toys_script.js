@@ -284,7 +284,7 @@ function onLoadCreateDatabase() {
 
   let cinderella_doll = new Toy(
     "cindrella doll",
-    "$20",
+    "20",
     4,
     10,
     "images/toyImages/WEBP/Chess_Set.webp",
@@ -312,7 +312,7 @@ function onLoadCreateDatabase() {
   );
   let football = new Toy(
     "football",
-    "$8",
+    "8",
     3,
     15,
     "images/toyImages/WEBP/Chess_Set.webp",
@@ -652,7 +652,7 @@ function onLoadCreateDatabase() {
 
   let SpongeBob_Comic = new Toy(
     "SpongeBob Comic Book",
-    "$12.99",
+    "12.99",
     4,
     30,
     "images/toyImages/WEBP/SpongeBob_Comic.webp",
@@ -774,7 +774,7 @@ function onLoadCreateDatabase() {
 
   let Monopoly = new Toy(
     "Monopoly",
-    "$19.99",
+    "19.99",
     5,
     25,
     "images/toyImages/WEBP/Monopoly.webp",
@@ -802,7 +802,7 @@ function onLoadCreateDatabase() {
 
   let Puzzle_3d = new Toy(
     "Puzzle 3D",
-    "$19.99",
+    "19.99",
     4,
     20,
     "images/toyImages/WEBP/Puzzle_3D.webp",
@@ -1038,7 +1038,7 @@ function showLuckCards() {
       if (i === luckyCardIndex) {
         luckCardBack.innerHTML = ""; // Clear the current back content
 
-        luckyToy.get(0).setPrice("$13.99");
+        luckyToy.get(0).setPrice("13.99");
         luckyToy.displayHTML();
         luckyToy.get(0).setPrice(originalPrice);
 

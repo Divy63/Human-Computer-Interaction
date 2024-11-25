@@ -320,24 +320,24 @@ button:hover {
 }
 
 .category-electronics {
-    top: 85%;
-    left: 30%;
-    background-color: #96CEB4;
-    color: white;
+    top: 48%;
+    left: 48.5%;
+    background-color: #33d288;
+    color: rgb(0, 0, 0);
 }
 
 .category-electronics:active {
-    top: 85%;
-    left: 30%;
-    background-color: #52cf95;
-    color: white;
+    top: 48%;
+    left: 48.5%;
+    background-color: #008145;
+    color: rgb(0, 0, 0);
 }
 
 .category-electronics:focus {
-    top: 85%;
-    left: 30%;
-    background-color: #52cf95;
-    color: white;
+    top: 48%;
+    left: 48.5%;
+    background-color: #008145;
+    color: rgb(0, 0, 0);
 }
 
 .category-games {
