@@ -178,9 +178,8 @@ function showLuckCards() {
     // Random card pick (lucky card)
     let luckyCardIndex = Math.floor(Math.random() * 4);
 
-    // Create a new Toys object and add a toy (for example, the 3rd toy)
     let luckyToy = new Toys();
-    luckyToy.add(TOY_DATABASE.get(2)); // Get toy from database (index 2 in this case)
+    luckyToy.add(TOY_DATABASE.get(2));
 
     // Store the original price
     let originalPrice = luckyToy.get(0).getPrice();
@@ -198,7 +197,6 @@ function showLuckCards() {
 
         let luckCardTitle = document.createElement('div');
         luckCardTitle.classList.add('card-title');
-        luckCardTitle.textContent = "?"; // Display the "?" sign
         luckCardFront.appendChild(luckCardTitle);
 
         let luckCardFooter = document.createElement('div');
@@ -213,20 +211,14 @@ function showLuckCards() {
 
         luckCard.appendChild(luckCardInner);
 
-        // Event listener for flipping the card
         luckCard.addEventListener('click', function () {
-            luckCard.classList.toggle('flipped'); // Toggle flip class
+            luckCard.classList.toggle('flipped');
 
-            // When the card is flipped, update the content only for the clicked card
             if (i === luckyCardIndex) {
 
-                // Set a temporary price change for the lucky toy
                 luckyToy.get(0).setPrice("13.99");
-                // Update back content with lucky toy info
                 luckyToy.displayHTML();
 
-
-                // Hide the "Try Your Luck" text after flip
                 luckCardFooter.style.display = "none";
 
                 setTimeout(() => {
@@ -237,11 +229,10 @@ function showLuckCards() {
             } else {
                 luckCardFooter.style.display = "none";
                 luckCardTitle.style.display = "none";
-                luckCardBack.innerHTML = "<p>Better luck next time!</p>";
+                luckCardBack.innerHTML = "<p class = 'unlucky-card'>Better luck next time!</p>";
             }
         });
 
-        // Append the luck card to the container
         htmlContainer.appendChild(luckCard);
     }
 }

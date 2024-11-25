@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet"
-          href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0"/>
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
     <link rel="stylesheet" href="styles/index.css">
     <link rel="stylesheet" href="styles/ToyCardStyle.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
@@ -18,218 +18,223 @@
 </head>
 
 <body>
-<header>
-    <div class="container">
-        <div class="box-logo" id="toyLogoHomeButton"><a href="#" id="toylogolink"><img src="images/toy_logo.jpg" alt="Store Logo"
-                                                                      width=512 height=512></a></div>
-        <div class="box-header" id ="box-header">
-            <div class="box-search">
-                <label>
+    <header>
+        <div class="container">
+            <div class="box-logo" id="toyLogoHomeButton"><a href="#" id="toylogolink"><img src="images/toy_logo.jpg"
+                        alt="Store Logo" width=512 height=512></a></div>
+            <div class="box-header" id="box-header">
+                <div class="box-search">
                     <input type="text" placeholder="Search..." class="search" id="searchBar">
-                </label>
-                <a id="searchButton"><span class="material-symbols-outlined">Search</span></a>               
-            </div>
+                    <a id="searchButton"><span class="material-symbols-outlined">Search</span></a>
+                    <!-- Changed to button -->
+                </div>
 
-            <div id="result" class="result-container"></div>
+                <div id="result" class="result-container"></div>
+            </div>
         </div>
-    </div>
-</header>
+    </header>
 
-<main>
-    <div class="container">
-        <div class="box-links" id="navigation-bar">
-            <button href="#" id="homeButton"><span class="material-symbols-outlined">home</span></button>
-            <nav>
-                <ul class="nav-links">
-                    <li><button id="tryYourLuckButton" href="#">Try Your Luck!</button></li>
-                    
-                </ul>
-            </nav>
-            <a class="sign-in" href="#">
-                <button onclick="window.dialog.showModal();">Sign In</button>
-            </a>
-            <a class="cart" href="#">
-                <button id="Add-to-Cart"><span class="material-symbols-outlined">shopping_cart</span></button>
-            </a>
-        </div>
+    <main>
+        <div class="container">
+            <div class="box-links" id="navigation-bar">
+                <button href="#" id="homeButton"><span class="material-symbols-outlined">home</span></button>
+                <nav>
+                    <ul class="nav-links">
+                        <li><button id="tryYourLuckButton" href="#">Try Your Luck!</button></li>
 
-        <div id="box-categories">
-            <img src="images/map.png" alt="Map Image">
-            <div class="category category-books" id="BooksAndComicsButton">
-                <div class="stars">Books & Comics<span class="book material-symbols-outlined" style="color: #ffffff;">book</span>
-                </div>
-            </div>
-            <div class="category category-outdoor" id="outdoorButton">
-                <div class="stars">Outdoor<span class="book material-symbols-outlined" style="color: #ffffff;">sports_and_outdoors</span>
-                </div>
-            </div>
-            <div class="category category-electronics" id="electronicsButton">
-                <div class="stars">Electronics<span class="book material-symbols-outlined" style="color: #ffffff;">sports_esports</span>
-                </div>
-            </div>
-            <div class="category category-games" id="GamesAndPuzzlesButton">
-                <div class="stars">Games & Puzzles<span class="book material-symbols-outlined" style="color: #ffffff;">extension</span>
-                </div>
-            </div>
-            <div class="category category-action" id="ActionFiguresButton">
-                <div class="stars">Action Figures<span class="book material-symbols-outlined" style="color: #ffffff;">flutter_dash</span>
-                </div>
-            </div>
-            <!--            <div class="category category-dolls">Dolls</div>-->
-        </div>
-
-
-        <div class="box-filter" id="box-filter">
-            <div class="row category-selected" id="selectedCategory" style="text-align: center; font-family:sans-serif; font-size:1.25em; font-weight: bold;"></div>
-            <div class="row filter-row age">
-                <div class="dropdown toggle">
-                    <input id="t1" type="checkbox">
-                    <label id="agefilter" for="t1">Age</label>
-                    <ul>
-                        <li><a href="#" id="age0to2">0 - 2</a></li>
-                        <li><a href="#" id="age2to5">2 - 5</a></li>
-                        <li><a href="#" id="age5to10">5 - 10</a></li>
-                        <li><a href="#" id="ageMoreThan10">10 +</a></li>
-                        <li><a href="#" class="Undo" href="#" id="ageUndo"> Undo </a></li>
                     </ul>
+                </nav>
+                <a class="sign-in" href="#">
+                    <button onclick="window.dialog.showModal();">Sign In</button>
+                </a>
+                <a class="cart" href="#">
+                    <button id="Add-to-Cart"><span class="material-symbols-outlined">shopping_cart</span></button>
+                </a>
+            </div>
+
+            <div id="box-categories">
+                <img src="images/map.png" alt="Map Image">
+                <div class="category category-books" id="BooksAndComicsButton">
+                    <div class="stars">Books & Comics<span class="book material-symbols-outlined"
+                            style="color: #ffffff;">book</span>
+                    </div>
+                </div>
+                <div class="category category-outdoor" id="outdoorButton">
+                    <div class="stars">Outdoor<span class="book material-symbols-outlined"
+                            style="color: #ffffff;">sports_and_outdoors</span>
+                    </div>
+                </div>
+                <div class="category category-electronics" id="electronicsButton">
+                    <div class="stars">Electronics<span class="book material-symbols-outlined"
+                            style="color: #ffffff;">sports_esports</span>
+                    </div>
+                </div>
+                <div class="category category-games" id="GamesAndPuzzlesButton">
+                    <div class="stars">Games & Puzzles<span class="book material-symbols-outlined"
+                            style="color: #ffffff;">extension</span>
+                    </div>
+                </div>
+                <div class="category category-action" id="ActionFiguresButton">
+                    <div class="stars">Action Figures<span class="book material-symbols-outlined"
+                            style="color: #ffffff;">flutter_dash</span>
+                    </div>
+                </div>
+                <!--            <div class="category category-dolls">Dolls</div>-->
+            </div>
+
+
+            <div class="box-filter" id="box-filter">
+                <div class="row category-selected" id="selectedCategory"
+                    style="text-align: center; font-family:sans-serif; font-size:1.25em; font-weight: bold;"></div>
+                <div class="row filter-row age">
+                    <div class="dropdown toggle">
+                        <input id="t1" type="checkbox">
+                        <label id="agefilter" for="t1">Age</label>
+                        <ul>
+                            <li><a href="#" id="age0to2">0 - 2</a></li>
+                            <li><a href="#" id="age2to5">2 - 5</a></li>
+                            <li><a href="#" id="age5to10">5 - 10</a></li>
+                            <li><a href="#" id="ageMoreThan10">10 +</a></li>
+                            <li><a href="#" class="Undo" href="#" id="ageUndo"> Undo </a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="row filter-row price">
+                    <div class="dropdown toggle" id="priceDropDown">
+                        <input id="t2" type="checkbox">
+                        <label id="pricefilter" for="t2">Price</label>
+                        <ul>
+                            <li><a href="#" id="price0to10">$0-10</a></li>
+                            <li><a href="#" id="price10to20">$ 10 - 20</a></li>
+                            <li><a href="#" id="price20to30">$ 20 - 30</a></li>
+                            <li><a href="#" id="price30to40">$ 30 - 40</a></li>
+                            <li><a href="#" id="priceMoreThan40">$ 40 +</a></li>
+                            <li><a href="#" href="#" id="priceUndo"> Undo </a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="row filter-row ratings">
+                    <div class="dropdown toggle">
+                        <input id="t3" type="checkbox">
+                        <label id="starfilter" for="t3">Customer Ratings</label>
+                        <ul>
+                            <li class="star rating"><a class="OneStar" href="#" id="oneStar">
+                                    <div class="stars">1 Star
+                                        <span class=" first star material-symbols-outlined"
+                                            style="font-variation-settings: 'FILL' 0, 'wght' 100, 'GRAD' 0, 'opsz' 10;">star</span>
+                                        <span class=" material-symbols-outlined"
+                                            style="font-variation-settings: 'FILL' 0, 'wght' 100, 'GRAD' 0, 'opsz' 10;">star</span>
+                                        <span class=" third star material-symbols-outlined"
+                                            style="font-variation-settings: 'FILL' 0, 'wght' 100, 'GRAD' 0, 'opsz' 10;">star</span>
+                                        <span class=" fourth star material-symbols-outlined"
+                                            style="font-variation-settings: 'FILL' 0, 'wght' 100, 'GRAD' 0, 'opsz' 10;">star</span>
+                                        <span class=" fifth star material-symbols-outlined"
+                                            style="font-variation-settings: 'FILL' 1, 'wght' 100, 'GRAD' 0, 'opsz' 10;color:gold;">star</span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="star rating"><a class="TwoStar" href="#" id="twoStar">
+                                    <div class="stars">2 Star
+                                        <span class=" first star material-symbols-outlined"
+                                            style="font-variation-settings: 'FILL' 0, 'wght' 100, 'GRAD' 0, 'opsz' 10;">star</span>
+                                        <span class=" material-symbols-outlined"
+                                            style="font-variation-settings: 'FILL' 0, 'wght' 100, 'GRAD' 0, 'opsz' 10;">star</span>
+                                        <span class=" third star material-symbols-outlined"
+                                            style="font-variation-settings: 'FILL' 0, 'wght' 100, 'GRAD' 0, 'opsz' 10;">star</span>
+                                        <span class=" fourth star material-symbols-outlined"
+                                            style="font-variation-settings: 'FILL' 1, 'wght' 100, 'GRAD' 0, 'opsz' 10;color:gold;">star</span>
+                                        <span class=" fifth star material-symbols-outlined"
+                                            style="font-variation-settings: 'FILL' 1, 'wght' 100, 'GRAD' 0, 'opsz' 10;color:gold;">star</span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="star rating"><a class="ThreeStar" href="#" id="threeStar">
+                                    <div class="stars">3 Star
+                                        <span class=" first star material-symbols-outlined"
+                                            style="font-variation-settings: 'FILL' 0, 'wght' 100, 'GRAD' 0, 'opsz' 10;">star</span>
+                                        <span class=" material-symbols-outlined"
+                                            style="font-variation-settings: 'FILL' 0, 'wght' 100, 'GRAD' 0, 'opsz' 10;">star</span>
+                                        <span class=" third star material-symbols-outlined"
+                                            style="font-variation-settings: 'FILL' 1, 'wght' 100, 'GRAD' 0, 'opsz' 10; color:gold;">star</span>
+                                        <span class=" fourth star material-symbols-outlined"
+                                            style="font-variation-settings: 'FILL' 1, 'wght' 100, 'GRAD' 0, 'opsz' 10;color:gold;">star</span>
+                                        <span class=" fifth star material-symbols-outlined"
+                                            style="font-variation-settings: 'FILL' 1, 'wght' 100, 'GRAD' 0, 'opsz' 10; color:gold;">star</span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="star rating"><a class="FourStar" href="#" id="fourStar">
+                                    <div class="stars">4 Star
+                                        <span class=" first star material-symbols-outlined"
+                                            style="font-variation-settings: 'FILL' 0, 'wght' 100, 'GRAD' 0, 'opsz' 10;">star</span>
+                                        <span class=" material-symbols-outlined"
+                                            style="font-variation-settings: 'FILL' 1, 'wght' 100, 'GRAD' 0, 'opsz' 10;color:gold;">star</span>
+                                        <span class=" third star material-symbols-outlined"
+                                            style="font-variation-settings: 'FILL' 1, 'wght' 100, 'GRAD' 0, 'opsz' 10;color:gold;">star</span>
+                                        <span class=" fourth star material-symbols-outlined"
+                                            style="font-variation-settings: 'FILL' 1, 'wght' 100, 'GRAD' 0, 'opsz' 10;color:gold;">star</span>
+                                        <span class=" fifth star material-symbols-outlined"
+                                            style="font-variation-settings: 'FILL' 1, 'wght' 100, 'GRAD' 0, 'opsz' 10;color:gold;">star</span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="star rating"><a class="FiveStar" href="#" id="fiveStar">
+                                    <div class="stars">5 Star
+                                        <span class=" first star material-symbols-outlined"
+                                            style="font-variation-settings: 'FILL' 1, 'wght' 100, 'GRAD' 0, 'opsz' 10;color:gold;">star</span>
+                                        <span class=" material-symbols-outlined"
+                                            style="font-variation-settings: 'FILL' 1, 'wght' 100, 'GRAD' 0, 'opsz' 10;color:gold;">star</span>
+                                        <span class=" third star material-symbols-outlined"
+                                            style="font-variation-settings: 'FILL' 1, 'wght' 100, 'GRAD' 0, 'opsz' 10;color:gold;">star</span>
+                                        <span class=" fourth star material-symbols-outlined"
+                                            style="font-variation-settings: 'FILL' 1, 'wght' 100, 'GRAD' 0, 'opsz' 10;color:gold;">star</span>
+                                        <span class=" fifth star material-symbols-outlined"
+                                            style="font-variation-settings: 'FILL' 1, 'wght' 100, 'GRAD' 0, 'opsz' 10;color:gold;">star</span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="star rating"><a class="Undo" href="#" id="ratingUndo">
+                                    <div class="stars">Undo
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="row filter-row subcategory" id="subcategory-list">
+                    <div class="dropdown toggle" id="subcategory">
+                        <input id="t4" type="checkbox">
+                        <label class="t4" for="t4">Subcategories</label>
+                        <ul>
+                            <li id="book-cat1"><a href="#">Book Cat 1</a></li>
+                            <li id="book-cat2"><a href="#">Book Cat 2</a></li>
+                            <li id="book-cat3"><a href="#">Book Cat 3</a></li>
+                            <li id="electronics-cat1"><a href="#">Elec Cat 1</a></li>
+                            <li id="electronics-cat2"><a href="#">Elec Cat 2</a></li>
+                            <li id="electronics-cat3"><a href="#">Elec Cat 3</a></li>
+                            <li id="action-cat1"><a href="#">Action Cat 1</a></li>
+                            <li id="action-cat2"><a href="#">Action Cat 2</a></li>
+                            <li id="action-cat3"><a href="#">Action Cat 3</a></li>
+                            <li id="game-cat1"><a href="#">Game Cat 1</a></li>
+                            <li id="game-cat2"><a href="#">Game Cat 2</a></li>
+                            <li id="game-cat3"><a href="#">Game Cat 3</a></li>
+                            <li id="outdoor-cat1"><a href="#">Outdoor Cat 1</a></li>
+                            <li id="outdoor-cat2"><a href="#">Outdoor Cat 2</a></li>
+                            <li id="outdoor-cat3"><a href="#">Outdoor Cat 3</a></li>
+                        </ul>
+                    </div>
                 </div>
             </div>
-            <div class="row filter-row price">
-                <div class="dropdown toggle" id="priceDropDown">
-                    <input id="t2" type="checkbox">
-                    <label id="pricefilter" for="t2">Price</label>
-                    <ul>
-                        <li><a href="#" id="price0to10">$0-10</a></li>
-                        <li><a href="#" id="price10to20">$ 10 - 20</a></li>
-                        <li><a href="#" id="price20to30">$ 20 - 30</a></li>
-                        <li><a href="#" id="price30to40">$ 30 - 40</a></li>
-                        <li><a href="#" id="priceMoreThan40">$ 40 +</a></li>
-                        <li><a href="#" href="#" id="priceUndo"> Undo </a></li>
-                    </ul>
-                </div>
+
+            <div class="box-toy-card" id="box-toy-card">
+                <!-- <div class="toy-card-List" id="toy-card-List"> -->
+                <!-- </div> -->
             </div>
-            <div class="row filter-row ratings">
-                <div class="dropdown toggle">
-                    <input id="t3" type="checkbox">
-                    <label id="starfilter" for="t3">Customer Ratings</label>
-                    <ul>
-                        <li class="star rating"><a class="OneStar" href="#" id="oneStar">
-                            <div class="stars">1 Star
-                                <span class=" first star material-symbols-outlined"
-                                      style="font-variation-settings: 'FILL' 0, 'wght' 100, 'GRAD' 0, 'opsz' 10;">star</span>
-                                <span class=" material-symbols-outlined"
-                                      style="font-variation-settings: 'FILL' 0, 'wght' 100, 'GRAD' 0, 'opsz' 10;">star</span>
-                                <span class=" third star material-symbols-outlined"
-                                      style="font-variation-settings: 'FILL' 0, 'wght' 100, 'GRAD' 0, 'opsz' 10;">star</span>
-                                <span class=" fourth star material-symbols-outlined"
-                                      style="font-variation-settings: 'FILL' 0, 'wght' 100, 'GRAD' 0, 'opsz' 10;">star</span>
-                                <span class=" fifth star material-symbols-outlined"
-                                      style="font-variation-settings: 'FILL' 1, 'wght' 100, 'GRAD' 0, 'opsz' 10;color:gold;">star</span>
-                            </div>
-                        </a>
-                        </li>
-                        <li class="star rating"><a class="TwoStar" href="#" id="twoStar">
-                            <div class="stars">2 Star
-                                <span class=" first star material-symbols-outlined"
-                                      style="font-variation-settings: 'FILL' 0, 'wght' 100, 'GRAD' 0, 'opsz' 10;">star</span>
-                                <span class=" material-symbols-outlined"
-                                      style="font-variation-settings: 'FILL' 0, 'wght' 100, 'GRAD' 0, 'opsz' 10;">star</span>
-                                <span class=" third star material-symbols-outlined"
-                                      style="font-variation-settings: 'FILL' 0, 'wght' 100, 'GRAD' 0, 'opsz' 10;">star</span>
-                                <span class=" fourth star material-symbols-outlined"
-                                      style="font-variation-settings: 'FILL' 1, 'wght' 100, 'GRAD' 0, 'opsz' 10;color:gold;">star</span>
-                                <span class=" fifth star material-symbols-outlined"
-                                      style="font-variation-settings: 'FILL' 1, 'wght' 100, 'GRAD' 0, 'opsz' 10;color:gold;">star</span>
-                            </div>
-                        </a>
-                        </li>
-                        <li class="star rating"><a class="ThreeStar" href="#" id="threeStar">
-                            <div class="stars">3 Star
-                                <span class=" first star material-symbols-outlined"
-                                      style="font-variation-settings: 'FILL' 0, 'wght' 100, 'GRAD' 0, 'opsz' 10;">star</span>
-                                <span class=" material-symbols-outlined"
-                                      style="font-variation-settings: 'FILL' 0, 'wght' 100, 'GRAD' 0, 'opsz' 10;">star</span>
-                                <span class=" third star material-symbols-outlined"
-                                      style="font-variation-settings: 'FILL' 1, 'wght' 100, 'GRAD' 0, 'opsz' 10; color:gold;">star</span>
-                                <span class=" fourth star material-symbols-outlined"
-                                      style="font-variation-settings: 'FILL' 1, 'wght' 100, 'GRAD' 0, 'opsz' 10;color:gold;">star</span>
-                                <span class=" fifth star material-symbols-outlined"
-                                      style="font-variation-settings: 'FILL' 1, 'wght' 100, 'GRAD' 0, 'opsz' 10; color:gold;">star</span>
-                            </div>
-                        </a>
-                        </li>
-                        <li class="star rating"><a class="FourStar" href="#" id="fourStar">
-                            <div class="stars">4 Star
-                                <span class=" first star material-symbols-outlined"
-                                      style="font-variation-settings: 'FILL' 0, 'wght' 100, 'GRAD' 0, 'opsz' 10;">star</span>
-                                <span class=" material-symbols-outlined"
-                                      style="font-variation-settings: 'FILL' 1, 'wght' 100, 'GRAD' 0, 'opsz' 10;color:gold;">star</span>
-                                <span class=" third star material-symbols-outlined"
-                                      style="font-variation-settings: 'FILL' 1, 'wght' 100, 'GRAD' 0, 'opsz' 10;color:gold;">star</span>
-                                <span class=" fourth star material-symbols-outlined"
-                                      style="font-variation-settings: 'FILL' 1, 'wght' 100, 'GRAD' 0, 'opsz' 10;color:gold;">star</span>
-                                <span class=" fifth star material-symbols-outlined"
-                                      style="font-variation-settings: 'FILL' 1, 'wght' 100, 'GRAD' 0, 'opsz' 10;color:gold;">star</span>
-                            </div>
-                        </a>
-                        </li>
-                        <li class="star rating"><a class="FiveStar" href="#" id="fiveStar">
-                            <div class="stars">5 Star
-                                <span class=" first star material-symbols-outlined"
-                                      style="font-variation-settings: 'FILL' 1, 'wght' 100, 'GRAD' 0, 'opsz' 10;color:gold;">star</span>
-                                <span class=" material-symbols-outlined"
-                                      style="font-variation-settings: 'FILL' 1, 'wght' 100, 'GRAD' 0, 'opsz' 10;color:gold;">star</span>
-                                <span class=" third star material-symbols-outlined"
-                                      style="font-variation-settings: 'FILL' 1, 'wght' 100, 'GRAD' 0, 'opsz' 10;color:gold;">star</span>
-                                <span class=" fourth star material-symbols-outlined"
-                                      style="font-variation-settings: 'FILL' 1, 'wght' 100, 'GRAD' 0, 'opsz' 10;color:gold;">star</span>
-                                <span class=" fifth star material-symbols-outlined"
-                                      style="font-variation-settings: 'FILL' 1, 'wght' 100, 'GRAD' 0, 'opsz' 10;color:gold;">star</span>
-                            </div>
-                        </a>
-                        </li>
-                        <li class="star rating"><a class="Undo" href="#" id="ratingUndo">
-                            <div class="stars">Undo                
-                            </div>
-                        </a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-            <div class="row filter-row subcategory" id="subcategory-list">
-                <div class="dropdown toggle" id="subcategory">
-                    <input id="t4" type="checkbox">
-                    <label class="t4" for="t4">Subcategories</label>
-                    <ul>
-                        <li id="book-cat1"><a href="#">Book Cat 1</a></li>
-                        <li id="book-cat2"><a href="#">Book Cat 2</a></li>
-                        <li id="book-cat3"><a href="#">Book Cat 3</a></li>
-                        <li id="electronics-cat1"><a href="#">Elec Cat 1</a></li>
-                        <li id="electronics-cat2"><a href="#">Elec Cat 2</a></li>
-                        <li id="electronics-cat3"><a href="#">Elec Cat 3</a></li>
-                        <li id="action-cat1"><a href="#">Action Cat 1</a></li>
-                        <li id="action-cat2"><a href="#">Action Cat 2</a></li>
-                        <li id="action-cat3"><a href="#">Action Cat 3</a></li>
-                        <li id="game-cat1"><a href="#">Game Cat 1</a></li>
-                        <li id="game-cat2"><a href="#">Game Cat 2</a></li>
-                        <li id="game-cat3"><a href="#">Game Cat 3</a></li>
-                        <li id="outdoor-cat1"><a href="#">Outdoor Cat 1</a></li>
-                        <li id="outdoor-cat2"><a href="#">Outdoor Cat 2</a></li>
-                        <li id="outdoor-cat3"><a href="#">Outdoor Cat 3</a></li>
-                    </ul>
-                </div>
-            </div>
+
         </div>
 
-        <div class="box-toy-card" id="box-toy-card">
-            <!-- <div class="toy-card-List" id="toy-card-List"> -->
-            <!-- </div> -->
-        </div>
 
-    </div>
-
-
-    <!-- <section id="cart-section" style="display: none;">
+        <!-- <section id="cart-section" style="display: none;">
         <div id="cart-header">
             <h2>Your Cart</h2>
         </div>
@@ -253,51 +258,51 @@
     </section> -->
 
 
-</main>
+    </main>
 
 
-<footer>
-    <div class="container">
-        <div class="box-contact">
-            <div class="socialIcons">
-                <a href="https://www.facebook.com/umanitoba/"><i class="fa-brands fa-facebook"></i></a>
-                <a href="https://www.instagram.com/umanitoba/"><i class="fa-brands fa-instagram"></i></a>
-                <a href="https://x.com/umanitoba"><i class="fa-brands fa-twitter"></i></a>
-                <a href="https://www.youtube.com/umanitoba"><i class="fa-brands fa-youtube"></i></a>
-            </div>
-            <div class="footerNav">
-                <ul>
-                    <!-- insert links later -->
-                    <li><a href="">Home</a></li>
-                    <li><a href="">News</a></li>
-                    <li><a href="">About</a></li>
-                    <li><a href="">Contact Us</a></li>
-                    <li><a href="">our Team</a></li>
-                </ul>
+    <footer>
+        <div class="container">
+            <div class="box-contact">
+                <div class="socialIcons">
+                    <a href="https://www.facebook.com/umanitoba/"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="https://www.instagram.com/umanitoba/"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://x.com/umanitoba"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="https://www.youtube.com/umanitoba"><i class="fa-brands fa-youtube"></i></a>
+                </div>
+                <div class="footerNav">
+                    <ul>
+                        <!-- insert links later -->
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="">News</a></li>
+                        <li><a href="">About</a></li>
+                        <li><a href="">Contact Us</a></li>
+                        <li><a href="https://github.com/Divy63/Human-Computer-Interaction">Our Team</a></li>
+                    </ul>
+                </div>
             </div>
         </div>
-    </div>
-</footer>
+    </footer>
 
-<!--Sign in popup-->
-<dialog id="dialog">
-    <h2>Customer Sign In (Not Part of Demo!)</h2>
-    <p>Clicking the sign in link would open a popop like this where the user could sign in or sign up</p>
-    <p>The user login experience is not part of this vertical prototype.</p>
-    <button onclick="window.dialog.close();" aria-label="close" class="x">❌</button>
-</dialog>
+    <!--Sign in popup-->
+    <dialog id="dialog">
+        <h2>Customer Sign In (Not Part of Demo!)</h2>
+        <p>Clicking the sign in link would open a popop like this where the user could sign in or sign up</p>
+        <p>The user login experience is not part of this vertical prototype.</p>
+        <button onclick="window.dialog.close();" aria-label="close" class="x">❌</button>
+    </dialog>
 
 
-<script src="scripts/Toy.js"></script>
-<script src="scripts/Toys.js"></script>
-<script src="scripts/CartToy.js"></script>
-<script src="scripts/Cart.js"></script>
+    <script src="scripts/Toy.js"></script>
+    <script src="scripts/Toys.js"></script>
+    <script src="scripts/CartToy.js"></script>
+    <script src="scripts/Cart.js"></script>
 
-<script src="scripts/search.js"></script>
-<script src="scripts/categories.js"></script>
-<script src="scripts/filter.js"></script>
-<script src="scripts/ToyCardScripts/toys_script.js"></script>
-<script src="scripts/index.js"></script>
+    <script src="scripts/search.js"></script>
+    <script src="scripts/categories.js"></script>
+    <script src="scripts/filter.js"></script>
+    <script src="scripts/ToyCardScripts/toys_script.js"></script>
+    <script src="scripts/index.js"></script>
 
 </body>
 
