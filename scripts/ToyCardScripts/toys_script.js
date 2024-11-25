@@ -881,28 +881,28 @@ function onLoadDisplayToys() {
 
 // Method that shows Electronics
 function showElectronics() {
-    let htmlContainer = document.getElementById('box-toy-card');
-    htmlContainer.innerHTML = '';//Emptying the container
-    let toys = new Toys();
-    for (let i = 0; i < TOY_DATABASE.getLength(); i++) {
-        if (TOY_DATABASE.get(i).toyType == "Electronics") {
-            toys.add(TOY_DATABASE.get(i));
-        }
+  let htmlContainer = document.getElementById("box-toy-card");
+  htmlContainer.innerHTML = ""; //Emptying the container
+  let toys = new Toys();
+  for (let i = 0; i < TOY_DATABASE.getLength(); i++) {
+    if (TOY_DATABASE.get(i).toyType == "Electronics") {
+      toys.add(TOY_DATABASE.get(i));
     }
+  }
 
   displayToys(toys);
 }
 
 // Method that shows books and comics
 function showBooksAndComics() {
-    let htmlContainer = document.getElementById('box-toy-card');
-    htmlContainer.innerHTML = '';//Emptying the container
-    let toys = new Toys();
-    for (let i = 0; i < TOY_DATABASE.getLength(); i++) {
-        if (TOY_DATABASE.get(i).toyType == "Books and Comics") {
-            toys.add(TOY_DATABASE.get(i));
-        }
+  let htmlContainer = document.getElementById("box-toy-card");
+  htmlContainer.innerHTML = ""; //Emptying the container
+  let toys = new Toys();
+  for (let i = 0; i < TOY_DATABASE.getLength(); i++) {
+    if (TOY_DATABASE.get(i).toyType == "Books and Comics") {
+      toys.add(TOY_DATABASE.get(i));
     }
+  }
 
   let toyCardArea = document.getElementById("box-toy-card");
 
@@ -917,43 +917,42 @@ function showBooksAndComics() {
 
 // Method that shows action figures
 function showActionFigures() {
-    let htmlContainer = document.getElementById('box-toy-card');
-    htmlContainer.innerHTML = '';//Emptying the container
-    let toys = new Toys();
-    for (let i = 0; i < TOY_DATABASE.getLength(); i++) {
-        if (TOY_DATABASE.get(i).toyType == "Action Figures") {
-            toys.add(TOY_DATABASE.get(i));
-        }
+  let htmlContainer = document.getElementById("box-toy-card");
+  htmlContainer.innerHTML = ""; //Emptying the container
+  let toys = new Toys();
+  for (let i = 0; i < TOY_DATABASE.getLength(); i++) {
+    if (TOY_DATABASE.get(i).toyType == "Action Figures") {
+      toys.add(TOY_DATABASE.get(i));
     }
+  }
 
   displayToys(toys);
 }
 
 // Method that shows games and puzzles
 function showGamesAndPuzzles() {
-    let htmlContainer = document.getElementById('box-toy-card');
-    htmlContainer.innerHTML = '';//Emptying the container
-    let toys = new Toys();
-    for (let i = 0; i < TOY_DATABASE.getLength(); i++) {
-        if (TOY_DATABASE.get(i).toyType == "Games and Puzzles") {
-            toys.add(TOY_DATABASE.get(i));
-        }
+  let htmlContainer = document.getElementById("box-toy-card");
+  htmlContainer.innerHTML = ""; //Emptying the container
+  let toys = new Toys();
+  for (let i = 0; i < TOY_DATABASE.getLength(); i++) {
+    if (TOY_DATABASE.get(i).toyType == "Games and Puzzles") {
+      toys.add(TOY_DATABASE.get(i));
     }
+  }
 
   displayToys(toys);
 }
 
 // Method that shows Outdoors
 function showOutdoor() {
-    let htmlContainer = document.getElementById('box-toy-card');
-    htmlContainer.innerHTML = '';//Emptying the container
-    let toys = new Toys();
-    for (let i = 0; i < TOY_DATABASE.getLength(); i++) {
-        if (TOY_DATABASE.get(i).toyType == "Outdoor") {
-            toys.add(TOY_DATABASE.get(i));
-        }
+  let htmlContainer = document.getElementById("box-toy-card");
+  htmlContainer.innerHTML = ""; //Emptying the container
+  let toys = new Toys();
+  for (let i = 0; i < TOY_DATABASE.getLength(); i++) {
+    if (TOY_DATABASE.get(i).toyType == "Outdoor") {
+      toys.add(TOY_DATABASE.get(i));
     }
-
+  }
 
   displayToys(toys);
 }
@@ -977,21 +976,6 @@ function createCartListeners(toys) {
       }
     }
   }
-    for (let i = 0; i < toys.getLength(); i++) {
-        let toy = toys.get(i);
-        if (toy.getQuantity() > 0) {
-            let id = "add to cart - " + toy.getID();
-            let button = document.getElementById(id);
-            if (button) {
-                button.addEventListener("click", function (toy) {
-                    return function () {
-                        CART.addToCart(toys.getByID(toy.getID()));
-                        showNotification(toy.getName());
-                    };
-                }(toy));
-            }
-        }
-    }
 }
 
 function showNotification(itemName) {
@@ -1014,13 +998,12 @@ function showLuckCards() {
   let luckyToy = new Toys();
   luckyToy.add(TOY_DATABASE.get(2));
 
-    // Store the original price
-    let originalPrice = luckyToy.get(0).getPrice();
+  // Store the original price
+  let originalPrice = luckyToy.get(0).getPrice();
 
-    // Create the 4 cards
-    for (let i = 0; i < 4; i++) {
-        let luckCard = document.createElement('div');
-        luckCard.classList.add('toy-card');
+  for (let i = 0; i < 4; i++) {
+    let luckCard = document.createElement("div");
+    luckCard.classList.add("toy-card");
 
     let luckCardInner = document.createElement("div");
     luckCardInner.classList.add("toy-card-inner");
@@ -1047,30 +1030,26 @@ function showLuckCards() {
 
     luckCard.appendChild(luckCardInner);
 
-        luckCard.addEventListener('click', function () {
-            luckCard.classList.toggle('flipped');
+    // Event listener for flipping the card
+    luckCard.addEventListener("click", function () {
+      luckCard.classList.toggle("flipped"); // Toggle flip class
 
-            // When the card is flipped, update the content only for the clicked card
-            if (i === luckyCardIndex) {
-                luckCardBack.innerHTML = ''; // Clear the current back content
+      // When the card is flipped, update the content only for the clicked card
+      if (i === luckyCardIndex) {
+        luckCardBack.innerHTML = ""; // Clear the current back content
 
-                luckyToy.get(0).setPrice("13.99");
-                luckyToy.displayHTML();
+        luckyToy.get(0).setPrice("$13.99");
+        luckyToy.displayHTML();
+        luckyToy.get(0).setPrice(originalPrice);
 
-                createCartListeners(luckyToy);
+        luckCardFooter.style.display = "none";
+      } else {
+        luckCardFooter.style.display = "none";
+        luckCardTitle.style.display = "none";
+        luckCardBack.innerHTML = "<p>Better luck next time!</p>";
+      }
+    });
 
-                luckyToy.get(0).setPrice(originalPrice);
-
-                luckCardFooter.style.display = "none";
-
-            } else {
-                luckCardFooter.style.display = "none";
-                luckCardTitle.style.display = "none";
-                luckCardBack.innerHTML = "<p class = 'unlucky-card'>Better luck next time!</p>";
-            }
-        });
-
-        htmlContainer.appendChild(luckCard);
-    }
+    htmlContainer.appendChild(luckCard);
+  }
 }
-
