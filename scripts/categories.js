@@ -3,7 +3,12 @@
 // -------------------------------------------------------------------------------------------------------------------------------------
 //Display Toy Cards for Categories Added listeners for categories
 let booksAndComicsButton = document.getElementById("BooksAndComicsButton").addEventListener("click", function () {
-    showBooksAndComics();
+    
+    TOY_DATABASE.editFilterArray("Category","Books and Comics")
+    TOY_DATABASE.filterToyDB();
+    console.log("returned value");
+    console.log(TOY_DATABASE);
+    //showBooksAndComics();
     let toyCardArea = document.getElementById("box-toy-card");
     // Scrolls to toy card section
     window.scrollTo({
@@ -39,7 +44,10 @@ let booksAndComicsButton = document.getElementById("BooksAndComicsButton").addEv
     $("#book-cat3").show();
 });
 let outdoorButton = document.getElementById("outdoorButton").addEventListener("click", function () {
-    showOutdoor();
+    
+    TOY_DATABASE.editFilterArray("Category","Outdoor");
+    TOY_DATABASE.filterToyDB();
+    //showOutdoor();
     let toyCardArea = document.getElementById("box-toy-card");
     // Scrolls to toy card section
     window.scrollTo({
@@ -75,7 +83,10 @@ let outdoorButton = document.getElementById("outdoorButton").addEventListener("c
     $("#outdoor-cat3").show();
 });
 let electronicsButton = document.getElementById("electronicsButton").addEventListener("click", function () {
-    showElectronics();
+    
+    TOY_DATABASE.editFilterArray("Category","Electronics");
+    TOY_DATABASE.filterToyDB();
+    //showElectronics();
     let toyCardArea = document.getElementById("box-toy-card");
     // Scrolls to toy card section
     window.scrollTo({
@@ -111,7 +122,10 @@ let electronicsButton = document.getElementById("electronicsButton").addEventLis
     $("#electronics-cat3").show();
 });
 let GamesAndPuzzlesButton = document.getElementById("GamesAndPuzzlesButton").addEventListener("click", function () {
-    showGamesAndPuzzles();
+    
+    TOY_DATABASE.editFilterArray("Category","Games and Puzzles");
+    TOY_DATABASE.filterToyDB();
+    //showGamesAndPuzzles();
     let toyCardArea = document.getElementById("box-toy-card");
     // Scrolls to toy card section
     window.scrollTo({
@@ -148,7 +162,10 @@ let GamesAndPuzzlesButton = document.getElementById("GamesAndPuzzlesButton").add
     $("#game-cat3").show();
 });
 let ActionFigures = document.getElementById("ActionFiguresButton").addEventListener("click", function () {
-    showActionFigures();
+    //TOY_DATABASE=TOY_DATABASE.applyCategoryFilter("Action Figures");
+    TOY_DATABASE.editFilterArray("Category","Action Figures");
+    TOY_DATABASE.filterToyDB();
+    //showActionFigures();
     let toyCardArea = document.getElementById("box-toy-card");
     // Scrolls to toy card section
     window.scrollTo({

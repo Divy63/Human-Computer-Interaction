@@ -127,7 +127,8 @@ html {
 
 button.disabled {
     opacity: 0.5;
-    pointer-events: none;  /* Prevents any further interaction with the button */
+    pointer-events: none;
+    /* Prevents any further interaction with the button */
 }
 
 
@@ -149,4 +150,34 @@ button.disabled {
 
 .toy-card.toy-card-inner {
     transform: rotateY(180deg);
+}
+
+.card-footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 130px;
+}
+
+.card-footer p {
+    margin: 0;
+}
+
+.unlucky-card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 130px;
+}
+
+.unlucky-card p {
+    margin: 0;
 }
