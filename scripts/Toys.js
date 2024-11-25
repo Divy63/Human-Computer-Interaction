@@ -33,17 +33,29 @@ class Toys{
             this.filter[7] = end;            
         }
         if(type === "Star"){
-            this.filter[9] = start;                     
+            this.filter[9] = start;  
+                               
         }
-
     }
+       
+    FilterArraytoDefault(){
+        this.filter[1] = "None";
+        this.filter[3] = 0;
+        this.filter[4] = Infinity; 
+        this.filter[6] = 0;
+        this.filter[7] = Infinity;
+        this.filter[9] = 6;    
+    }    
+
+    
+
 
     // Method that displays toys in the html page.
     // It creates a container for each toy and forms a card for it to display.
     displayHTML(){
         let htmlContainer=document.getElementById('box-toy-card');
         if(htmlContainer){
-        htmlContainer.innerHTML='';//Emptying the container
+            htmlContainer.innerHTML='';//Emptying the container
 
 
         let notificationDiv = document.getElementById('notification');
@@ -55,8 +67,25 @@ class Toys{
 
 
 
+        console.log("No Toys");
+        console.log(this.toys.length == 0);
+        if (this.toys.length == 0){
+            let toyCard=``;
+            console.log("Yes No Toys!!");
+            toyCard=`
+                <div class="toy-card">
+                    <picture>
+                        <source srcset="images/no_item_found.webp" type="image/webp" alt="No Item Found">
+                        <img src=images/no_item_found.jpg" alt="No Item Found">
+                    </picture>
+                    <div class="toy-card-container">
+                        <div class="card-title" style="font-size: 1.5em;">No Item Found</div>                        
+                        </div>
+                    
+            </div>`;
 
-
+            htmlContainer.innerHTML+=toyCard;
+        }
         
         for(let i=0;i<this.toys.length;i++){
             let toy=this.toys[i];
@@ -65,6 +94,7 @@ class Toys{
             let stars=Math.floor(toy.rating);
             let halfstar=(toy.rating%1);
             let starDisplay='';
+            
             for(let j=0;j<stars;j++){
 
                 // Adding a full star

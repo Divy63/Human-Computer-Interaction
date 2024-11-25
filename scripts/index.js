@@ -72,7 +72,28 @@ document.addEventListener("DOMContentLoaded",()=>{
                 $("label.t4").css("color", "grey");
         document.getElementById("selectedCategory").innerHTML = "";
     
-                onLoadDisplayToys();
+        TOY_DATABASE.FilterArraytoDefault();
+        TOY_DATABASE.filterToyDB();
+        const starlabel = document.getElementById("starfilter");
+        if (starlabel.innerHTML != "Customer Ratings") {
+          starlabel.innerHTML = "Customer Ratings";
+        } else {
+          starlabel.innerHTML = "Customer Ratings";
+        }
+
+        const agelabel = document.getElementById("agefilter");
+        if (agelabel.innerHTML != "Age") {
+          agelabel.innerHTML = "Age";
+        } else {
+          agelabel.innerHTML = "Age";
+        }
+
+        const pricelabel = document.getElementById("pricefilter");
+        if (pricelabel.innerHTML != "Price") {
+            pricelabel.innerHTML = "Price";
+        } else {
+            pricelabel.innerHTML = "Price";
+        }  
             });
         }
     
@@ -83,7 +104,30 @@ document.addEventListener("DOMContentLoaded",()=>{
         $("label.t4").css("color", "grey");
         document.getElementById("selectedCategory").innerHTML = "";
     
-        onLoadDisplayToys();
+        TOY_DATABASE.FilterArraytoDefault();
+        TOY_DATABASE.filterToyDB();
+
+        const starlabel = document.getElementById("starfilter");
+      if (starlabel.innerHTML != "Customer Ratings") {
+          starlabel.innerHTML = "Customer Ratings";
+        } else {
+          starlabel.innerHTML = "Customer Ratings";
+        }
+
+      const agelabel = document.getElementById("agefilter");
+      if (agelabel.innerHTML != "Age") {
+          agelabel.innerHTML = "Age";
+      } else {
+          agelabel.innerHTML = "Age";
+      }
+
+      const pricelabel = document.getElementById("pricefilter");
+      if (pricelabel.innerHTML != "Price") {
+          pricelabel.innerHTML = "Price";
+      } else {
+          pricelabel.innerHTML = "Price";
+      }  
+
     });
     
     

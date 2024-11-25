@@ -165,11 +165,11 @@ let age0to2 = document.getElementById("age0to2").addEventListener("click", (even
         top: toyCardArea.offsetTop,
         behavior: "smooth",
     });
-    const pricelabel = document.getElementById("agefilter");
-    if (pricelabel.innerHTML != "0 - 2 years old") {
-        pricelabel.innerHTML = "0 - 2 years old";
+    const agelabel = document.getElementById("agefilter");
+    if (agelabel.innerHTML != "0 - 2 years old") {
+        agelabel.innerHTML = "0 - 2 years old";
       } else {
-        pricelabel.innerHTML = "0 - 2 years old";
+        agelabel.innerHTML = "0 - 2 years old";
       }
 
     if ( $('.toggle > input').is(':checked'))
@@ -190,11 +190,11 @@ let age2to5 = document.getElementById("age2to5").addEventListener("click", (even
         top: toyCardArea.offsetTop,
         behavior: "smooth",
     });
-    const pricelabel = document.getElementById("agefilter");
-    if (pricelabel.innerHTML != "2 - 5 years old") {
-        pricelabel.innerHTML = "2 - 5 years old";
+    const agelabel = document.getElementById("agefilter");
+    if (agelabel.innerHTML != "2 - 5 years old") {
+      agelabel.innerHTML = "2 - 5 years old";
       } else {
-        pricelabel.innerHTML = "2 - 5 years old";
+        agelabel.innerHTML = "2 - 5 years old";
       }
     
     if ( $('.toggle > input').is(':checked'))
@@ -215,11 +215,11 @@ let age5to10 = document.getElementById("age5to10").addEventListener("click", (ev
         top: toyCardArea.offsetTop,
         behavior: "smooth",
     });
-    const pricelabel = document.getElementById("agefilter");
-    if (pricelabel.innerHTML != "5 - 10 years old") {
-        pricelabel.innerHTML = "5 - 10 years old";
+    const agelabel = document.getElementById("agefilter");
+    if (agelabel.innerHTML != "5 - 10 years old") {
+      agelabel.innerHTML = "5 - 10 years old";
       } else {
-        pricelabel.innerHTML = "5 - 10 years old";
+        agelabel.innerHTML = "5 - 10 years old";
       }
 
     if ( $('.toggle > input').is(':checked'))
@@ -239,11 +239,11 @@ let ageMoreThan10 = document.getElementById("ageMoreThan10").addEventListener("c
         top: toyCardArea.offsetTop,
         behavior: "smooth",
     });
-    const pricelabel = document.getElementById("agefilter");
-    if (pricelabel.innerHTML != "10+ years old") {
-        pricelabel.innerHTML = "10+ years old";
+    const agelabel = document.getElementById("agefilter");
+    if (agelabel.innerHTML != "10+ years old") {
+      agelabel.innerHTML = "10+ years old";
       } else {
-        pricelabel.innerHTML = "10+ years old";
+        agelabel.innerHTML = "10+ years old";
       }
 
     if ( $('.toggle > input').is(':checked'))
@@ -263,11 +263,11 @@ let undoAgeFilter = document.getElementById("ageUndo").addEventListener("click",
         top: toyCardArea.offsetTop,
         behavior: "smooth",
     });
-    const pricelabel = document.getElementById("agefilter");
-    if (pricelabel.innerHTML != "Age") {
-        pricelabel.innerHTML = "Age";
+    const agelabel = document.getElementById("agefilter");
+    if (agelabel.innerHTML != "Age") {
+      agelabel.innerHTML = "Age";
       } else {
-        pricelabel.innerHTML = "Age";
+        agelabel.innerHTML = "Age";
       }
     
     if ( $('.toggle > input').is(':checked'))
@@ -289,11 +289,11 @@ let oneStar = document.getElementById("oneStar").addEventListener("click", (even
         top: toyCardArea.offsetTop,
         behavior: "smooth",
     });
-    const pricelabel = document.getElementById("starfilter");
-    if (pricelabel.innerHTML != "1 star") {
-        pricelabel.innerHTML = "1 star";
+    const starlabel = document.getElementById("starfilter");
+    if (starlabel.innerHTML != "1 star") {
+        starlabel.innerHTML = "1 star";
       } else {
-        pricelabel.innerHTML = "1 star";
+        starlabel.innerHTML = "1 star";
       }
 
     if ( $('.toggle > input').is(':checked'))
@@ -313,11 +313,11 @@ let twoStar = document.getElementById("twoStar").addEventListener("click", (even
         top: toyCardArea.offsetTop,
         behavior: "smooth",
     });
-    const pricelabel = document.getElementById("starfilter");
-    if (pricelabel.innerHTML != "2 star") {
-        pricelabel.innerHTML = "2 star";
+    const starelabel = document.getElementById("starfilter");
+    if (starlabel.innerHTML != "2 star") {
+        starlabel.innerHTML = "2 star";
       } else {
-        pricelabel.innerHTML = "2 star";
+        starlabel.innerHTML = "2 star";
       }
 
     if ( $('.toggle > input').is(':checked'))
@@ -337,11 +337,11 @@ let threeStar = document.getElementById("threeStar").addEventListener("click", (
         top: toyCardArea.offsetTop,
         behavior: "smooth",
     });
-    const pricelabel = document.getElementById("starfilter");
-    if (pricelabel.innerHTML != "3 star") {
-        pricelabel.innerHTML = "3 star";
+    const starlabel = document.getElementById("starfilter");
+    if (starlabel.innerHTML != "3 star") {
+        starlabellabel.innerHTML = "3 star";
       } else {
-        pricelabel.innerHTML = "3 star";
+        starlabel.innerHTML = "3 star";
       }
 
     if ( $('.toggle > input').is(':checked'))
@@ -361,11 +361,11 @@ let fourStar = document.getElementById("fourStar").addEventListener("click", (ev
         top: toyCardArea.offsetTop,
         behavior: "smooth",
     });
-    const pricelabel = document.getElementById("starfilter");
-    if (pricelabel.innerHTML != "4 star") {
-        pricelabel.innerHTML = "4 star";
+    const starlabel = document.getElementById("starfilter");
+    if (starlabel.innerHTML != "4 star") {
+        starlabel.innerHTML = "4 star";
       } else {
-        pricelabel.innerHTML = "4 star";
+        starlabel.innerHTML = "4 star";
       }
 
     if ( $('.toggle > input').is(':checked'))
@@ -387,11 +387,11 @@ let fiveStar = document.getElementById("fiveStar").addEventListener("click", (ev
         top: toyCardArea.offsetTop,
         behavior: "smooth",
     });
-    const pricelabel = document.getElementById("starfilter");
-    if (pricelabel.innerHTML != "5 star") {
-        pricelabel.innerHTML = "5 star";
+    const starlabel = document.getElementById("starfilter");
+    if (starlabel.innerHTML != "5 star") {
+        starlabel.innerHTML = "5 star";
       } else {
-        pricelabel.innerHTML = "5 star";
+        starlabel.innerHTML = "5 star";
       }
 
     if ( $('.toggle > input').is(':checked'))
@@ -411,15 +411,47 @@ let undoStarFilter = document.getElementById("ratingUndo").addEventListener("cli
         top: toyCardArea.offsetTop,
         behavior: "smooth",
     });
-    const pricelabel = document.getElementById("starfilter");
-    if (pricelabel.innerHTML != "Customer Ratings") {
-        pricelabel.innerHTML = "Customer Ratings";
+    const starlabel = document.getElementById("starfilter");
+    if (starlabel.innerHTML != "Customer Ratings") {
+        starlabel.innerHTML = "Customer Ratings";
       } else {
-        pricelabel.innerHTML = "Customer Ratings";
+        starlabel.innerHTML = "Customer Ratings";
       }
 
     if ( $('.toggle > input').is(':checked'))
     {     
       $('.toggle > input').prop('checked', false);
-    }       
+    }
+    
+    let toyLogohomeButton = document.getElementById("toyLogoHomeButton")
+    
+    if(toyLogohomeButton){
+
+    }
+
+    let homeButton = document.getElementById("homeButton").addEventListener("click", function () {
+      console.log("home clicked");
+      const starlabel = document.getElementById("starfilter");
+      if (starlabel.innerHTML != "Customer Ratings") {
+          starlabel.innerHTML = "Customer Ratings";
+        } else {
+          starlabel.innerHTML = "Customer Ratings";
+        }
+
+      const agelabel = document.getElementById("agefilter");
+      if (agelabel.innerHTML != "Age") {
+          agelabel.innerHTML = "Age";
+      } else {
+          agelabel.innerHTML = "Age";
+      }
+
+      const pricelabel = document.getElementById("pricefilter");
+      if (pricelabel.innerHTML != "Price") {
+          pricelabel.innerHTML = "Price";
+      } else {
+          pricelabel.innerHTML = "Price";
+      }  
+        
+    });
+
 });
