@@ -16,15 +16,28 @@ class Toys{
 
     get(i){
         return this.toys[i];
-;
-    }
 
+    }
 
     // Method that displays toys in the html page.
     // It creates a container for each toy and forms a card for it to display.
     displayHTML(){
         let htmlContainer=document.getElementById('box-toy-card');
+        if(htmlContainer){
         htmlContainer.innerHTML='';//Emptying the container
+
+
+        let notificationDiv = document.getElementById('notification');
+        if (!notificationDiv) {
+            notificationDiv = document.createElement('div');
+            notificationDiv.id = 'notification';
+            document.body.appendChild(notificationDiv); 
+        }
+
+
+
+
+
         
         for(let i=0;i<this.toys.length;i++){
             let toy=this.toys[i];
@@ -66,6 +79,7 @@ class Toys{
                     </div>
                 </div>`;
             }else{
+                console.log("CREATING ID");
                  toyCard=`
                     <div class="toy-card">
                         <picture>
@@ -87,10 +101,12 @@ class Toys{
             
             htmlContainer.innerHTML+=toyCard;
         }
-
+    }
     }
 
+    
     getByID(id){
+        let toy;
         for(let i=0;i<this.toys.length;i++){
             if(this.toys[i].getID()==id){
                 toy=this.toys[i];
@@ -143,7 +159,7 @@ class Toys{
         for(let i=0;i<this.toys.length;i++){
             let toy=this.toys[i];
             console.log("IN LOOP");
-            if(toy.getRating()>=star && toy.getAge()<=5){
+            if(toy.getRating()===star){
                 console.log("FILTERED");
                 filteredToys.add(this.toys[i]);
             }
@@ -152,6 +168,19 @@ class Toys{
 
     }
 
+
+    searchToys(searchText){
+
+
+        result=this.toys.filter(toy => {
+            return (toy.getName().toLowerCase().includes(searchText.toLowerCase()) ||
+             toy.getToyType().toLowerCase().includes(searchText.toLowerCase()))||
+             toy.getKeywords().some(keyword=>keyword.toLowerCase().includes(searchText.toLowerCase())
+            );
+        });
+
+        return result;
+    }
 
 
 }

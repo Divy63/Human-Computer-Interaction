@@ -20,15 +20,17 @@
 <body>
 <header>
     <div class="container">
-        <div class="box-logo" id="toyLogoHomeButton"><a href="#"><img src="images/toy_logo.jpg" alt="Store Logo"
+        <div class="box-logo" id="toyLogoHomeButton"><a href="#" id="toylogolink"><img src="images/toy_logo.jpg" alt="Store Logo"
                                                                       width=512 height=512></a></div>
-        <div class="box-header">
+        <div class="box-header" id ="box-header">
             <div class="box-search">
                 <label>
-                    <input type="text" placeholder="Search..." class="search">
+                    <input type="text" placeholder="Search..." class="search" id="searchBar">
                 </label>
-                <a href="#"><span class="material-symbols-outlined">search</span></a>
+                <a id="searchButton"><span class="material-symbols-outlined">Search</span></a>               
             </div>
+
+            <div id="result" class="result-container"></div>
         </div>
     </div>
 </header>
@@ -36,12 +38,11 @@
 <main>
     <div class="container">
         <div class="box-links" id="navigation-bar">
-            <a href="#" id="homeButton"><span class="material-symbols-outlined">home</span></a>
+            <button href="#" id="homeButton"><span class="material-symbols-outlined">home</span></button>
             <nav>
                 <ul class="nav-links">
-                    <li><a id="tryYourLuckButton" href="#">Try Your Luck!</a></li>
-                    <li><a href="#">Nav2</a></li>
-                    <li><a href="#">Nav3</a></li>
+                    <li><button id="tryYourLuckButton" href="#">Try Your Luck!</button></li>
+                    
                 </ul>
             </nav>
             <a class="sign-in" href="#">
@@ -79,35 +80,38 @@
 
 
         <div class="box-filter" id="box-filter">
+            <div class="row category-selected" id="selectedCategory" style="text-align: center; font-family:sans-serif; font-size:1.25em; font-weight: bold;"></div>
             <div class="row filter-row age">
                 <div class="dropdown toggle">
                     <input id="t1" type="checkbox">
-                    <label for="t1">Age</label>
+                    <label id="agefilter" for="t1">Age</label>
                     <ul>
                         <li><a href="#" id="age0to2">0 - 2</a></li>
                         <li><a href="#" id="age2to5">2 - 5</a></li>
                         <li><a href="#" id="age5to10">5 - 10</a></li>
                         <li><a href="#" id="ageMoreThan10">10 +</a></li>
+                        <li><a href="#" class="Undo" href="#" id="ageUndo"> Undo </a></li>
                     </ul>
                 </div>
             </div>
             <div class="row filter-row price">
                 <div class="dropdown toggle" id="priceDropDown">
                     <input id="t2" type="checkbox">
-                    <label for="t2">Price</label>
+                    <label id="pricefilter" for="t2">Price</label>
                     <ul>
-                        <li><a href="#" id="price0to10">$ 0 - 10</a></li>
+                        <li><a href="#" id="price0to10">$0-10</a></li>
                         <li><a href="#" id="price10to20">$ 10 - 20</a></li>
                         <li><a href="#" id="price20to30">$ 20 - 30</a></li>
                         <li><a href="#" id="price30to40">$ 30 - 40</a></li>
                         <li><a href="#" id="priceMoreThan40">$ 40 +</a></li>
+                        <li><a href="#" href="#" id="priceUndo"> Undo </a></li>
                     </ul>
                 </div>
             </div>
             <div class="row filter-row ratings">
                 <div class="dropdown toggle">
                     <input id="t3" type="checkbox">
-                    <label for="t3">Customer Ratings</label>
+                    <label id="starfilter" for="t3">Customer Ratings</label>
                     <ul>
                         <li class="star rating"><a class="OneStar" href="#" id="oneStar">
                             <div class="stars">1 Star
@@ -184,6 +188,11 @@
                             </div>
                         </a>
                         </li>
+                        <li class="star rating"><a class="Undo" href="#" id="ratingUndo">
+                            <div class="stars">Undo                
+                            </div>
+                        </a>
+                        </li>
                     </ul>
                 </div>
             </div>
@@ -220,7 +229,7 @@
     </div>
 
 
-    <section id="cart-section" style="display: none;">
+    <!-- <section id="cart-section" style="display: none;">
         <div id="cart-header">
             <h2>Your Cart</h2>
         </div>
@@ -232,14 +241,16 @@
             </div>
 
             <div id="cart-items">
-                <!-- Cart Items will be displayed dynamically -->
+                Cart Items will be displayed dynamically
             </div>
         </div>
 
         <div id="cart-total">
+            <strong>GST: $<span id="gst-price">0.00</span></strong><br><br>
+            <strong>PST: $<span id="pst-price">0.00</span></strong><br><br>
             <strong>Total: $<span id="total-price">0.00</span></strong>
         </div>
-    </section>
+    </section> -->
 
 
 </main>
@@ -281,6 +292,10 @@
 <script src="scripts/Toys.js"></script>
 <script src="scripts/CartToy.js"></script>
 <script src="scripts/Cart.js"></script>
+
+<script src="scripts/search.js"></script>
+<script src="scripts/categories.js"></script>
+<script src="scripts/filter.js"></script>
 <script src="scripts/ToyCardScripts/toys_script.js"></script>
 <script src="scripts/index.js"></script>
 

@@ -1,5 +1,5 @@
-let TOY_DATABASE = new Toys();
-let CART = new Cart();
+// let TOY_DATABASE=new Toys();
+// let CART=new Cart();
 
 function displayToys(toys) {
     toys.displayHTML();
@@ -8,22 +8,22 @@ function displayToys(toys) {
 function onLoadCreateDatabase() {
 
     // Create Toys to display on load
-    let Robot_Head = new Toy("Robot Head", "18.99", 3, 0, "images/toyImages/WEBP/Robot_Head.webp", "images/toyImages/JPEG/Robot_Head.jpeg", "Action Figures", 6);
-    let Grizzly_Bear = new Toy("Grizzly Bear", "19.99", 2, 15, "images/toyImages/WEBP/Grizzly_Bear.webp", "images/toyImages/JPEG/Grizzly_Bear.jpeg", "Games and Puzzles", 2);
-    let Darts = new Toy("Darts", "19.99", 4.7, 2, "images/toyImages/WEBP/Darts.webp", "images/toyImages/JPEG/Darts.jpeg", "Outdoor", 10);
-    let Lego_RangeRover = new Toy("Lego Car (Range Rover)", "25.99", 4.5, 12, "images/toyImages/WEBP/Lego_RangeRover.webp", "images/toyImages/JPEG/Lego_RangeRover.jpeg", "Games and Puzzles", 9);
-    let SpiderMan_Comic_Book = new Toy("Spider-Man Comic Book", "9.99", 1, 30, "images/toyImages/WEBP/Comic_Book.webp", "images/toyImages/JPEG/Comic_Book.jpeg", "Books and Comics", 7);
-    let HarryPotter_Book = new Toy("Harry Potter Book", "12.99", 2, 25, "images/toyImages/WEBP/Comic_Book.webp", "images/toyImages/JPEG/Comic_Book.jpeg", "Books and Comics", 7);
-    let IronMan_Figure = new Toy("Iron Man Action Figure", "14.99", 4.65, 50, "images/toyImages/WEBP/Ironman_Figure.webp", "images/toyImages/JPEG/Ironman_Figure.jpeg", "Action Figures", 3);
+    let Robot_Head = new Toy("Robot Head", "18.99", 3, 0, "images/toyImages/WEBP/Robot_Head.webp", "images/toyImages/JPEG/Robot_Head.jpeg", "Action Figures", 6, ["robot", "head", "kids", "future"]);
+    let Grizzly_Bear = new Toy("Grizzly Bear", "19.99", 2, 15, "images/toyImages/WEBP/Grizzly_Bear.webp", "images/toyImages/JPEG/Grizzly_Bear.jpeg", "Games and Puzzles", 2, ["grizzly", "bear", "animal", "wildlife", "teddy", "toy", "brown", "forest"]);
+    let Darts = new Toy("Darts", "19.99", 4.7, 2, "images/toyImages/WEBP/Darts.webp", "images/toyImages/JPEG/Darts.jpeg", "Outdoor", 10, ["darts", "game", "target", "aim", "sports", "throw", "competition"]);
+    let Lego_RangeRover = new Toy("Lego Car (Range Rover)", "25.99", 4.5, 12, "images/toyImages/WEBP/Lego_RangeRover.webp", "images/toyImages/JPEG/Lego_RangeRover.jpeg", "Games and Puzzles", 9, ["lego", "range rover", "car", "vehicle", "SUV", "building blocks", "toy", "model", "construction"]);
+    let SpiderMan_Comic_Book = new Toy("Spider-Man Comic Book", "9.99", 1, 30, "images/toyImages/WEBP/Comic_Book.webp", "images/toyImages/JPEG/Comic_Book.jpeg", "Books and Comics", 7, ["spiderman", "comic book", "superhero", "marvel", "web", "hero", "action", "adventure", "comic", "spider"]);
+    let HarryPotter_Book = new Toy("Harry Potter Book", "12.99", 2, 25, "images/toyImages/WEBP/Comic_Book.webp", "images/toyImages/JPEG/Comic_Book.jpeg", "Books and Comics", 7, ["harry potter", "book", "wizard", "magic", "fantasy", "hogwarts", "witchcraft", "j.k. rowling", "adventure"]);
+    let IronMan_Figure = new Toy("Iron Man Action Figure", "14.99", 4.65, 50, "images/toyImages/WEBP/Ironman_Figure.webp", "images/toyImages/JPEG/Ironman_Figure.jpeg", "Action Figures", 3, ["iron man", "figure", "marvel", "superhero", "action figure", "tony stark", "armor", "robot", "comic", "avengers"]);
 
     // Images left to be downloaded
-    let WonderWoman_Figure = new Toy("Wonder Woman Action Figure", "17.99", 4, 40, "images/toyImages/WEBP/WonderWoman_Figure.webp", "images/toyImages/JPEG/WonderWoman_Figure.jpeg", "Action Figures", 3);
-    let Chess_Set = new Toy("Chess Set", "24.99", 3, 15, "images/toyImages/WEBP/Chess_Set.webp", "images/toyImages/JPEG/Chess_Set.jpeg", "Games and Puzzles", 15);
-    let Jenga_Game = new Toy("Jenga Game", "19.99", 4, 20, "images/toyImages/WEBP/Jenga_Game.webp", "images/toyImages/JPEG/Jenga_Game.jpeg", "Games and Puzzles", 14);
-    let Soccer_Ball = new Toy("Soccer Ball", "14.99", 2, 35, "images/toyImages/WEBP/Soccer_Ball.webp", "images/toyImages/JPEG/Soccer_Ball.jpeg", "Outdoor", 5);
-    let Jump_Rope = new Toy("Jump Rope", "7.99", 1, 30, "images/toyImages/WEBP/Jump_Rope.webp", "images/toyImages/JPEG/Jump_Rope.jpeg", "Outdoor", 12);
-    let Remote_Control_Car = new Toy("Remote Control Car", "29.99", 5, 15, "images/toyImages/WEBP/Remote_Control_Car.webp", "images/toyImages/JPEG/Remote_Control_Car.jpeg", "Electronics", 12);
-    let Digital_Camera_Toy = new Toy("Digital Camera Toy", "22.99", 4, 25, "images/toyImages/WEBP/Digital_Camera_Toy.webp", "images/toyImages/JPEG/Digital_Camera_Toy.jpeg", "Electronics", 15);
+    let WonderWoman_Figure = new Toy("Wonder Woman Action Figure", "17.99", 4, 40, "images/toyImages/WEBP/WonderWoman_Figure.webp", "images/toyImages/JPEG/WonderWoman_Figure.jpeg", "Action Figures", 3, ["wonder woman", "figure", "superhero", "amazon", "action figure", "dc comics", "woman", "justice league", "battle", "hero"]);
+    let Chess_Set = new Toy("Chess Set", "24.99", 3, 15, "images/toyImages/WEBP/Chess_Set.webp", "images/toyImages/JPEG/Chess_Set.jpeg", "Games and Puzzles", 15, ["chess", "board game", "strategy", "game", "puzzle", "king", "queen", "pawn", "checkmate", "competition"]);
+    let Jenga_Game = new Toy("Jenga Game", "19.99", 4, 20, "images/toyImages/WEBP/Jenga_Game.webp", "images/toyImages/JPEG/Jenga_Game.jpeg", "Games and Puzzles", 14, ["jenga", "game", "wood", "tower", "stack", "balance", "family", "party", "puzzle", "fun"]);
+    let Soccer_Ball = new Toy("Soccer Ball", "14.99", 2, 35, "images/toyImages/WEBP/Soccer_Ball.webp", "images/toyImages/JPEG/Soccer_Ball.jpeg", "Outdoor", 5, ["soccer", "ball", "football", "sports", "game", "kick", "goal", "team", "outdoor", "exercise"]);
+    let Jump_Rope = new Toy("Jump Rope", "7.99", 1, 30, "images/toyImages/WEBP/Jump_Rope.webp", "images/toyImages/JPEG/Jump_Rope.jpeg", "Outdoor", 12, ["jump rope", "fitness", "exercise", "workout", "skipping", "activity", "cord", "outdoor", "sports", "cardio"]);
+    let Remote_Control_Car = new Toy("Remote Control Car", "29.99", 5, 15, "images/toyImages/WEBP/Remote_Control_Car.webp", "images/toyImages/JPEG/Remote_Control_Car.jpeg", "Electronics", 12, ["remote control", "car", "toy", "vehicle", "RC", "radio control", "race", "speed", "battery"]);
+    let Digital_Camera_Toy = new Toy("Digital Camera Toy", "22.99", 4, 25, "images/toyImages/WEBP/Digital_Camera_Toy.webp", "images/toyImages/JPEG/Digital_Camera_Toy.jpeg", "Electronics", 15, ["digital camera", "toy", "camera", "photography", "kids", "imagination", "toy camera", "electronic", "play", "education"]);
 
     TOY_DATABASE.add(Robot_Head);
     TOY_DATABASE.add(Grizzly_Bear);
@@ -141,17 +141,17 @@ function showOutdoor() {
 
 }
 
-function createCartListeners() {
-    for (let i = 0; i < TOY_DATABASE.getLength(); i++) {
-        toy = TOY_DATABASE.get(i);
+function createCartListeners(toys) {
+    for (let i = 0; i < toys.getLength(); i++) {
+        let toy = toys.get(i);
         if (toy.getQuantity() > 0) {
             let id = "add to cart - " + toy.getID();
-            button = document.getElementById(id)
+            let button = document.getElementById(id);
             if (button) {
                 button.addEventListener("click", function (toy) {
                     return function () {
-
-                        CART.addToCart(TOY_DATABASE.getByID(toy.getID()));
+                        CART.addToCart(toys.getByID(toy.getID()));
+                        showNotification(toy.getName());
                     };
                 }(toy));
             }
@@ -159,30 +159,17 @@ function createCartListeners() {
     }
 }
 
-function createCardHtml(toy, isLucky = false) {
-    const toyName = toy.getName();
-    const toyImage = toy.getImageLink();
-    const otherImage = toy.getOtherImageLink();
-    const toyRating = generateRatingStars(toy.getRating());
-    const toyPrice = isLucky ? "13.99" : toy.getPrice();
 
-    return `
-        <picture>
-            <source srcset="${toyImage}" type="image/webp" alt="${toyName}">
-            <img src="${otherImage}" alt="${toyName}">
-        </picture>
-        <div class="toy-card-container">
-            <div class="card-title">${toyName}</div>
-            <div class="rating">${toyRating}</div>
-        </div>
-        <div class="toy-card-footer">
-            <div class="card-price">$${toyPrice}</div>
-            <button class="add-to-cart-btn" id="add-to-cart-${toy.getID()}">
-                <img src="images/buttons/add-to-cart-icon.png" alt="Add to Cart">
-            </button>
-        </div>
-    `;
+function showNotification(itemName) {
+    const notification = document.getElementById('notification');
+    notification.innerText = `${itemName} has been added to the cart!`;
+    notification.classList.add('show');
+
+    setTimeout(() => {
+        notification.classList.remove('show');
+    }, 3000); // Hides after 3 seconds
 }
+
 
 function showLuckCards() {
     let htmlContainer = document.getElementById('box-toy-card');
