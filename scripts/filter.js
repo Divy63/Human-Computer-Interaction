@@ -6,7 +6,11 @@
 // Get the dropdown container by its ID
 let price0to10 = document.getElementById("price0to10").addEventListener("click", (event) => {
     event.preventDefault();
-    TOY_DATABASE.applyPriceFilter(0, 10);
+    //TOY_DATABASE.applyPriceFilter(0, 10); 
+    TOY_DATABASE.editFilterArray("Price",0,10);
+    TOY_DATABASE.filterToyDB();
+    //filterArray[3] = "0-10";
+    //TOY_DATABASE.filterto(filterArray);   
     let toyCardArea = document.getElementById("box-toy-card");
     // Scrolls to toy card section
     window.scrollTo({
@@ -30,7 +34,9 @@ let price0to10 = document.getElementById("price0to10").addEventListener("click",
 
 let price10to20 = document.getElementById("price10to20").addEventListener("click", (event) => {
     event.preventDefault();
-    TOY_DATABASE.applyPriceFilter(10, 20);
+    //TOY_DATABASE = TOY_DATABASE.applyPriceFilter(10, 20);
+    TOY_DATABASE.editFilterArray("Price",10,20);
+    TOY_DATABASE.filterToyDB();
     let toyCardArea = document.getElementById("box-toy-card");
     // Scrolls to toy card section
     window.scrollTo({
@@ -53,7 +59,9 @@ let price10to20 = document.getElementById("price10to20").addEventListener("click
 
 let price20to30 = document.getElementById("price20to30").addEventListener("click", (event) => {
     event.preventDefault();
-    TOY_DATABASE.applyPriceFilter(20, 30);
+    //TOY_DATABASE = TOY_DATABASE.applyPriceFilter(20, 30);
+    TOY_DATABASE.editFilterArray("Price",20,30);
+    TOY_DATABASE.filterToyDB();
     let toyCardArea = document.getElementById("box-toy-card");
     // Scrolls to toy card section
     window.scrollTo({
@@ -74,7 +82,9 @@ let price20to30 = document.getElementById("price20to30").addEventListener("click
 
 let price30to40 = document.getElementById("price30to40").addEventListener("click", (event) => {
     event.preventDefault();
-    TOY_DATABASE.applyPriceFilter(30, 40);
+    //TOY_DATABASE = TOY_DATABASE.applyPriceFilter(30, 40);
+    TOY_DATABASE.editFilterArray("Price",30,40);
+    TOY_DATABASE.filterToyDB();
     let toyCardArea = document.getElementById("box-toy-card");
     // Scrolls to toy card section
     window.scrollTo({
@@ -96,7 +106,9 @@ let price30to40 = document.getElementById("price30to40").addEventListener("click
 
 let priceMoreThan40 = document.getElementById("priceMoreThan40").addEventListener("click", (event) => {
     event.preventDefault();
-    TOY_DATABASE.applyPriceFilter(40);
+    //TOY_DATABASE = TOY_DATABASE.applyPriceFilter(40);
+    TOY_DATABASE.editFilterArray("Price",40,Infinity);
+    TOY_DATABASE.filterToyDB();
     let toyCardArea = document.getElementById("box-toy-card");
     // Scrolls to toy card section
     window.scrollTo({
@@ -119,7 +131,9 @@ let priceMoreThan40 = document.getElementById("priceMoreThan40").addEventListene
 
 let undoPriceFilter = document.getElementById("priceUndo").addEventListener("click", (event) => {
     event.preventDefault();
-    TOY_DATABASE.applyPriceFilter(0);
+    //TOY_DATABASE = TOY_DATABASE.applyPriceFilter(0);
+    TOY_DATABASE.editFilterArray("Price",0,Infinity);
+    TOY_DATABASE.filterToyDB();
     let toyCardArea = document.getElementById("box-toy-card");
     // Scrolls to toy card section
     window.scrollTo({
@@ -142,18 +156,20 @@ let undoPriceFilter = document.getElementById("priceUndo").addEventListener("cli
 // Age Filters
 let age0to2 = document.getElementById("age0to2").addEventListener("click", (event) => {
     event.preventDefault();
-    TOY_DATABASE.applyAgeFilter(0, 2);
+    //TOY_DATABASE = TOY_DATABASE.applyAgeFilter(0, 2);
+    TOY_DATABASE.editFilterArray("Age",0,2);
+    TOY_DATABASE.filterToyDB();
     let toyCardArea = document.getElementById("box-toy-card");
     // Scrolls to toy card section
     window.scrollTo({
         top: toyCardArea.offsetTop,
         behavior: "smooth",
     });
-    const pricelabel = document.getElementById("agefilter");
-    if (pricelabel.innerHTML != "0 - 2 years old") {
-        pricelabel.innerHTML = "0 - 2 years old";
+    const agelabel = document.getElementById("agefilter");
+    if (agelabel.innerHTML != "0 - 2 years old") {
+        agelabel.innerHTML = "0 - 2 years old";
       } else {
-        pricelabel.innerHTML = "0 - 2 years old";
+        agelabel.innerHTML = "0 - 2 years old";
       }
 
     if ( $('.toggle > input').is(':checked'))
@@ -165,18 +181,20 @@ let age0to2 = document.getElementById("age0to2").addEventListener("click", (even
 
 let age2to5 = document.getElementById("age2to5").addEventListener("click", (event) => {
     event.preventDefault();
-    TOY_DATABASE.applyAgeFilter(2, 5);
+    //TOY_DATABASE = TOY_DATABASE.applyAgeFilter(2, 5);
+    TOY_DATABASE.editFilterArray("Age",2,5);
+    TOY_DATABASE.filterToyDB();
     let toyCardArea = document.getElementById("box-toy-card");
     // Scrolls to toy card section
     window.scrollTo({
         top: toyCardArea.offsetTop,
         behavior: "smooth",
     });
-    const pricelabel = document.getElementById("agefilter");
-    if (pricelabel.innerHTML != "2 - 5 years old") {
-        pricelabel.innerHTML = "2 - 5 years old";
+    const agelabel = document.getElementById("agefilter");
+    if (agelabel.innerHTML != "2 - 5 years old") {
+      agelabel.innerHTML = "2 - 5 years old";
       } else {
-        pricelabel.innerHTML = "2 - 5 years old";
+        agelabel.innerHTML = "2 - 5 years old";
       }
     
     if ( $('.toggle > input').is(':checked'))
@@ -188,18 +206,20 @@ let age2to5 = document.getElementById("age2to5").addEventListener("click", (even
 
 let age5to10 = document.getElementById("age5to10").addEventListener("click", (event) => {
     event.preventDefault();
-    TOY_DATABASE.applyAgeFilter(5, 10);
+    //TOY_DATABASE = TOY_DATABASE.applyAgeFilter(5, 10);
+    TOY_DATABASE.editFilterArray("Age",5,10);
+    TOY_DATABASE.filterToyDB();
     let toyCardArea = document.getElementById("box-toy-card");
     // Scrolls to toy card section
     window.scrollTo({
         top: toyCardArea.offsetTop,
         behavior: "smooth",
     });
-    const pricelabel = document.getElementById("agefilter");
-    if (pricelabel.innerHTML != "5 - 10 years old") {
-        pricelabel.innerHTML = "5 - 10 years old";
+    const agelabel = document.getElementById("agefilter");
+    if (agelabel.innerHTML != "5 - 10 years old") {
+      agelabel.innerHTML = "5 - 10 years old";
       } else {
-        pricelabel.innerHTML = "5 - 10 years old";
+        agelabel.innerHTML = "5 - 10 years old";
       }
 
     if ( $('.toggle > input').is(':checked'))
@@ -210,18 +230,20 @@ let age5to10 = document.getElementById("age5to10").addEventListener("click", (ev
 
 let ageMoreThan10 = document.getElementById("ageMoreThan10").addEventListener("click", (event) => {
     event.preventDefault();
-    TOY_DATABASE.applyAgeFilter(10);
+    //TOY_DATABASE = TOY_DATABASE.applyAgeFilter(10);
+    TOY_DATABASE.editFilterArray("Age",10,Infinity);
+    TOY_DATABASE.filterToyDB();
     let toyCardArea = document.getElementById("box-toy-card");
     // Scrolls to toy card section
     window.scrollTo({
         top: toyCardArea.offsetTop,
         behavior: "smooth",
     });
-    const pricelabel = document.getElementById("agefilter");
-    if (pricelabel.innerHTML != "10+ years old") {
-        pricelabel.innerHTML = "10+ years old";
+    const agelabel = document.getElementById("agefilter");
+    if (agelabel.innerHTML != "10+ years old") {
+      agelabel.innerHTML = "10+ years old";
       } else {
-        pricelabel.innerHTML = "10+ years old";
+        agelabel.innerHTML = "10+ years old";
       }
 
     if ( $('.toggle > input').is(':checked'))
@@ -232,18 +254,20 @@ let ageMoreThan10 = document.getElementById("ageMoreThan10").addEventListener("c
 
 let undoAgeFilter = document.getElementById("ageUndo").addEventListener("click", (event) => {
     event.preventDefault();
-    TOY_DATABASE.applyAgeFilter(0);
+    //TOY_DATABASE = TOY_DATABASE.applyAgeFilter(0);
+    TOY_DATABASE.editFilterArray("Age",0,Infinity);
+    TOY_DATABASE.filterToyDB();
     let toyCardArea = document.getElementById("box-toy-card");
     // Scrolls to toy card section
     window.scrollTo({
         top: toyCardArea.offsetTop,
         behavior: "smooth",
     });
-    const pricelabel = document.getElementById("agefilter");
-    if (pricelabel.innerHTML != "Age") {
-        pricelabel.innerHTML = "Age";
+    const agelabel = document.getElementById("agefilter");
+    if (agelabel.innerHTML != "Age") {
+      agelabel.innerHTML = "Age";
       } else {
-        pricelabel.innerHTML = "Age";
+        agelabel.innerHTML = "Age";
       }
     
     if ( $('.toggle > input').is(':checked'))
@@ -256,18 +280,20 @@ let undoAgeFilter = document.getElementById("ageUndo").addEventListener("click",
 // Rating Filter
 let oneStar = document.getElementById("oneStar").addEventListener("click", (event) => {
     event.preventDefault();
-    TOY_DATABASE.applyRatingFilter(1);
+    //TOY_DATABASE = TOY_DATABASE.applyRatingFilter(1);
+    TOY_DATABASE.editFilterArray("Star",1);
+    TOY_DATABASE.filterToyDB();
     let toyCardArea = document.getElementById("box-toy-card");
     // Scrolls to toy card section
     window.scrollTo({
         top: toyCardArea.offsetTop,
         behavior: "smooth",
     });
-    const pricelabel = document.getElementById("starfilter");
-    if (pricelabel.innerHTML != "1 star") {
-        pricelabel.innerHTML = "1 star";
+    const starlabel = document.getElementById("starfilter");
+    if (starlabel.innerHTML != "1 star") {
+        starlabel.innerHTML = "1 star";
       } else {
-        pricelabel.innerHTML = "1 star";
+        starlabel.innerHTML = "1 star";
       }
 
     if ( $('.toggle > input').is(':checked'))
@@ -278,18 +304,20 @@ let oneStar = document.getElementById("oneStar").addEventListener("click", (even
 
 let twoStar = document.getElementById("twoStar").addEventListener("click", (event) => {
     event.preventDefault();
-    TOY_DATABASE.applyRatingFilter(2);
+    //TOY_DATABASE = TOY_DATABASE.applyRatingFilter(2);
+    TOY_DATABASE.editFilterArray("Star",2);
+    TOY_DATABASE.filterToyDB();
     let toyCardArea = document.getElementById("box-toy-card");
     // Scrolls to toy card section
     window.scrollTo({
         top: toyCardArea.offsetTop,
         behavior: "smooth",
     });
-    const pricelabel = document.getElementById("starfilter");
-    if (pricelabel.innerHTML != "2 star") {
-        pricelabel.innerHTML = "2 star";
+    const starelabel = document.getElementById("starfilter");
+    if (starlabel.innerHTML != "2 star") {
+        starlabel.innerHTML = "2 star";
       } else {
-        pricelabel.innerHTML = "2 star";
+        starlabel.innerHTML = "2 star";
       }
 
     if ( $('.toggle > input').is(':checked'))
@@ -300,18 +328,20 @@ let twoStar = document.getElementById("twoStar").addEventListener("click", (even
 
 let threeStar = document.getElementById("threeStar").addEventListener("click", (event) => {
     event.preventDefault();
-    TOY_DATABASE.applyRatingFilter(3);
+    //TOY_DATABASE = TOY_DATABASE.applyRatingFilter(3);
+    TOY_DATABASE.editFilterArray("Star",3);
+    TOY_DATABASE.filterToyDB();
     let toyCardArea = document.getElementById("box-toy-card");
     // Scrolls to toy card section
     window.scrollTo({
         top: toyCardArea.offsetTop,
         behavior: "smooth",
     });
-    const pricelabel = document.getElementById("starfilter");
-    if (pricelabel.innerHTML != "3 star") {
-        pricelabel.innerHTML = "3 star";
+    const starlabel = document.getElementById("starfilter");
+    if (starlabel.innerHTML != "3 star") {
+        starlabellabel.innerHTML = "3 star";
       } else {
-        pricelabel.innerHTML = "3 star";
+        starlabel.innerHTML = "3 star";
       }
 
     if ( $('.toggle > input').is(':checked'))
@@ -322,18 +352,20 @@ let threeStar = document.getElementById("threeStar").addEventListener("click", (
 
 let fourStar = document.getElementById("fourStar").addEventListener("click", (event) => {
     event.preventDefault();
-    TOY_DATABASE.applyRatingFilter(4);
+    //TOY_DATABASE = TOY_DATABASE.applyRatingFilter(4);
+    TOY_DATABASE.editFilterArray("Star",4);
+    TOY_DATABASE.filterToyDB();
     let toyCardArea = document.getElementById("box-toy-card");
     // Scrolls to toy card section
     window.scrollTo({
         top: toyCardArea.offsetTop,
         behavior: "smooth",
     });
-    const pricelabel = document.getElementById("starfilter");
-    if (pricelabel.innerHTML != "4 star") {
-        pricelabel.innerHTML = "4 star";
+    const starlabel = document.getElementById("starfilter");
+    if (starlabel.innerHTML != "4 star") {
+        starlabel.innerHTML = "4 star";
       } else {
-        pricelabel.innerHTML = "4 star";
+        starlabel.innerHTML = "4 star";
       }
 
     if ( $('.toggle > input').is(':checked'))
@@ -344,18 +376,22 @@ let fourStar = document.getElementById("fourStar").addEventListener("click", (ev
 
 let fiveStar = document.getElementById("fiveStar").addEventListener("click", (event) => {
     event.preventDefault();
-    TOY_DATABASE.applyRatingFilter(5);
+    //TOY_DATABASE = TOY_DATABASE.applyRatingFilter(5);
+    TOY_DATABASE.editFilterArray("Star",5);
+    TOY_DATABASE.filterToyDB();
+    filterArray.push("Star");
+    filterArray.push("");
     let toyCardArea = document.getElementById("box-toy-card");
     // Scrolls to toy card section
     window.scrollTo({
         top: toyCardArea.offsetTop,
         behavior: "smooth",
     });
-    const pricelabel = document.getElementById("starfilter");
-    if (pricelabel.innerHTML != "5 star") {
-        pricelabel.innerHTML = "5 star";
+    const starlabel = document.getElementById("starfilter");
+    if (starlabel.innerHTML != "5 star") {
+        starlabel.innerHTML = "5 star";
       } else {
-        pricelabel.innerHTML = "5 star";
+        starlabel.innerHTML = "5 star";
       }
 
     if ( $('.toggle > input').is(':checked'))
@@ -366,22 +402,56 @@ let fiveStar = document.getElementById("fiveStar").addEventListener("click", (ev
 
 let undoStarFilter = document.getElementById("ratingUndo").addEventListener("click", (event) => {
     event.preventDefault();
-    TOY_DATABASE.applyAgeFilter(6);
+    //TOY_DATABASE = TOY_DATABASE.applyAgeFilter(6);
+    TOY_DATABASE.editFilterArray("Star",6);
+    TOY_DATABASE.filterToyDB();
     let toyCardArea = document.getElementById("box-toy-card");
     // Scrolls to toy card section
     window.scrollTo({
         top: toyCardArea.offsetTop,
         behavior: "smooth",
     });
-    const pricelabel = document.getElementById("starfilter");
-    if (pricelabel.innerHTML != "Customer Ratings") {
-        pricelabel.innerHTML = "Customer Ratings";
+    const starlabel = document.getElementById("starfilter");
+    if (starlabel.innerHTML != "Customer Ratings") {
+        starlabel.innerHTML = "Customer Ratings";
       } else {
-        pricelabel.innerHTML = "Customer Ratings";
+        starlabel.innerHTML = "Customer Ratings";
       }
 
     if ( $('.toggle > input').is(':checked'))
     {     
       $('.toggle > input').prop('checked', false);
-    }       
+    }
+    
+    let toyLogohomeButton = document.getElementById("toyLogoHomeButton")
+    
+    if(toyLogohomeButton){
+
+    }
+
+    let homeButton = document.getElementById("homeButton").addEventListener("click", function () {
+      console.log("home clicked");
+      const starlabel = document.getElementById("starfilter");
+      if (starlabel.innerHTML != "Customer Ratings") {
+          starlabel.innerHTML = "Customer Ratings";
+        } else {
+          starlabel.innerHTML = "Customer Ratings";
+        }
+
+      const agelabel = document.getElementById("agefilter");
+      if (agelabel.innerHTML != "Age") {
+          agelabel.innerHTML = "Age";
+      } else {
+          agelabel.innerHTML = "Age";
+      }
+
+      const pricelabel = document.getElementById("pricefilter");
+      if (pricelabel.innerHTML != "Price") {
+          pricelabel.innerHTML = "Price";
+      } else {
+          pricelabel.innerHTML = "Price";
+      }  
+        
+    });
+
 });
