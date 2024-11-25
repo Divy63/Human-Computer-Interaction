@@ -221,7 +221,7 @@ function showLuckCards() {
 
                 createCartListeners(luckyToy);
 
-                luckyToy.get(0).setPrice(originalPrice);
+                // luckyToy.get(0).setPrice(originalPrice);
 
                 luckCardFooter.style.display = "none";
 

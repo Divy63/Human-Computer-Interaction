@@ -3,6 +3,7 @@ document.addEventListener("DOMContentLoaded", () => {
     onLoadCreateDatabase();
     onLoadDisplayToys();
     createCartListeners(TOY_DATABASE);
+    let tryYourLuck=false;
 
 
     let cartItemsData = JSON.parse(sessionStorage.getItem("cartItemsData")) || [];
@@ -20,9 +21,12 @@ document.addEventListener("DOMContentLoaded", () => {
 
         });
 
+
+
     } else {
         console.log("CREATING NEW CART");
         CART = new Cart();
+        tryYourLuck=false;
         // TOY_DATABASE=new Toys();
     }
 
@@ -63,7 +67,7 @@ document.addEventListener("DOMContentLoaded", () => {
         //$("#t4").prop('disabled', true);
         //$("#subcategory-list").hide();
 
-
+        
         let toyLogohomeButton = document.getElementById("toyLogoHomeButton")
 
         if (toyLogohomeButton) {
@@ -139,15 +143,30 @@ document.addEventListener("DOMContentLoaded", () => {
 
         if (tryYourLuckButton) {
             tryYourLuckButton.addEventListener("click", function () {
+                let tryYourLuckBoolean=JSON.parse(sessionStorage.getItem("tryYourLuck"));
+                console.log(typeof tryYourLuckBoolean);
+                console.log(tryYourLuckBoolean);
+                if (tryYourLuckBoolean === true) {
+                    tryYourLuck=true;
+                }else{
+                    tryYourLuck=false;
+                }
+                console.log(tryYourLuck);
+                if(tryYourLuck === true){
                 showLuckCards();
+                
                 let toyCardArea = document.getElementById("box-toy-card");
                 // Scrolls to toy card section
                 window.scrollTo({
                     top: toyCardArea.offsetTop,
                     behaviour: "smooth",
                 });
+                }else{
+                    window.document.getElementById("TryYourLuckDialog").showModal();
+                }
 
             });
+            
         }
 
 

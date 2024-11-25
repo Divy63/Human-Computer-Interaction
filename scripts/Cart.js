@@ -23,14 +23,16 @@ class Cart {
             console.log(`Toy with ID ${toy.id} is not in cart. Adding new CartToy.`);
             this.cartItems.push(new CartToy(toy));
         }
-        // // If toy in the cart, add quantity
-        // for (let i = 0; i < this.cartItems.length; i++) {
-        //     if (this.cartItems[i].toy.id == toy.id) {
-        //         this.cartItems[i].addQuantity();
-        //         return;
-        //     }
-        // }
-        this.updateLocalStorageCart();
+        
+
+        let tryYourLuck;
+        if(this.cartItems.length>0){
+            tryYourLuck=true;
+        }else{
+            tryYourLuck=false;
+        }
+        
+        this.updateLocalStorageCart(tryYourLuck);
     }
 
     getQuantity(toy) {
@@ -56,8 +58,36 @@ class Cart {
 
         this.displayCart();
 
-        this.updateLocalStorageCart();
+        if(this.cartItems.length>0){
+            if(this.cartItems===1 && this.cartItems.CartToy.toy.name=="Darts"){
+                this.removeFromCartByName("Darts");
+                tryYourLuck==false;
+            }else{
+                tryYourLuck=true;
+            }
+        }else{
+            tryYourLuck=false;
+        }
 
+        this.updateLocalStorageCart(tryYourLuck);
+
+    }
+
+
+    removeFromCartByName(toyName) {
+        const itemIndex = this.cartItems.findIndex(item => item.toy.name === toyName);
+
+        if (itemIndex === -1) {
+            console.warn(`Item with ID ${toyID} not found in the cart.`);
+            return;
+        }
+
+        this.cartItems.splice(itemIndex, 1);
+        let cartItemsContainer = document.getElementById('cart-items');
+
+        cartItemsContainer.innerHTML = '';
+
+        this.displayCart();
     }
 
 
@@ -174,12 +204,17 @@ class Cart {
         return this.cartItems;
     }
 
-    updateLocalStorageCart(){
+    updateLocalStorageCart(tryYourLuck){
         const cartItemsData=this.getCartItems().map(cartToy =>({
             toy: cartToy.toy,
             quantity: cartToy.quantity
         }))
         sessionStorage.setItem("cartItemsData",JSON.stringify(cartItemsData));
+
+        const tryYourLuckStorage={
+            "tryYourLuck":tryYourLuck
+        }
+        sessionStorage.setItem("tryYourLuck",JSON.stringify(tryYourLuck));
     }
 
     toString(){
