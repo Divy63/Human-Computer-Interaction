@@ -58,10 +58,18 @@ class Cart {
 
         this.displayCart();
 
+        let tryYourLuck;
+        let tryYourLuckBoolean=JSON.parse(sessionStorage.getItem("tryYourLuck"));
+        if (tryYourLuckBoolean === true) {
+            tryYourLuck=true;
+        }else{
+            tryYourLuck=false;
+        }
         if(this.cartItems.length>0){
-            if(this.cartItems===1 && this.cartItems.CartToy.toy.name=="Darts"){
+            if(this.cartItems.length==1 && this.cartItems[0].toy.name==="Darts" && tryYourLuck===true){
+                console.log("Removing Darts");
                 this.removeFromCartByName("Darts");
-                tryYourLuck==false;
+                tryYourLuck=false;
             }else{
                 tryYourLuck=true;
             }
@@ -140,7 +148,7 @@ class Cart {
         let pstPrice = 0;
 
         cartItemsContainer.innerHTML = '';
-        console.log(cartItemsContainer.innerHTML)
+        console.log(cartItemsContainer.innerHTML);
 
         let cartButtonsContainer = document.getElementById("cart-buttons");
         let checkoutPopup=document.getElementById("dialog");
