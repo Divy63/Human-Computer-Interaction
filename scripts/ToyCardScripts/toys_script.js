@@ -287,8 +287,8 @@ function onLoadCreateDatabase() {
     "20",
     4,
     10,
-    "images/toyImages/WEBP/Chess_Set.webp",
-    "images/toyImages/WEBP/Chess_Set.webp",
+    "images/toyImages/WEBP/Cindrella_doll.webp",
+    "images/toyImages/WEBP/Cindrella_doll.jpeg",
     "Games and Puzzles",
     3,
     [
@@ -315,8 +315,8 @@ function onLoadCreateDatabase() {
     "8",
     3,
     15,
-    "images/toyImages/WEBP/Chess_Set.webp",
-    "images/toyImages/WEBP/Chess_Set.webp",
+    "images/toyImages/WEBP/Football.webp",
+    "images/toyImages/WEBP/Football.webp",
     "outdoor",
     5,
     [
