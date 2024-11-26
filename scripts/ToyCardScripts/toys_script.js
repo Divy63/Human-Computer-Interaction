@@ -127,7 +127,6 @@ function onLoadCreateDatabase() {
     ]
   );
 
-  // Images left to be downloaded
   let WonderWoman_Figure = new Toy(
     "Wonder Woman Action Figure",
     "17.99",
@@ -316,7 +315,7 @@ function onLoadCreateDatabase() {
     3,
     15,
     "images/toyImages/WEBP/Football.webp",
-    "images/toyImages/WEBP/Football.webp",
+    "images/toyImages/WEBP/Football.jpeg",
     "outdoor",
     5,
     [
@@ -430,7 +429,6 @@ function onLoadCreateDatabase() {
     ]
   );
 
-  // ELECTRONICS
   let Walkie_Talkies = new Toy(
     "Kids Walkie Talkies",
     "29.99",
@@ -523,7 +521,6 @@ function onLoadCreateDatabase() {
     ]
   );
 
-  // ACTION FIGURES
   let SpiderMan_Figure = new Toy(
     "Spider-Man Action Figure",
     "19.99",
@@ -575,8 +572,8 @@ function onLoadCreateDatabase() {
     "29.99",
     5,
     15,
-    "images/toyImages/WEBP/Transformers_Optimus.webp",
-    "images/toyImages/JPEG/Transformers_Optimus.jpeg",
+    "images/toyImages/WEBP/Transformers_Optimus_Prime.webp",
+    "images/toyImages/JPEG/Transformers_Optimus_Prime.jpeg",
     "Action Figures",
     6,
     [
@@ -616,14 +613,13 @@ function onLoadCreateDatabase() {
     ]
   );
 
-  // BOOKS AND COMICS
   let Naruto_1 = new Toy(
     "Naruto_1",
     "9.99",
     5,
     50,
-    "images/toyImages/WEBP/Naruto_1.webp",
-    "images/toyImages/JPEG/Naruto_1.jpeg",
+    "images/toyImages/WEBP/Comic_Book.webp",
+    "images/toyImages/JPEG/Comic_Book.jpeg",
     "Books and Comics",
     10,
     [
@@ -655,8 +651,8 @@ function onLoadCreateDatabase() {
     "12.99",
     4,
     30,
-    "images/toyImages/WEBP/SpongeBob_Comic.webp",
-    "images/toyImages/JPEG/SpongeBob_Comic.jpeg",
+    "images/toyImages/WEBP/Comic_Book.webp",
+    "images/toyImages/JPEG/Comic_Book.jpeg",
     "Books and Comics",
     8,
     [
@@ -684,8 +680,8 @@ function onLoadCreateDatabase() {
     "19.99",
     5,
     25,
-    "images/toyImages/WEBP/Dr_Seuss_Book.webp",
-    "images/toyImages/JPEG/Dr_Seuss_Book.jpeg",
+    "images/toyImages/WEBP/Comic_Book.webp",
+    "images/toyImages/JPEG/Comic_Book.jpeg",
     "Books and Comics",
     3,
     [
@@ -707,8 +703,8 @@ function onLoadCreateDatabase() {
     "12.99",
     4,
     20,
-    "images/toyImages/WEBP/Avengers_Comics.webp",
-    "images/toyImages/JPEG/Avengers_Comics.jpeg",
+    "images/toyImages/WEBP/Comic_Book.webp",
+    "images/toyImages/JPEG/Comic_Book.jpeg",
     "Books and Comics",
     9,
     [
@@ -725,7 +721,6 @@ function onLoadCreateDatabase() {
     ]
   );
 
-  // BOARD GAMES AND PUZZLES
   let Scrabble_Game = new Toy(
     "Scrabble Board Game",
     "19.99",
@@ -831,7 +826,6 @@ function onLoadCreateDatabase() {
   TOY_DATABASE.add(Darts);
   TOY_DATABASE.add(Lego_RangeRover);
 
-  // Comics
   TOY_DATABASE.add(SpiderMan_Comic_Book);
   TOY_DATABASE.add(HarryPotter_Book);
   TOY_DATABASE.add(Naruto_1);
@@ -839,7 +833,6 @@ function onLoadCreateDatabase() {
   TOY_DATABASE.add(Dr_Seuss_Book);
   TOY_DATABASE.add(Avengers_Comics);
 
-  // Action Figure
   TOY_DATABASE.add(IronMan_Figure);
   TOY_DATABASE.add(WonderWoman_Figure);
   TOY_DATABASE.add(SpiderMan_Figure);
@@ -847,7 +840,6 @@ function onLoadCreateDatabase() {
   TOY_DATABASE.add(Transformers_Optimus);
   TOY_DATABASE.add(Hulk_Figure);
 
-  // Games & Puzzles
   TOY_DATABASE.add(Chess_Set);
   TOY_DATABASE.add(Jenga_Game);
   TOY_DATABASE.add(Scrabble_Game);
@@ -856,7 +848,6 @@ function onLoadCreateDatabase() {
   TOY_DATABASE.add(Puzzle_3d);
   TOY_DATABASE.add(cinderella_doll);
 
-  // Outdoor
   TOY_DATABASE.add(Soccer_Ball);
   TOY_DATABASE.add(Jump_Rope);
   TOY_DATABASE.add(football);
@@ -865,7 +856,6 @@ function onLoadCreateDatabase() {
   TOY_DATABASE.add(Trampoline);
   TOY_DATABASE.add(Kite);
 
-  // Electronic
   TOY_DATABASE.add(Remote_Control_Car);
   TOY_DATABASE.add(Digital_Camera_Toy);
   TOY_DATABASE.add(Walkie_Talkies);

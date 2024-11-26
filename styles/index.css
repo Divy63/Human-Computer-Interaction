@@ -7,15 +7,16 @@ html {
     grid-template-columns: 1fr 3fr;
     grid-template-rows: auto 1fr auto;
     gap: 10px;
-    max-width: 2500px;
+    max-width: 1400px;
     margin: 0 auto;
-    padding: 10px;
+    padding: 20px;
     background-color: #d9d9d9;
 }
 
 header {
     height: 50px;
 }
+
 
 .box-logo {
     grid-column-start: 1;
@@ -33,7 +34,7 @@ header {
 }
 
 .box-logo img {
-    margin-left: 5px;
+    margin-left: 10px;
     height: 50px;
     width: auto;
 }
@@ -147,12 +148,13 @@ header {
 
 }
 
+
 .box-filter,
 .box-contact,
 /* .box-items {
-        background-color: #f3f3f3;
-        padding: 15px;
-    } */
+    background-color: #f3f3f3;
+    padding: 15px;
+} */
 
 .box-filter {
     grid-column: 1 / 2;
@@ -161,7 +163,7 @@ header {
     padding: 15px;
 }
 
-/*
+/* 
 .box-items {
     background-color: #f3f3f3;
     padding: 15px;
@@ -279,120 +281,36 @@ button:hover {
 
 .category-books {
     top: 30%;
-    left: 22%;
-    background-color: #FF6B6B;
-    color: white;
-}
-
-.category-books:active {
-    top: 30%;
-    left: 22%;
-    background-color: #f82828;
-    color: white;
-}
-
-.category-books:focus {
-    top: 30%;
-    left: 22%;
-    background-color: #f82828;
-    color: white;
+    left: 29%;
+    background-color: #375dc6;
+    color: rgb(255, 255, 255);
 }
 
 .category-outdoor {
-    top: 80%;
-    left: 85%;
-    background-color: #FF9999;
-    color: white;
-}
-
-.category-outdoor:active {
-    top: 80%;
-    left: 85%;
-    background-color: #fc5d5d;
-    color: white;
-}
-
-.category-outdoor:focus {
-    top: 80%;
-    left: 85%;
-    background-color: #fc5d5d;
-    color: white;
+    top: 78%;
+    left: 71.25%;
+    background-color: #ff4545;
+    color: rgb(255, 255, 255);
 }
 
 .category-electronics {
-    top: 48%;
-    left: 48.5%;
-    background-color: #33d288;
-    color: rgb(0, 0, 0);
-}
-
-.category-electronics:active {
-    top: 48%;
-    left: 48.5%;
-    background-color: #008145;
-    color: rgb(0, 0, 0);
-}
-
-.category-electronics:focus {
-    top: 48%;
-    left: 48.5%;
-    background-color: #008145;
-    color: rgb(0, 0, 0);
+    top: 78%;
+    left: 27%;
+    background-color: #03a359;
+    color: rgb(255, 255, 255);
 }
 
 .category-games {
     top: 30%;
-    left: 70%;
-    background-color: #71dad3;
-    color: white;
-}
-
-.category-games:active {
-    top: 30%;
-    left: 70%;
-    background-color: #05bdb1;
-    color: white;
-}
-
-.category-games:focus {
-    top: 30%;
-    left: 70%;
-    background-color: #05bdb1;
-    color: white;
+    left: 71%;
+    background-color: #2c9bce;
+    color: rgb(255, 255, 255);
 }
 
 .category-action {
-    top: 60%;
-    left: 50%;
-    background-color: #FFAD60;
-    color: white;
-}
-
-.category-action:active {
-    top: 60%;
-    left: 50%;
-    background-color: #f88d29;
-    color: white;
-}
-
-.category-action:focus {
-    top: 60%;
-    left: 50%;
-    background-color: #f88d29;
-    color: white;
-}
-
-.category-dolls {
     top: 80%;
-    left: 85%;
-    background-color: #FF9999;
-    color: white;
-}
-
-.category-dolls:active {
-    top: 80%;
-    left: 85%;
-    background-color: #f46b6b;
+    left: 49.5%;
+    background-color: #d8399b;
     color: white;
 }
 
@@ -513,7 +431,7 @@ button:hover {
     text-transform: uppercase;
     font-weight: bold;
     color: #090909;
-    background-color: #FFF;
+    background-color: #FFF;    
     align-items: center;
 }
 
@@ -607,8 +525,8 @@ li.star.rating {
     display: flex;
     /*text-align: center;*/
     vertical-align: middle;
-    text-align: center;
-    align-items: center;
+    text-align: center;   
+    align-items: center;    
     /*align-items: center;*/
 }
 
@@ -676,21 +594,21 @@ li.star.rating {
 
 /* Sign Popup */
 dialog {
-    padding: 1rem 3rem;
-    background: white;
-    max-width: 400px;
-    padding-top: 2rem;
-    border-radius: 20px;
-    border: 0;
-    box-shadow: 0 5px 30px 0 rgb(0 0 0 / 10%);
-    animation: fadeIn 1s ease both;
+	padding: 1rem 3rem;
+	background: white;
+	max-width: 400px;
+	padding-top: 2rem;
+	border-radius: 20px;
+	border: 0;
+	box-shadow: 0 5px 30px 0 rgb(0 0 0 / 10%);
+	animation: fadeIn 1s ease both;
 
-    &::backdrop {
-        animation: fadeIn 1s ease both;
-        background: rgb(255 255 255 / 40%);
-        z-index: 2;
-        backdrop-filter: blur(20px);
-    }
+	&::backdrop {
+		animation: fadeIn 1s ease both;
+		background: rgb(255 255 255 / 40%);
+		z-index: 2;
+		backdrop-filter: blur(20px);
+	}
 }
 
 .x {

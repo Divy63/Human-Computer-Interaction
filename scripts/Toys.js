@@ -303,7 +303,7 @@ class Toys{
 
     searchToys(searchText){
 
-
+        let result;
         result=this.toys.filter(toy => {
             return (toy.getName().toLowerCase().includes(searchText.toLowerCase()) ||
              toy.getToyType().toLowerCase().includes(searchText.toLowerCase()))||
