@@ -176,9 +176,9 @@ class Cart {
                         <div class="item-price">Price: $${price}</div>
                     </div>
                     <div class="cart-item-actions">
-                        <button onclick="CART.decreaseQuantity(${toy.id})">-</button>
-                        <span>${quantity}</span>
-                        <button onclick="CART.increaseQuantity(${toy.id})">+</button>
+                        <button style="font-weight: bold;" onclick="CART.decreaseQuantity(${toy.id})">-</button>
+                        <strong>${quantity}</strong>
+                        <button style="font-weight: bold;" onclick="CART.increaseQuantity(${toy.id})">+</button>
                         <button onclick="CART.removeFromCart(${toy.id})" class="remove-button">Remove From Cart</button>
                     </div>
                 </div>`;

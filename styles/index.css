@@ -631,11 +631,11 @@ dialog {
 
 #cart-section {
     margin: 0 auto;
-    background-color: #f8f8f8;
+    background-color: #d9d9d9;
     border: 1px solid #ddd;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     font-family: Arial, sans-serif;
-    max-width: 2500px;
+    max-width: 1399px;
     padding: 20px;
     height: 500px;
 
@@ -651,7 +651,7 @@ dialog {
 #cart-header h2 {
     margin: 0;
     font-size: 1.5rem;
-    color: #333;
+    color: #000000;
 }
 
 #cart-total {
@@ -662,7 +662,7 @@ dialog {
 #empty-cart-message {
     text-align: center;
     padding: 20px;
-    color: #888;
+    color: #000000;
 }
 
 #empty-cart-message strong {
@@ -672,8 +672,19 @@ dialog {
 }
 
 .btn-primary {
-    background-color: #9D6F6F;
+    background-color: #B19C9C;
     color: #fff;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn-primary-shopMore {
+    background-color: #B19C9C;
+    font-weight: bold;
+    color: #000000;
     border: none;
     padding: 8px 16px;
     border-radius: 4px;
@@ -691,11 +702,12 @@ dialog {
 .btn-primary-checkout,
 .btn-secondary-homepage {
     background-color: #9D6F6F;
-    color: #fff;
+    color: #000000;
     border: none;
     padding: 8px 16px;
     border-radius: 4px;
     cursor: pointer;
+    font-weight: bold;
     transition: background-color 0.3s ease;
 }
 
@@ -731,7 +743,7 @@ dialog {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #fff;
+    background-color: #B19C9C;
     border: 1px solid #ddd;
     border-radius: 4px;
     padding: 10px;
@@ -757,16 +769,21 @@ dialog {
 
 .cart-item .item-price {
     font-size: 0.9rem;
-    color: #666;
+    color: #000000;
 }
 
 .cart-item .remove-button {
-    background-color: #FF4136;
-    color: #fff;
+    background-color: #9D6F6F;
+    color: #000000;
     border: none;
     padding: 6px 12px;
     border-radius: 4px;
     cursor: pointer;
+    font-weight: bold;
+}
+
+.cart-item .remove-button:hover {
+    background-color: #674949;
 }
 
 #notification {
