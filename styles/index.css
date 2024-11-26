@@ -805,3 +805,23 @@ dialog {
     opacity: 1;
     transform: translateY(0);
 }
+
+
+.Badge {
+    align-items: center;
+    background: #ce2c6c;
+    border: 2px solid #fff;
+    border-radius: 99em;
+    color: #fff;
+    display: inline-block;
+    font-size: 0.77em;
+    font-weight: 400;
+    height: 1.44em;
+    justify-content: center;
+    line-height: 1;
+    min-width: 1.44em;
+    position: relative;
+    top: -20px;
+    left: 15px;
+    z-index: 2;
+  }
