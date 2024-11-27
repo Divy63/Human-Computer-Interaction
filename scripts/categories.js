@@ -5,9 +5,8 @@
 let booksAndComicsButton = document.getElementById("BooksAndComicsButton").addEventListener("click", function () {
     
     TOY_DATABASE.editFilterArray("Category","Books and Comics")
-    TOY_DATABASE.filterToyDB();
-    console.log("returned value");
-    console.log(TOY_DATABASE);
+    TOY_DATABASE.filterToyDB();    
+    createCartListeners(TOY_DATABASE);
     //showBooksAndComics();
     let toyCardArea = document.getElementById("box-toy-card");
     // Scrolls to toy card section
@@ -32,6 +31,7 @@ let outdoorButton = document.getElementById("outdoorButton").addEventListener("c
     TOY_DATABASE.editFilterArray("Category","Outdoor");
     TOY_DATABASE.filterToyDB();
     //showOutdoor();
+    createCartListeners(TOY_DATABASE);
     let toyCardArea = document.getElementById("box-toy-card");
     // Scrolls to toy card section
     window.scrollTo({
@@ -54,6 +54,7 @@ let electronicsButton = document.getElementById("electronicsButton").addEventLis
     
     TOY_DATABASE.editFilterArray("Category","Electronics");
     TOY_DATABASE.filterToyDB();
+    createCartListeners(TOY_DATABASE);
     //showElectronics();
     let toyCardArea = document.getElementById("box-toy-card");
     // Scrolls to toy card section
@@ -77,6 +78,7 @@ let GamesAndPuzzlesButton = document.getElementById("GamesAndPuzzlesButton").add
     
     TOY_DATABASE.editFilterArray("Category","Games and Puzzles");
     TOY_DATABASE.filterToyDB();
+    createCartListeners(TOY_DATABASE);
     //showGamesAndPuzzles();
     let toyCardArea = document.getElementById("box-toy-card");
     // Scrolls to toy card section
@@ -101,6 +103,7 @@ let ActionFigures = document.getElementById("ActionFiguresButton").addEventListe
     //TOY_DATABASE=TOY_DATABASE.applyCategoryFilter("Action Figures");
     TOY_DATABASE.editFilterArray("Category","Action Figures");
     TOY_DATABASE.filterToyDB();
+    createCartListeners(TOY_DATABASE);
     //showActionFigures();
     let toyCardArea = document.getElementById("box-toy-card");
     // Scrolls to toy card section

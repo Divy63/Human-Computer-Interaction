@@ -960,6 +960,7 @@ function createCartListeners(toys) {
             return function () {
               CART.addToCart(toys.getByID(toy.getID()));
               showNotification(toy.getName());
+              showTotalItems();  
             };
           })(toy)
         );
@@ -976,6 +977,19 @@ function showNotification(itemName) {
   setTimeout(() => {
     notification.classList.remove("show");
   }, 3000); // Hides after 3 seconds
+}
+
+function showTotalItems(){
+  console.log("Items in cart");
+  console.log(CART.getTotalItems());
+  let badgeValue = document.getElementById("cartTotal");
+  if (CART.getTotalItems() > 0) {
+    badgeValue.style.visibility = "visible";
+    badgeValue.innerHTML = CART.getTotalItems();
+  }
+  else{
+   badgeValue.style.visibility = "hidden"
+  }
 }
 
 function showLuckCards() {
