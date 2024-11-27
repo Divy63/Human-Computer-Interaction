@@ -44,10 +44,10 @@ html {
 
 /* Content */
 .toy-card-container {
-    padding: 10px 15px;
+    padding: 0px 15px;
     text-align: center;
     flex-grow: 1;
-    display: flex;
+    display: inline-block;
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
@@ -65,15 +65,15 @@ html {
     color: #000000;
     margin: 10px 0;
     text-align: center;
+    height: 50%;
 }
 
 .toy-card-footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-top: auto;
     width: 100%;
-    padding: 5px;
+    padding: 10px;
 }
 
 /* Toy rating */
@@ -82,6 +82,7 @@ html {
     font-size: 18px;
     color: #FFD700;
     margin-top: 8px;
+    height: 50%;
 
 }
 

@@ -149,7 +149,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 let tryYourLuckBoolean=JSON.parse(sessionStorage.getItem("tryYourLuck"));
                 console.log(typeof tryYourLuckBoolean);
                 console.log(tryYourLuckBoolean);
-                if (tryYourLuckBoolean === true) {
+                if (tryYourLuckBoolean) {
                     tryYourLuck=true;
                 }else{
                     tryYourLuck=false;
