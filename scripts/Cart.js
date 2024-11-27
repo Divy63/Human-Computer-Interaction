@@ -1,6 +1,7 @@
 class Cart {
     constructor() {
         this.cartItems = [];
+        this.totalcartitems = 0;
     }
 
     getCartItems(){
@@ -31,7 +32,7 @@ class Cart {
         }else{
             tryYourLuck=false;
         }
-        
+        this.totalcartitems = this.totalcartitems + 1;
         this.updateLocalStorageCart(tryYourLuck);
     }
 
@@ -76,9 +77,15 @@ class Cart {
         }else{
             tryYourLuck=false;
         }
-
+        this.totalcartitems = this.totalcartitems - 1;
         this.updateLocalStorageCart(tryYourLuck);
 
+    }
+
+    getTotalItems(){
+        console.log("Total Cart");
+        console.log(this.totalcartitems);
+        return this.totalcartitems;
     }
 
 

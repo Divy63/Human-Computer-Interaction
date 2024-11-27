@@ -4,6 +4,9 @@ document.addEventListener("DOMContentLoaded", () => {
     onLoadDisplayToys();
     createCartListeners(TOY_DATABASE);
     let tryYourLuck=false;
+    let badgeValue = document.getElementById("cartTotal");
+    badgeValue.style.visibility = "hidden";
+
 
 
     let cartItemsData = JSON.parse(sessionStorage.getItem("cartItemsData")) || [];
@@ -146,7 +149,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 let tryYourLuckBoolean=JSON.parse(sessionStorage.getItem("tryYourLuck"));
                 console.log(typeof tryYourLuckBoolean);
                 console.log(tryYourLuckBoolean);
-                if (tryYourLuckBoolean === true) {
+                if (tryYourLuckBoolean) {
                     tryYourLuck=true;
                 }else{
                     tryYourLuck=false;
