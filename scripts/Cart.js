@@ -1,181 +1,189 @@
 class Cart {
-    constructor() {
-        this.cartItems = [];
-        this.totalcartitems = 0;
+  constructor() {
+    this.cartItems = [];
+    this.totalcartitems = 0;
+  }
+
+  getCartItems() {
+    return this.cartItems;
+  }
+
+  addCartToy(cartToy) {
+    this.cartItems.push(cartToy);
+    this.totalcartitems += 1;
+  }
+
+  addToCart(toy) {
+    console.log("Adding toy to cart:", toy);
+
+    let existingToy = this.cartItems.find(
+      (cartToy) => cartToy.toy.id === toy.id
+    );
+
+    if (existingToy) {
+      console.log(
+        `Toy with ID ${toy.id} already in cart. Increasing quantity.`
+      );
+      existingToy.addQuantity();
+    } else {
+      console.log(`Toy with ID ${toy.id} is not in cart. Adding new CartToy.`);
+      this.cartItems.push(new CartToy(toy));
     }
 
-    getCartItems(){
-        return this.cartItems;
+    let tryYourLuck;
+    if (this.cartItems.length > 0) {
+      tryYourLuck = true;
+    } else {
+      tryYourLuck = false;
+    }
+    this.totalcartitems = this.totalcartitems + 1;
+    this.updateLocalStorageCart(tryYourLuck);
+  }
+
+  getQuantity(toy) {
+    for (let i = 0; i < this.cartItems.length; i++) {
+      if (this.cartItems[i].toy.getID() === toy.getID()) {
+        return this.cartItems[i].getQuantity();
+      }
+    }
+  }
+
+  removeFromCart(toyID) {
+    const itemIndex = this.cartItems.findIndex((item) => item.toy.id === toyID);
+
+    if (itemIndex === -1) {
+      console.warn(`Item with ID ${toyID} not found in the cart.`);
+      return;
     }
 
-    addCartToy(cartToy){
-        this.cartItems.push(cartToy);
+    this.cartItems.splice(itemIndex, 1);
+    let cartItemsContainer = document.getElementById("cart-items");
+
+    cartItemsContainer.innerHTML = "";
+
+    this.displayCart();
+
+    let tryYourLuck;
+    let tryYourLuckBoolean = JSON.parse(sessionStorage.getItem("tryYourLuck"));
+    if (tryYourLuckBoolean === true) {
+      tryYourLuck = true;
+    } else {
+      tryYourLuck = false;
+    }
+    if (this.cartItems.length > 0) {
+      if (
+        this.cartItems.length == 1 &&
+        this.cartItems[0].toy.name === "Darts" &&
+        tryYourLuck === true
+      ) {
+        console.log("Removing Darts");
+        this.removeFromCartByName("Darts");
+        tryYourLuck = false;
+      } else {
+        tryYourLuck = true;
+      }
+    } else {
+      tryYourLuck = false;
+    }
+    this.totalcartitems = this.totalcartitems - 1;
+    this.updateLocalStorageCart(tryYourLuck);
+    this.updateCartTotal();
+  }
+
+  getTotalItems() {
+    console.log("Total Cart");
+    console.log(this.totalcartitems);
+    return this.totalcartitems;
+  }
+
+  removeFromCartByName(toyName) {
+    const itemIndex = this.cartItems.findIndex(
+      (item) => item.toy.name === toyName
+    );
+
+    if (itemIndex === -1) {
+      console.warn(`Item with ID ${toyID} not found in the cart.`);
+      return;
     }
 
-    addToCart(toy) {
-        console.log("Adding toy to cart:", toy);
+    this.cartItems.splice(itemIndex, 1);
+    let cartItemsContainer = document.getElementById("cart-items");
 
-        let existingToy=this.cartItems.find(cartToy=>cartToy.toy.id===toy.id);
+    cartItemsContainer.innerHTML = "";
 
-        if(existingToy){
-            console.log(`Toy with ID ${toy.id} already in cart. Increasing quantity.`);
-            existingToy.addQuantity();
-        }else{
-            console.log(`Toy with ID ${toy.id} is not in cart. Adding new CartToy.`);
-            this.cartItems.push(new CartToy(toy));
-        }
-        
+    this.displayCart();
+  }
 
-        let tryYourLuck;
-        if(this.cartItems.length>0){
-            tryYourLuck=true;
-        }else{
-            tryYourLuck=false;
-        }
-        this.totalcartitems = this.totalcartitems + 1;
-        this.updateLocalStorageCart(tryYourLuck);
+  toString() {
+    let output = "Cart:\n";
+    for (let i = 0; i < this.cartItems.length; i++) {
+      output += this.cartItems[i].toString() + "\n";
+    }
+    return output;
+  }
+
+  decreaseQuantity(toyID) {
+    let item = this.cartItems.find((cartItem) => cartItem.toy.id === toyID);
+    if (item && item.quantity > 1) {
+      item.quantity--;
+      let cartItemsContainer = document.getElementById("cart-items");
+
+      cartItemsContainer.innerHTML = "";
+
+      this.displayCart();
+    }
+    this.updateLocalStorageCart(true);
+    this.updateCartTotal();
+  }
+
+  increaseQuantity(toyID) {
+    let item = this.cartItems.find((cartItem) => cartItem.toy.id === toyID);
+    if (item) {
+      item.quantity++;
+      let cartItemsContainer = document.getElementById("cart-items");
+
+      cartItemsContainer.innerHTML = "";
+
+      this.displayCart();
     }
 
-    getQuantity(toy) {
-        for (let i = 0; i < this.cartItems.length; i++) {
-            if (this.cartItems[i].toy.getID() === toy.getID()) {
-                return this.cartItems[i].getQuantity();
-            }
-        }
-    }
+    this.updateLocalStorageCart(true);
+    this.updateCartTotal();
+  }
 
-    removeFromCart(toyID) {
-        const itemIndex = this.cartItems.findIndex(item => item.toy.id === toyID);
+  displayCart() {
+    console.log("DISPLAY CALLED");
+    let cartItemsContainer = document.getElementById("cart-items");
+    let emptyCart = document.getElementById("empty-cart-message");
+    let cartTotalElement = document.getElementById("cart-total");
+    let totalPriceElement = document.getElementById("total-price");
+    let gstPriceElement = document.getElementById("gst-price");
+    let pstPrcicELement = document.getElementById("pst-price");
+    let total = 0;
+    let gstPrice = 0;
+    let pstPrice = 0;
 
-        if (itemIndex === -1) {
-            console.warn(`Item with ID ${toyID} not found in the cart.`);
-            return;
-        }
+    cartItemsContainer.innerHTML = "";
+    console.log(cartItemsContainer.innerHTML);
 
-        this.cartItems.splice(itemIndex, 1);
-        let cartItemsContainer = document.getElementById('cart-items');
+    let cartButtonsContainer = document.getElementById("cart-buttons");
+    let checkoutPopup = document.getElementById("dialog");
 
-        cartItemsContainer.innerHTML = '';
+    cartButtonsContainer.innerHTML = "";
 
-        this.displayCart();
+    if (this.cartItems.length === 0) {
+      emptyCart.style.display = "block";
+      cartTotalElement.style.display = "none";
+    } else {
+      emptyCart.style.display = "none";
+      cartTotalElement.style.display = "block";
+      for (let i = 0; i < this.cartItems.length; i++) {
+        let toy = this.cartItems[i].toy;
+        let quantity = this.cartItems[i].quantity;
+        let price = toy.price;
+        total += price * quantity;
 
-        let tryYourLuck;
-        let tryYourLuckBoolean=JSON.parse(sessionStorage.getItem("tryYourLuck"));
-        if (tryYourLuckBoolean === true) {
-            tryYourLuck=true;
-        }else{
-            tryYourLuck=false;
-        }
-        if(this.cartItems.length>0){
-            if(this.cartItems.length==1 && this.cartItems[0].toy.name==="Darts" && tryYourLuck===true){
-                console.log("Removing Darts");
-                this.removeFromCartByName("Darts");
-                tryYourLuck=false;
-            }else{
-                tryYourLuck=true;
-            }
-        }else{
-            tryYourLuck=false;
-        }
-        this.totalcartitems = this.totalcartitems - 1;
-        this.updateLocalStorageCart(tryYourLuck);
-
-    }
-
-    getTotalItems(){
-        console.log("Total Cart");
-        console.log(this.totalcartitems);
-        return this.totalcartitems;
-    }
-
-
-    removeFromCartByName(toyName) {
-        const itemIndex = this.cartItems.findIndex(item => item.toy.name === toyName);
-
-        if (itemIndex === -1) {
-            console.warn(`Item with ID ${toyID} not found in the cart.`);
-            return;
-        }
-
-        this.cartItems.splice(itemIndex, 1);
-        let cartItemsContainer = document.getElementById('cart-items');
-
-        cartItemsContainer.innerHTML = '';
-
-        this.displayCart();
-    }
-
-
-    toString() {
-        let output = "Cart:\n";
-        for (let i = 0; i < this.cartItems.length; i++) {
-            output += this.cartItems[i].toString() + "\n";
-        }
-        return output;
-    }
-
-    decreaseQuantity(toyID) {
-        let item = this.cartItems.find(cartItem => cartItem.toy.id === toyID);
-        if (item && item.quantity > 1) {
-            item.quantity--;
-            let cartItemsContainer = document.getElementById('cart-items');
-
-            cartItemsContainer.innerHTML = '';
-
-            this.displayCart();
-        }
-
-        this.updateLocalStorageCart();
-    }
-
-    increaseQuantity(toyID) {
-        let item = this.cartItems.find(cartItem => cartItem.toy.id === toyID);
-        if (item) {
-            item.quantity++;
-            let cartItemsContainer = document.getElementById('cart-items');
-
-            cartItemsContainer.innerHTML = '';
-
-            this.displayCart();
-        }
-
-        this.updateLocalStorageCart();
-    }
-
-    displayCart() {
-        console.log("DISPLAY CALLED")
-        let cartItemsContainer = document.getElementById('cart-items');
-        let emptyCart = document.getElementById('empty-cart-message');
-        let cartTotalElement=document.getElementById('cart-total');
-        let totalPriceElement = document.getElementById('total-price');
-        let gstPriceElement = document.getElementById('gst-price');
-        let pstPrcicELement = document.getElementById('pst-price');
-        let total = 0;
-        let gstPrice = 0;
-        let pstPrice = 0;
-
-        cartItemsContainer.innerHTML = '';
-        console.log(cartItemsContainer.innerHTML);
-
-        let cartButtonsContainer = document.getElementById("cart-buttons");
-        let checkoutPopup=document.getElementById("dialog");
-
-        cartButtonsContainer.innerHTML="";
-
-        if (this.cartItems.length === 0) {
-            emptyCart.style.display = "block";
-            cartTotalElement.style.display = "none";
-        } else {
-            emptyCart.style.display = "none";
-            cartTotalElement.style.display = "block";
-            for (let i = 0; i < this.cartItems.length; i++) {
-                let toy = this.cartItems[i].toy;
-                let quantity = this.cartItems[i].quantity;
-                let price = toy.price;
-                total += price * quantity;
-
-
-                let toyInCart = `
+        let toyInCart = `
                 <div class="cart-item">
                     <img class="item-image" src="${toy.imageLink}" alt="${toy.name}">
                     <div class="cart-item-details">
@@ -190,83 +198,84 @@ class Cart {
                     </div>
                 </div>`;
 
-                cartItemsContainer.innerHTML += toyInCart;
-                this.displayCheckoutAndHomeButton();
-
-
-            }
-            gstPrice=total*0.05;
-            pstPrice=total*0.07;
-        }
-        pstPrcicELement.innerText=pstPrice.toFixed(2);
-        gstPriceElement.innerText=gstPrice.toFixed(2);
-        total+=gstPrice+pstPrice;
-        totalPriceElement.innerText = total.toFixed(2);
+        cartItemsContainer.innerHTML += toyInCart;
+        this.displayCheckoutAndHomeButton();
+      }
+      gstPrice = total * 0.05;
+      pstPrice = total * 0.07;
     }
+    pstPrcicELement.innerText = pstPrice.toFixed(2);
+    gstPriceElement.innerText = gstPrice.toFixed(2);
+    total += gstPrice + pstPrice;
+    totalPriceElement.innerText = total.toFixed(2);
+  }
 
-    //  addTotalBlock(){
-    //     let cartTotalElement = document.getElementById("cart-total");
-    //     cartTotalElement.innerHTML+=`<strong>Total: $<span id="total-price">0.00</span></strong>`;
-        
-    // }
+  //  addTotalBlock(){
+  //     let cartTotalElement = document.getElementById("cart-total");
+  //     cartTotalElement.innerHTML+=`<strong>Total: $<span id="total-price">0.00</span></strong>`;
 
-    emptyTotal(){
-        let cartTotalElement = document.getElementById('cart-total');
-        cartTotalElement.innerHTML = '';
-    }
+  // }
 
-    getCartData(){
-        return this.cartItems;
-    }
+  emptyTotal() {
+    let cartTotalElement = document.getElementById("cart-total");
+    cartTotalElement.innerHTML = "";
+  }
 
-    updateLocalStorageCart(tryYourLuck){
-        const cartItemsData=this.getCartItems().map(cartToy =>({
-            toy: cartToy.toy,
-            quantity: cartToy.quantity
-        }))
-        sessionStorage.setItem("cartItemsData",JSON.stringify(cartItemsData));
+  getCartData() {
+    return this.cartItems;
+  }
 
-        const tryYourLuckStorage={
-            "tryYourLuck":tryYourLuck
-        }
-        sessionStorage.setItem("tryYourLuck",JSON.stringify(tryYourLuck));
-    }
+  updateLocalStorageCart(tryYourLuck) {
+    const cartItemsData = this.getCartItems().map((cartToy) => ({
+      toy: cartToy.toy,
+      quantity: cartToy.quantity,
+    }));
+    sessionStorage.setItem("cartItemsData", JSON.stringify(cartItemsData));
 
-    toString(){
-        return this.cartItems.toy+""+this.cartItems.quantity;
-    }
+    const tryYourLuckStorage = {
+      tryYourLuck: tryYourLuck,
+    };
+    sessionStorage.setItem("tryYourLuck", JSON.stringify(tryYourLuck));
+  }
 
-    displayCheckoutAndHomeButton(){
-        let cartButtonsContainer = document.getElementById("cart-buttons");
-        let checkoutPopup=document.getElementById("dialog");
+  updateCartTotal() {
+    let cartItemsData =
+      JSON.parse(sessionStorage.getItem("cartItemsData")) || [];
+    sessionStorage.setItem("cartTotal", JSON.stringify(cartItemsData.length));
+  }
 
-        cartButtonsContainer.innerHTML="";
+  toString() {
+    return this.cartItems.toy + "" + this.cartItems.quantity;
+  }
 
-        let checkoutButton = document.createElement("button");
-        checkoutButton.textContent = "Checkout";
-        checkoutButton.className = "btn-primary-checkout";
-        checkoutButton.id="checkout-button";
-        checkoutButton.addEventListener("click",()=>{
-            checkoutPopup.showModal();
+  displayCheckoutAndHomeButton() {
+    let cartButtonsContainer = document.getElementById("cart-buttons");
+    let checkoutPopup = document.getElementById("dialog");
 
-            let closeButton=checkoutPopup.querySelector(".x");
-            closeButton.addEventListener("click",()=>{
-                checkoutPopup.close();
-            });
-        });
+    cartButtonsContainer.innerHTML = "";
 
-        let homeButton = document.createElement("button");
-        homeButton.textContent = "Home";
-        homeButton.className = "btn-primary-checkout";
-        homeButton.id="btn-secondary-homepage";
-        homeButton.addEventListener("click",()=>{
-            window.location.href = "index.html";
-            });
-            
-        cartButtonsContainer.appendChild(checkoutButton);
-        cartButtonsContainer.appendChild(homeButton);
+    let checkoutButton = document.createElement("button");
+    checkoutButton.textContent = "Checkout";
+    checkoutButton.className = "btn-primary-checkout";
+    checkoutButton.id = "checkout-button";
+    checkoutButton.addEventListener("click", () => {
+      checkoutPopup.showModal();
 
-    }
+      let closeButton = checkoutPopup.querySelector(".x");
+      closeButton.addEventListener("click", () => {
+        checkoutPopup.close();
+      });
+    });
+
+    let homeButton = document.createElement("button");
+    homeButton.textContent = "Home";
+    homeButton.className = "btn-primary-checkout";
+    homeButton.id = "btn-secondary-homepage";
+    homeButton.addEventListener("click", () => {
+      window.location.href = "index.html";
+    });
+
+    cartButtonsContainer.appendChild(checkoutButton);
+    cartButtonsContainer.appendChild(homeButton);
+  }
 }
-
-

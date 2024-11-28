@@ -984,6 +984,7 @@ function showTotalItems(){
   console.log(CART.getTotalItems());
   let badgeValue = document.getElementById("cartTotal");
   if (CART.getTotalItems() > 0) {
+    let cartTotal=sessionStorage.setItem('cartTotal',JSON.stringify(CART.getTotalItems()));
     badgeValue.style.visibility = "visible";
     badgeValue.innerHTML = CART.getTotalItems();
   }

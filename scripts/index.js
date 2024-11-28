@@ -3,10 +3,13 @@ document.addEventListener("DOMContentLoaded", () => {
     onLoadCreateDatabase();
     onLoadDisplayToys();
     createCartListeners(TOY_DATABASE);
+    let cartTotal=0;
     let tryYourLuck=false;
+    // sessionStorage.setItem("")
+
+
     let badgeValue = document.getElementById("cartTotal");
     badgeValue.style.visibility = "hidden";
-
 
 
     let cartItemsData = JSON.parse(sessionStorage.getItem("cartItemsData")) || [];
@@ -23,6 +26,12 @@ document.addEventListener("DOMContentLoaded", () => {
             console.log(CART);
 
         });
+        let cartTotal=JSON.parse(sessionStorage.getItem("cartTotal"));
+        if (cartTotal>0) {
+            let badgeValue = document.getElementById("cartTotal");
+            badgeValue.style.visibility = "visible";
+            badgeValue.innerHTML = cartTotal;
+        }
 
 
 
@@ -30,6 +39,8 @@ document.addEventListener("DOMContentLoaded", () => {
         console.log("CREATING NEW CART");
         CART = new Cart();
         tryYourLuck=false;
+        sessionStorage.setItem("tryYourLuck",JSON.stringify(tryYourLuck));
+        sessionStorage.setItem("cartTotal",JSON.stringify(cartTotal));
         // TOY_DATABASE=new Toys();
     }
 
@@ -151,19 +162,21 @@ document.addEventListener("DOMContentLoaded", () => {
                 console.log(tryYourLuckBoolean);
                 if (tryYourLuckBoolean) {
                     tryYourLuck=true;
+                }else if(tryYourLuckBoolean===undefined){
+                    tryYourLuck=false;
                 }else{
                     tryYourLuck=false;
                 }
                 console.log(tryYourLuck);
                 if(tryYourLuck === true){
-                showLuckCards();
-                
-                let toyCardArea = document.getElementById("box-toy-card");
-                // Scrolls to toy card section
-                window.scrollTo({
-                    top: toyCardArea.offsetTop,
-                    behaviour: "smooth",
-                });
+                    showLuckCards();
+                    
+                    let toyCardArea = document.getElementById("box-toy-card");
+                    // Scrolls to toy card section
+                    window.scrollTo({
+                        top: toyCardArea.offsetTop,
+                        behaviour: "smooth",
+                    });
                 }else{
                     window.document.getElementById("TryYourLuckDialog").showModal();
                 }
