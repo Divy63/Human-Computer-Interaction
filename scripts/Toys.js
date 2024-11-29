@@ -108,7 +108,7 @@ class Toys {
                 }
 
 
-                while (starDisplay.split(' ').length < 5 && stars < 5) {
+                while (starDisplay.split(' ').length <= 5 && stars <= 5) {
                     starDisplay += `<span class="rating">&#9734;</span>`
                 }
                 let toyCard = ``;
